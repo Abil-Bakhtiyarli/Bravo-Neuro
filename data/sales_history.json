@@ -1,0 +1,146 @@
+[
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-300ml",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-250g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-500g",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-300ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-250g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-1l",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-500g",
+    "avgDailySales": 9,
+    "last7DaysSales": 63
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-300ml",
+    "avgDailySales": 9,
+    "last7DaysSales": 63
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-250g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-200g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  }
+]

@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. This repo currently contains the Part 0 foundation only: app scaffold, UI stack, and a clean starter screen.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation and the Part 1 data layer: app scaffold, UI stack, typed domain models, realistic seed data, and a typed import module that verifies the seed files are internally consistent.
 
 ## Repo Structure
 
@@ -32,7 +32,8 @@ bravo-neuro/
 |   |       \-- button.tsx
 |   \-- lib/
 |       +-- utils.ts
-|       +-- types.ts                     (planned, not created yet)
+|       +-- types.ts
+|       +-- seedData.ts
 |       +-- dataLoader.ts                (planned, not created yet)
 |       +-- riskScore.ts                 (planned, not created yet)
 |       +-- recommendationEngine.ts      (planned, not created yet)
@@ -41,12 +42,12 @@ bravo-neuro/
 |       \-- formatters.ts                (planned, not created yet)
 +-- data/
 |   +-- .gitkeep
-|   +-- branches.json                   (planned, not created yet)
-|   +-- products.json                   (planned, not created yet)
-|   +-- inventory.json                  (planned, not created yet)
-|   +-- sales_history.json              (planned, not created yet)
-|   +-- discount_history.json           (planned, not created yet)
-|   \-- waste_history.json              (planned, not created yet)
+|   +-- branches.json
+|   +-- products.json
+|   +-- inventory.json
+|   +-- sales_history.json
+|   +-- discount_history.json
+|   \-- waste_history.json
 +-- public/
 |   +-- file.svg
 |   +-- globe.svg
@@ -71,4 +72,17 @@ bravo-neuro/
 ## Progress
 
 Part 0 is complete: Next.js, Tailwind, shadcn/ui, Lucide, and Recharts are installed and running.
-Part 1 and later will add domain data, types, risk scoring, recommendations, and API/server logic.
+Part 1 is complete: typed domain models and realistic demo seed data are in place under `src/lib/types.ts`, `src/lib/seedData.ts`, and `data/*.json`.
+Parts 2 and later will add joined branch/product records, risk scoring, recommendations, savings logic, explanations, and API/server data delivery.
+
+## Part 1 Seed Data
+
+The seed dataset is designed for the hackathon story in the technical plan:
+
+- 3 branches: Bravo Ganjlik, Bravo Yasamal, Bravo 28 May
+- 8 products across dairy, bakery, fruits/vegetables, and drinks
+- per-lot inventory records with expiry dates for expiry-driven risk logic
+- sales, discount, and waste history aligned to the same branch/product pairs
+- at least one critical expiry case, transfer-favorable case, reorder-reduction case, and low-risk case
+
+`src/lib/seedData.ts` is the canonical import surface for Part 2 onward. It loads all JSON seed files, exports typed arrays, and runs lightweight import-time invariants for referential integrity and scenario coverage.
