@@ -246,3 +246,74 @@ export type BranchSavingsSummary = {
   recommendationCount: number;
   breakdownByActionType: Partial<Record<RecommendationActionType, BranchSavingsSummaryItem>>;
 };
+
+export type DashboardKpiKey =
+  | "possible-loss"
+  | "recoverable-value"
+  | "net-saved-value"
+  | "risky-products"
+  | "tasks-today";
+
+export type DashboardKpi = {
+  key: DashboardKpiKey;
+  label: string;
+  value: number;
+  unit: "azn" | "count";
+};
+
+export type RiskTableItem = {
+  branchId: BranchId;
+  productId: ProductId;
+  productName: string;
+  category: ProductCategory;
+  riskLevel: RiskLevel;
+  riskScore: number;
+  daysUntilExpiry: number;
+  totalStock: number;
+  daysOfStockRemaining: number | null;
+  actionType: RecommendationActionType;
+  recommendationSummary: string;
+  netSavedValueAzN: number;
+  possibleLossAzN: number;
+};
+
+export type ActionPlanItem = {
+  taskId: string;
+  branchId: BranchId;
+  productId: ProductId;
+  productName: string;
+  actionType: RecommendationActionType;
+  riskLevel: RiskLevel;
+  riskScore: number;
+  status: TaskStatus;
+  summary: string;
+  expectedNetSavedValueAzN: number;
+  expectedRecoveredValueAzN: number;
+};
+
+export type ProductDetailData = {
+  branch: Branch;
+  product: Product;
+  generatedAt: string;
+  totalStock: number;
+  stockValueAzN: number;
+  lotCount: number;
+  earliestExpiryDate: string;
+  latestExpiryDate: string;
+  daysUntilEarliestExpiry: number;
+  daysOfStockRemaining: number | null;
+  risk: ProductRiskAssessment;
+  inventoryLots: EnrichedInventoryLot[];
+  recommendation: ProductRecommendation | null;
+  savings: RecommendationSavings | null;
+  explanation: RecommendationExplanation | null;
+};
+
+export type BranchDashboardData = {
+  branch: Branch;
+  generatedAt: string;
+  kpis: DashboardKpi[];
+  riskTable: RiskTableItem[];
+  actionPlan: ActionPlanItem[];
+  topProductIds: ProductId[];
+};

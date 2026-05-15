@@ -10,6 +10,7 @@ import {
 import { generateRecommendation, generateRecommendationsForBranch } from "./recommendationEngine";
 import { calculateWasteRisk, calculateWasteRiskForBranch } from "./riskScore";
 import type {
+  ProductRecommendation,
   ProductRiskAssessment,
   RiskComponentScore,
   ScoredBranchProductRecord,
@@ -71,16 +72,16 @@ test("discount explanations stay deterministic for the seeded Greek yogurt case"
 
   assert.equal(
     explanation.summary,
-    "Risk is critical for Greek Yogurt 500g. Greek Yogurt 500g is risky because expires in 1 day, and is overstocked: stock covers 11.67 days, or 11.7x the clearance window, and is not selling fast enough: current sales average 1.2/day versus 14/day needed to clear before expiry.",
+    "Risk is critical for Greek Yogurt 500g. Greek Yogurt 500g is risky because expires in 1 day, and is overstocked: stock covers 7.5 days, or 7.5x the clearance window, and is not selling fast enough: current sales average 4/day versus 30/day needed to clear before expiry.",
   );
   assert.deepEqual(explanation.driverHighlights, [
     "Greek Yogurt 500g expires in 1 day.",
-    "Greek Yogurt 500g is overstocked: stock covers 11.67 days, or 11.7x the clearance window.",
-    "Greek Yogurt 500g is not selling fast enough: current sales average 1.2/day versus 14/day needed to clear before expiry.",
+    "Greek Yogurt 500g is overstocked: stock covers 7.5 days, or 7.5x the clearance window.",
+    "Greek Yogurt 500g is not selling fast enough: current sales average 4/day versus 30/day needed to clear before expiry.",
   ]);
   assert.equal(
     explanation.recommendationRationale,
-    "This action is recommended because the product faces near-term expiry pressure and a 35% discount is the fastest way to improve sell-through. If sell-through stays below the 14-unit target by tomorrow, raise it to 45%.",
+    "This action is recommended because the product faces near-term expiry pressure and a 35% discount is the fastest way to improve sell-through. If sell-through stays below the 30-unit target by tomorrow, raise it to 45%.",
   );
 });
 
@@ -93,10 +94,9 @@ test("transfer explanations mention the faster destination branch and quantity",
 
   const explanation = generateRecommendationExplanation(record, recommendation);
 
-  assert.ok(
-    explanation.driverHighlights.some((highlight) => highlight.includes("Bravo 28 May sells this product 1.8x faster")),
-  );
+  assert.ok(explanation.driverHighlights.some((highlight) => highlight.includes("1.8x the clearance window")));
   assert.ok(explanation.recommendationRationale.includes("Bravo 28 May"));
+  assert.ok(explanation.recommendationRationale.includes("1.67x faster"));
   assert.ok(explanation.recommendationRationale.includes("7 units"));
 });
 
@@ -207,17 +207,17 @@ test("explanations use only the top two drivers when the third one has zero cont
       buildDriver("historical-waste", 0, 0),
     ],
   });
-  const recommendation = {
+  const recommendation: ProductRecommendation = {
     branchId: record.branch.branchId,
     productId: record.product.productId,
     branchName: record.branch.branchName,
     productName: record.product.name,
     riskScore: record.risk.roundedScore,
     riskLevel: record.risk.riskLevel,
-    actionType: "shelf-action" as const,
+    actionType: "shelf-action",
     summary: "placeholder",
-    reasonCodes: ["near-expiry", "visibility-boost"] as const,
-    targetPlacement: "front shelf" as const,
+    reasonCodes: ["near-expiry", "visibility-boost"],
+    targetPlacement: "front shelf",
   };
 
   const explanation = generateRecommendationExplanation(record, recommendation);

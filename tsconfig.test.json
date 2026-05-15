@@ -21,6 +21,10 @@
     "src/lib/recommendationEngine.ts",
     "src/lib/recommendationEngine.test.ts",
     "src/lib/savings.ts",
-    "src/lib/savings.test.ts"
+    "src/lib/savings.test.ts",
+    "src/lib/explanation.ts",
+    "src/lib/explanation.test.ts",
+    "src/lib/dashboardData.ts",
+    "src/lib/dashboardData.test.ts"
   ]
 }
