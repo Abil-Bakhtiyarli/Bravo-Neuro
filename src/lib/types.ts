@@ -191,3 +191,47 @@ export type ProductRecommendation =
   | ReorderAdjustmentRecommendation
   | ShelfActionRecommendation
   | InvestigationRecommendation;
+
+export type SavingsActionAssumptions = {
+  methodology: string;
+  baselineUnitsWithoutAction: number;
+  unitsAtRisk: number;
+  discountedUnitPriceAzN?: number;
+  actionUpliftRate?: number;
+  transferCostPerUnitAzN?: number;
+  reorderPreventionConfidence?: number;
+};
+
+export type RecommendationSavings = {
+  possibleLossAzN: number;
+  recoveredValueAzN: number;
+  netSavedValueAzN: number;
+  estimatedRecoveredUnits: number;
+  estimatedWasteUnitsAvoided: number;
+  costBreakdown: {
+    discountCostAzN: number;
+    transferCostAzN: number;
+    handlingCostAzN: number;
+  };
+  assumptions: SavingsActionAssumptions;
+};
+
+export type RecommendationWithSavings = {
+  recommendation: ProductRecommendation;
+  savings: RecommendationSavings;
+};
+
+export type BranchSavingsSummaryItem = {
+  recommendationCount: number;
+  totalPossibleLossAzN: number;
+  totalRecoveredValueAzN: number;
+  totalNetSavedValueAzN: number;
+};
+
+export type BranchSavingsSummary = {
+  totalPossibleLossAzN: number;
+  totalRecoveredValueAzN: number;
+  totalNetSavedValueAzN: number;
+  recommendationCount: number;
+  breakdownByActionType: Partial<Record<RecommendationActionType, BranchSavingsSummaryItem>>;
+};
