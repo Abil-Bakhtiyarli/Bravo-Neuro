@@ -9,7 +9,11 @@ import {
   TrendingUp,
 } from "lucide-react";
 
+import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
+import { getAvailableBranchOptions } from "@/lib/dashboardData";
+import { SEED_REFERENCE_DATE } from "@/lib/seedData";
+import type { BranchId } from "@/lib/types";
 
 const kpiCards = [
   {
@@ -103,59 +107,6 @@ const actionPlanRows = [
     badge: "Queued",
   },
 ] as const;
-
-function TopBar() {
-  return (
-    <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-      <div className="space-y-3">
-        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">
-          <span className="rounded-full border border-border/80 bg-accent/75 px-2.5 py-1">
-            Bravo Neuro
-          </span>
-          <span className="rounded-full border border-dashed border-border/80 px-2.5 py-1">
-            Part 8 layout foundation
-          </span>
-        </div>
-        <div className="space-y-2">
-          <h1 className="max-w-4xl text-3xl font-semibold tracking-tight text-balance text-foreground sm:text-4xl xl:text-[2.8rem]">
-            Retail waste-risk operations dashboard with the full demo story
-            blocked in.
-          </h1>
-          <p className="max-w-3xl text-sm leading-6 text-muted-foreground sm:text-base">
-            Static shell only for now: dashboard structure, surface hierarchy,
-            and placeholder decision areas are ready for live branch controls,
-            KPI wiring, risk rows, drawer detail, and task interactions.
-          </p>
-        </div>
-      </div>
-
-      <div className="grid gap-3 sm:grid-cols-2 lg:w-[24rem]">
-        <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-            Selected branch
-          </p>
-          <p className="mt-2 text-lg font-semibold text-foreground">
-            Bravo Ganjlik
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Branch switching starts in Part 9.
-          </p>
-        </div>
-        <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-            Daily status
-          </p>
-          <p className="mt-2 text-lg font-semibold text-foreground">
-            Review cycle queued
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Saturday, 16 May 2026
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function KpiStrip() {
   return (
@@ -416,10 +367,42 @@ function DetailHint() {
   );
 }
 
-export default function Home() {
+type HomeProps = {
+  searchParams: Promise<{ branch?: string | string[] }>;
+};
+
+function resolveSelectedBranchId(
+  requestedBranch: string | string[] | undefined,
+  branchIds: BranchId[],
+) {
+  const requestedValue = Array.isArray(requestedBranch)
+    ? requestedBranch[0]
+    : requestedBranch;
+
+  if (requestedValue && branchIds.includes(requestedValue)) {
+    return requestedValue;
+  }
+
+  return branchIds[0];
+}
+
+export default async function Home({ searchParams }: HomeProps) {
+  const branches = getAvailableBranchOptions();
+  const selectedBranchId = resolveSelectedBranchId(
+    (await searchParams).branch,
+    branches.map((branch) => branch.branchId),
+  );
+  const generatedAt = new Date(`${SEED_REFERENCE_DATE}T00:00:00.000Z`).toISOString();
+
   return (
     <DashboardLayout
-      topBar={<TopBar />}
+      topBar={
+        <DashboardHeader
+          branches={branches}
+          selectedBranchId={selectedBranchId}
+          generatedAt={generatedAt}
+        />
+      }
       kpiStrip={<KpiStrip />}
       mainPane={<MainPane />}
       sidePane={<SidePane />}
