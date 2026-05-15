@@ -1,74 +1,74 @@
 [
-    {
-        "branchId": "ganjlik",
-        "productId": "greek-yogurt-500g",
-        "pastDiscountPercent": 20,
-        "responseRate": 0.42
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "sourdough-bread",
-        "pastDiscountPercent": 15,
-        "responseRate": 0.37
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "butter-croissant",
-        "pastDiscountPercent": 20,
-        "responseRate": 0.58
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "strawberries-250g",
-        "pastDiscountPercent": 25,
-        "responseRate": 0.46
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "orange-juice-1l",
-        "pastDiscountPercent": 10,
-        "responseRate": 0.14
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "greek-yogurt-500g",
-        "pastDiscountPercent": 15,
-        "responseRate": 0.33
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "butter-croissant",
-        "pastDiscountPercent": 15,
-        "responseRate": 0.44
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "strawberries-250g",
-        "pastDiscountPercent": 20,
-        "responseRate": 0.39
-    },
-    {
-        "branchId": "may28",
-        "productId": "greek-yogurt-500g",
-        "pastDiscountPercent": 15,
-        "responseRate": 0.48
-    },
-    {
-        "branchId": "may28",
-        "productId": "ayran-300ml",
-        "pastDiscountPercent": 10,
-        "responseRate": 0.31
-    },
-    {
-        "branchId": "may28",
-        "productId": "butter-croissant",
-        "pastDiscountPercent": 15,
-        "responseRate": 0.41
-    },
-    {
-        "branchId": "may28",
-        "productId": "orange-juice-1l",
-        "pastDiscountPercent": 10,
-        "responseRate": 0.19
-    }
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-500g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.37
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.58
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-250g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-1l",
+    "pastDiscountPercent": 10,
+    "responseRate": 0.14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-500g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.33
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.44
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-250g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.39
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-500g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.48
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-300ml",
+    "pastDiscountPercent": 10,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-1l",
+    "pastDiscountPercent": 10,
+    "responseRate": 0.19
+  }
 ]

@@ -18,6 +18,7 @@ export type TaskActionType =
   | "reorder-adjustment"
   | "shelf-action"
   | "investigation";
+export type RecommendationActionType = TaskActionType;
 export type RiskLevel = "low" | "medium" | "high" | "critical";
 export type RiskFactorKey =
   | "expiry-urgency"
@@ -124,3 +125,69 @@ export type ProductRiskAssessment = {
   componentScores: RiskComponentScore[];
   mainDrivers: RiskComponentScore[];
 };
+
+export type ScoredBranchProductRecord = EnrichedBranchProductRecord & {
+  risk: ProductRiskAssessment;
+};
+
+export type RecommendationReasonCode =
+  | "near-expiry"
+  | "high-risk-score"
+  | "excess-stock"
+  | "faster-branch-demand"
+  | "transfer-feasible"
+  | "oversupply"
+  | "waste-trend"
+  | "visibility-boost"
+  | "data-conflict"
+  | "unclear-primary-action";
+
+type RecommendationBase = {
+  branchId: BranchId;
+  productId: ProductId;
+  branchName: string;
+  productName: string;
+  riskScore: number;
+  riskLevel: RiskLevel;
+  summary: string;
+  reasonCodes: RecommendationReasonCode[];
+};
+
+export type DiscountRecommendation = RecommendationBase & {
+  actionType: "discount";
+  discountPercent: number;
+  fallbackDiscountPercent: number;
+  targetUnitsByTomorrow: number;
+  expectedUnitsByTomorrow: number;
+};
+
+export type TransferRecommendation = RecommendationBase & {
+  actionType: "transfer";
+  destinationBranchId: BranchId;
+  destinationBranchName: string;
+  transferQuantity: number;
+  salesSpeedMultiplier: number;
+};
+
+export type ReorderAdjustmentRecommendation = RecommendationBase & {
+  actionType: "reorder-adjustment";
+  adjustment: "reduce" | "pause";
+  suggestedOrderMultiplier: number;
+};
+
+export type ShelfActionRecommendation = RecommendationBase & {
+  actionType: "shelf-action";
+  targetPlacement: "promo endcap" | "front shelf";
+};
+
+export type InvestigationRecommendation = RecommendationBase & {
+  actionType: "investigation";
+  checks: string[];
+};
+
+export type ProductRecommendation =
+  | DiscountRecommendation
+  | TransferRecommendation
+  | ReorderAdjustmentRecommendation
+  | ShelfActionRecommendation
+  | InvestigationRecommendation;

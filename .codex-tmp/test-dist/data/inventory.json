@@ -1,170 +1,170 @@
 [
-    {
-        "branchId": "ganjlik",
-        "productId": "greek-yogurt-500g",
-        "currentStock": 18,
-        "expiryDate": "2026-05-16",
-        "shelfLocation": "chilled aisle"
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "greek-yogurt-500g",
-        "currentStock": 12,
-        "expiryDate": "2026-05-18",
-        "shelfLocation": "chilled aisle"
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "sourdough-bread",
-        "currentStock": 14,
-        "expiryDate": "2026-05-17",
-        "shelfLocation": "bakery display"
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "sourdough-bread",
-        "currentStock": 10,
-        "expiryDate": "2026-05-19",
-        "shelfLocation": "bakery display"
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "strawberries-250g",
-        "currentStock": 16,
-        "expiryDate": "2026-05-18",
-        "shelfLocation": "produce chiller"
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "butter-croissant",
-        "currentStock": 20,
-        "expiryDate": "2026-05-16",
-        "shelfLocation": "bakery display"
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "orange-juice-1l",
-        "currentStock": 48,
-        "expiryDate": "2026-06-20",
-        "shelfLocation": "beverage shelf"
-    },
-    {
-        "branchId": "ganjlik",
-        "productId": "bananas",
-        "currentStock": 22,
-        "expiryDate": "2026-05-19",
-        "shelfLocation": "produce table"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "greek-yogurt-500g",
-        "currentStock": 9,
-        "expiryDate": "2026-05-19",
-        "shelfLocation": "chilled aisle"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "ayran-300ml",
-        "currentStock": 18,
-        "expiryDate": "2026-05-24",
-        "shelfLocation": "chilled aisle"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "sourdough-bread",
-        "currentStock": 8,
-        "expiryDate": "2026-05-16",
-        "shelfLocation": "bakery display"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "butter-croissant",
-        "currentStock": 12,
-        "expiryDate": "2026-05-16",
-        "shelfLocation": "bakery display"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "bananas",
-        "currentStock": 15,
-        "expiryDate": "2026-05-20",
-        "shelfLocation": "produce table"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "strawberries-250g",
-        "currentStock": 9,
-        "expiryDate": "2026-05-17",
-        "shelfLocation": "produce chiller"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "fresh-spinach-200g",
-        "currentStock": 11,
-        "expiryDate": "2026-05-17",
-        "shelfLocation": "produce chiller"
-    },
-    {
-        "branchId": "yasamal",
-        "productId": "orange-juice-1l",
-        "currentStock": 22,
-        "expiryDate": "2026-06-24",
-        "shelfLocation": "beverage shelf"
-    },
-    {
-        "branchId": "may28",
-        "productId": "greek-yogurt-500g",
-        "currentStock": 7,
-        "expiryDate": "2026-05-18",
-        "shelfLocation": "chilled aisle"
-    },
-    {
-        "branchId": "may28",
-        "productId": "ayran-300ml",
-        "currentStock": 14,
-        "expiryDate": "2026-05-25",
-        "shelfLocation": "chilled aisle"
-    },
-    {
-        "branchId": "may28",
-        "productId": "sourdough-bread",
-        "currentStock": 6,
-        "expiryDate": "2026-05-16",
-        "shelfLocation": "bakery display"
-    },
-    {
-        "branchId": "may28",
-        "productId": "butter-croissant",
-        "currentStock": 9,
-        "expiryDate": "2026-05-16",
-        "shelfLocation": "bakery display"
-    },
-    {
-        "branchId": "may28",
-        "productId": "bananas",
-        "currentStock": 13,
-        "expiryDate": "2026-05-19",
-        "shelfLocation": "produce table"
-    },
-    {
-        "branchId": "may28",
-        "productId": "strawberries-250g",
-        "currentStock": 8,
-        "expiryDate": "2026-05-18",
-        "shelfLocation": "produce chiller"
-    },
-    {
-        "branchId": "may28",
-        "productId": "fresh-spinach-200g",
-        "currentStock": 6,
-        "expiryDate": "2026-05-18",
-        "shelfLocation": "produce chiller"
-    },
-    {
-        "branchId": "may28",
-        "productId": "orange-juice-1l",
-        "currentStock": 12,
-        "expiryDate": "2026-06-28",
-        "shelfLocation": "beverage shelf"
-    }
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-500g",
+    "currentStock": 18,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-500g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread",
+    "currentStock": 14,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread",
+    "currentStock": 10,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-250g",
+    "currentStock": 16,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant",
+    "currentStock": 20,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-1l",
+    "currentStock": 48,
+    "expiryDate": "2026-06-20",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas",
+    "currentStock": 22,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-500g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-300ml",
+    "currentStock": 18,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread",
+    "currentStock": 8,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant",
+    "currentStock": 12,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas",
+    "currentStock": 15,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-200g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-1l",
+    "currentStock": 22,
+    "expiryDate": "2026-06-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-500g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-300ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread",
+    "currentStock": 6,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-250g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-200g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-06-28",
+    "shelfLocation": "beverage shelf"
+  }
 ]
