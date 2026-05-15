@@ -192,6 +192,17 @@ export type ProductRecommendation =
   | ShelfActionRecommendation
   | InvestigationRecommendation;
 
+export type RecommendationExplanation = {
+  summary: string;
+  driverHighlights: string[];
+  recommendationRationale: string;
+};
+
+export type RecommendationWithExplanation = {
+  recommendation: ProductRecommendation;
+  explanation: RecommendationExplanation;
+};
+
 export type SavingsActionAssumptions = {
   methodology: string;
   baselineUnitsWithoutAction: number;

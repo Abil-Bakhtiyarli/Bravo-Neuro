@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, and the Part 5 savings calculator: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, and AZN business-impact estimation for those recommendations.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, and the Part 6 explanation generator: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, and short manager-friendly explanations built from the top risk drivers plus action rationale.
 
 ## Repo Structure
 
@@ -42,7 +42,8 @@ bravo-neuro/
 |       +-- recommendationEngine.test.ts
 |       +-- savings.ts
 |       +-- savings.test.ts
-|       +-- explanation.ts               (planned, not created yet)
+|       +-- explanation.ts
+|       +-- explanation.test.ts
 |       \-- formatters.ts                (planned, not created yet)
 +-- data/
 |   +-- .gitkeep
@@ -81,7 +82,8 @@ Part 2 is complete: `src/lib/dataLoader.ts` returns enriched branch/product reco
 Part 3 is complete: `src/lib/riskScore.ts` calculates weighted waste-risk component scores, rounded risk levels, and the top machine-readable drivers for each enriched product record.
 Part 4 is complete: `src/lib/recommendationEngine.ts` turns scored records into one clear primary action per medium/high/critical product, covering discount, transfer, reorder adjustment, shelf action, and investigation flows.
 Part 5 is complete: `src/lib/savings.ts` converts recommendations into deterministic AZN impact estimates for possible loss, recovered value, and net saved value, and it aggregates those totals at branch level for later dashboard/API use.
-Parts 6 and later will add explanations and API/server data delivery.
+Part 6 is complete: `src/lib/explanation.ts` converts ordered risk drivers plus the chosen recommendation into deterministic manager-friendly explanation text for future API and drawer/detail surfaces.
+Parts 7 and later will add API/server data delivery and UI consumption.
 
 ## Part 1 Seed Data
 
@@ -102,3 +104,5 @@ The seed dataset is designed for the hackathon story in the technical plan:
 `src/lib/recommendationEngine.ts` is the canonical Part 4 decision layer. It takes scored branch/product records and returns one typed primary recommendation per eligible product with deterministic discount, transfer, reorder-adjustment, shelf-action, or investigation output.
 
 `src/lib/savings.ts` is the canonical Part 5 value layer. It attaches deterministic AZN savings estimates to each recommendation using the chosen pragmatic P&L policy and exposes branch-level aggregation helpers for future KPI cards and API routes.
+
+`src/lib/explanation.ts` is the canonical Part 6 explanation layer. It turns the top non-zero risk drivers and the selected recommendation into short summary text, readable driver highlights, and explicit action rationale for future product-detail and API payload use.

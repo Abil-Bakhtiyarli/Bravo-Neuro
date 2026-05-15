@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "tsc -p tsconfig.test.json && node -e \"require('node:fs').cpSync('data', '.codex-tmp/test-dist/data', { recursive: true, force: true })\" && node --test .codex-tmp/test-dist/src/lib/dataLoader.test.js .codex-tmp/test-dist/src/lib/riskScore.test.js .codex-tmp/test-dist/src/lib/recommendationEngine.test.js .codex-tmp/test-dist/src/lib/savings.test.js"
+    "test": "tsc -p tsconfig.test.json && node -e \"require('node:fs').cpSync('data', '.codex-tmp/test-dist/data', { recursive: true, force: true })\" && node --test .codex-tmp/test-dist/src/lib/dataLoader.test.js .codex-tmp/test-dist/src/lib/riskScore.test.js .codex-tmp/test-dist/src/lib/recommendationEngine.test.js .codex-tmp/test-dist/src/lib/savings.test.js .codex-tmp/test-dist/src/lib/explanation.test.js"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
