@@ -1,0 +1,20 @@
+[
+    {
+        "branchId": "ganjlik",
+        "branchName": "Bravo Ganjlik",
+        "location": "Baku, Ganjlik Mall area",
+        "demandProfile": "commuter"
+    },
+    {
+        "branchId": "yasamal",
+        "branchName": "Bravo Yasamal",
+        "location": "Baku, Yasamal district",
+        "demandProfile": "family"
+    },
+    {
+        "branchId": "may28",
+        "branchName": "Bravo 28 May",
+        "location": "Baku, 28 May transit hub",
+        "demandProfile": "premium-mixed"
+    }
+]

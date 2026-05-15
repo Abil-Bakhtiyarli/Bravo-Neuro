@@ -1,0 +1,58 @@
+[
+    {
+        "productId": "greek-yogurt-500g",
+        "name": "Greek Yogurt 500g",
+        "category": "dairy",
+        "unitPrice": 4.9,
+        "shelfLifeType": "short"
+    },
+    {
+        "productId": "ayran-300ml",
+        "name": "Ayran 300ml",
+        "category": "dairy",
+        "unitPrice": 1.7,
+        "shelfLifeType": "medium"
+    },
+    {
+        "productId": "sourdough-bread",
+        "name": "Sourdough Bread",
+        "category": "bakery",
+        "unitPrice": 3.4,
+        "shelfLifeType": "short"
+    },
+    {
+        "productId": "butter-croissant",
+        "name": "Butter Croissant",
+        "category": "bakery",
+        "unitPrice": 2.2,
+        "shelfLifeType": "short"
+    },
+    {
+        "productId": "bananas",
+        "name": "Bananas",
+        "category": "fruits-vegetables",
+        "unitPrice": 2.8,
+        "shelfLifeType": "short"
+    },
+    {
+        "productId": "strawberries-250g",
+        "name": "Strawberries 250g",
+        "category": "fruits-vegetables",
+        "unitPrice": 5.6,
+        "shelfLifeType": "short"
+    },
+    {
+        "productId": "fresh-spinach-200g",
+        "name": "Fresh Spinach 200g",
+        "category": "fruits-vegetables",
+        "unitPrice": 2.9,
+        "shelfLifeType": "short"
+    },
+    {
+        "productId": "orange-juice-1l",
+        "name": "Orange Juice 1L",
+        "category": "drinks",
+        "unitPrice": 3.8,
+        "shelfLifeType": "long"
+    }
+]

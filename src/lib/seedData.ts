@@ -14,7 +14,9 @@ import type {
   ProductId,
   SalesHistory,
   WasteHistory,
-} from "@/lib/types";
+} from "./types";
+
+export const SEED_REFERENCE_DATE = "2026-05-15";
 
 export const branches = branchesJson as Branch[];
 export const products = productsJson as Product[];
@@ -30,7 +32,7 @@ function invariant(condition: unknown, message: string): asserts condition {
 }
 
 function daysUntil(dateString: string) {
-  const today = new Date("2026-05-15T00:00:00.000Z");
+  const today = new Date(`${SEED_REFERENCE_DATE}T00:00:00.000Z`);
   const target = new Date(`${dateString}T00:00:00.000Z`);
   return Math.round((target.getTime() - today.getTime()) / 86_400_000);
 }

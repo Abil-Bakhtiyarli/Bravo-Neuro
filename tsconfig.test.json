@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./.codex-tmp/test-dist",
+    "rootDir": ".",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "types": ["node"],
+    "incremental": false,
+    "isolatedModules": false
+  },
+  "include": [
+    "src/lib/types.ts",
+    "src/lib/seedData.ts",
+    "src/lib/dataLoader.ts",
+    "src/lib/dataLoader.test.ts"
+  ]
+}

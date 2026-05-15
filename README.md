@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation and the Part 1 data layer: app scaffold, UI stack, typed domain models, realistic seed data, and a typed import module that verifies the seed files are internally consistent.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, and the Part 2 enriched data loader: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, and branch-first loader helpers that prepare joined records for later risk scoring and recommendations.
 
 ## Repo Structure
 
@@ -34,7 +34,7 @@ bravo-neuro/
 |       +-- utils.ts
 |       +-- types.ts
 |       +-- seedData.ts
-|       +-- dataLoader.ts                (planned, not created yet)
+|       +-- dataLoader.ts
 |       +-- riskScore.ts                 (planned, not created yet)
 |       +-- recommendationEngine.ts      (planned, not created yet)
 |       +-- savings.ts                   (planned, not created yet)
@@ -73,7 +73,8 @@ bravo-neuro/
 
 Part 0 is complete: Next.js, Tailwind, shadcn/ui, Lucide, and Recharts are installed and running.
 Part 1 is complete: typed domain models and realistic demo seed data are in place under `src/lib/types.ts`, `src/lib/seedData.ts`, and `data/*.json`.
-Parts 2 and later will add joined branch/product records, risk scoring, recommendations, savings logic, explanations, and API/server data delivery.
+Part 2 is complete: `src/lib/dataLoader.ts` returns enriched branch/product records with aggregated inventory, derived expiry/stock metrics, optional discount history, waste history, and cross-branch sales snapshots.
+Parts 3 and later will add risk scoring, recommendations, savings logic, explanations, and API/server data delivery.
 
 ## Part 1 Seed Data
 
@@ -85,4 +86,6 @@ The seed dataset is designed for the hackathon story in the technical plan:
 - sales, discount, and waste history aligned to the same branch/product pairs
 - at least one critical expiry case, transfer-favorable case, reorder-reduction case, and low-risk case
 
-`src/lib/seedData.ts` is the canonical import surface for Part 2 onward. It loads all JSON seed files, exports typed arrays, and runs lightweight import-time invariants for referential integrity and scenario coverage.
+`src/lib/seedData.ts` is the canonical raw seed import surface. It loads all JSON seed files, exports typed arrays, and runs lightweight import-time invariants for referential integrity and scenario coverage.
+
+`src/lib/dataLoader.ts` is the canonical Part 2 access layer. It exposes branch-first helpers that join the seed datasets into enriched records, sort lots by expiry, and precompute stock/expiry fields needed by the next implementation parts.

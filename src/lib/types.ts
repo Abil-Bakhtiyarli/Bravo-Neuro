@@ -62,3 +62,42 @@ export type WasteHistory = {
   categoryWasteRate: number;
   previousWasteUnits: number;
 };
+
+export type LoaderOptions = {
+  referenceDate?: string;
+};
+
+export type BranchProductLookup = `${BranchId}:${ProductId}`;
+
+export type EnrichedInventoryLot = InventoryLot & {
+  daysUntilExpiry: number;
+  stockValueAzN: number;
+};
+
+export type CrossBranchSalesSnapshot = {
+  branchId: BranchId;
+  branchName: string;
+  demandProfile: DemandProfile;
+  avgDailySales: number;
+  last7DaysSales: number;
+  totalStock: number;
+};
+
+export type EnrichedBranchProductRecord = {
+  lookupKey: BranchProductLookup;
+  branch: Branch;
+  product: Product;
+  inventoryLots: EnrichedInventoryLot[];
+  salesHistory: SalesHistory;
+  discountHistory?: DiscountHistory;
+  wasteHistory: WasteHistory;
+  totalStock: number;
+  lotCount: number;
+  earliestExpiryDate: string;
+  latestExpiryDate: string;
+  daysUntilEarliestExpiry: number;
+  daysOfStockRemaining: number | null;
+  hasDiscountHistory: boolean;
+  stockValueAzN: number;
+  crossBranchSales: CrossBranchSalesSnapshot[];
+};
