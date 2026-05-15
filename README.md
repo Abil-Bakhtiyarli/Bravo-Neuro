@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, and the Part 2 enriched data loader: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, and branch-first loader helpers that prepare joined records for later risk scoring and recommendations.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, and the Part 3 waste-risk scorer: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, and a deterministic explainable scoring engine that ranks expiry-driven product risk for later recommendations and dashboard delivery.
 
 ## Repo Structure
 
@@ -74,7 +74,8 @@ bravo-neuro/
 Part 0 is complete: Next.js, Tailwind, shadcn/ui, Lucide, and Recharts are installed and running.
 Part 1 is complete: typed domain models and realistic demo seed data are in place under `src/lib/types.ts`, `src/lib/seedData.ts`, and `data/*.json`.
 Part 2 is complete: `src/lib/dataLoader.ts` returns enriched branch/product records with aggregated inventory, derived expiry/stock metrics, optional discount history, waste history, and cross-branch sales snapshots.
-Parts 3 and later will add risk scoring, recommendations, savings logic, explanations, and API/server data delivery.
+Part 3 is complete: `src/lib/riskScore.ts` calculates weighted waste-risk component scores, rounded risk levels, and the top machine-readable drivers for each enriched product record.
+Parts 4 and later will add recommendations, savings logic, explanations, and API/server data delivery.
 
 ## Part 1 Seed Data
 
@@ -89,3 +90,5 @@ The seed dataset is designed for the hackathon story in the technical plan:
 `src/lib/seedData.ts` is the canonical raw seed import surface. It loads all JSON seed files, exports typed arrays, and runs lightweight import-time invariants for referential integrity and scenario coverage.
 
 `src/lib/dataLoader.ts` is the canonical Part 2 access layer. It exposes branch-first helpers that join the seed datasets into enriched records, sort lots by expiry, and precompute stock/expiry fields needed by the next implementation parts.
+
+`src/lib/riskScore.ts` is the canonical Part 3 scoring layer. It turns enriched branch/product records into deterministic risk assessments using the implementation-plan weights for expiry urgency, stock pressure, sales weakness, historical waste, and branch demand mismatch.

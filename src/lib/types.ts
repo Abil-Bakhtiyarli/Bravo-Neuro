@@ -18,6 +18,13 @@ export type TaskActionType =
   | "reorder-adjustment"
   | "shelf-action"
   | "investigation";
+export type RiskLevel = "low" | "medium" | "high" | "critical";
+export type RiskFactorKey =
+  | "expiry-urgency"
+  | "stock-pressure"
+  | "sales-weakness"
+  | "historical-waste"
+  | "branch-demand-mismatch";
 
 export type Branch = {
   branchId: BranchId;
@@ -100,4 +107,20 @@ export type EnrichedBranchProductRecord = {
   hasDiscountHistory: boolean;
   stockValueAzN: number;
   crossBranchSales: CrossBranchSalesSnapshot[];
+};
+
+export type RiskComponentScore = {
+  key: RiskFactorKey;
+  label: string;
+  rawScore: number;
+  weight: number;
+  weightedContribution: number;
+};
+
+export type ProductRiskAssessment = {
+  totalScore: number;
+  roundedScore: number;
+  riskLevel: RiskLevel;
+  componentScores: RiskComponentScore[];
+  mainDrivers: RiskComponentScore[];
 };
