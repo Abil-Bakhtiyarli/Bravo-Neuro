@@ -54,6 +54,7 @@ test("dashboard KPI totals match the branch savings summary", () => {
   assert.equal(getKpiValue(dashboardData, "net-saved-value"), summary.totalNetSavedValueAzN);
   assert.equal(getKpiValue(dashboardData, "risky-products"), recommendations.length);
   assert.equal(getKpiValue(dashboardData, "tasks-today"), recommendations.length);
+  assert.equal(getKpiValue(dashboardData, "tasks-today"), dashboardData.actionPlan.length);
 });
 
 test("riskTable includes only medium, high, and critical products", () => {

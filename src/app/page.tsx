@@ -11,40 +11,40 @@ import {
 
 import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
-import { getAvailableBranchOptions } from "@/lib/dashboardData";
-import { SEED_REFERENCE_DATE } from "@/lib/seedData";
+import KpiCards, { type KpiCardItem } from "@/components/KpiCards";
+import { getAvailableBranchOptions, getDashboardData } from "@/lib/dashboardData";
+import {
+  buildDashboardKpiPresentationItems,
+  type DashboardKpiPresentationItem,
+} from "@/lib/dashboardKpiPresentation";
 import type { BranchId } from "@/lib/types";
 
-const kpiCards = [
-  {
-    label: "Possible waste",
-    value: "AZN 240.0",
-    helper: "Highest exposure sits in dairy and bakery lots.",
-    tone: "Exposure snapshot",
-    icon: AlertTriangle,
-  },
-  {
-    label: "Recoverable value",
-    value: "AZN 53.8",
-    helper: "Discount and transfer placeholders reserved for Part 11.",
-    tone: "Recovery path",
-    icon: BanknoteArrowDown,
-  },
-  {
-    label: "Risky products",
-    value: "4",
-    helper: "Medium, high, and critical rows will flow from dashboard data.",
-    tone: "Priority count",
-    icon: PackageSearch,
-  },
-  {
-    label: "Tasks today",
-    value: "4",
-    helper: "Action plan remains static until branch state arrives in Part 9.",
-    tone: "Workflow load",
-    icon: CalendarClock,
-  },
-] as const;
+function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
+  switch (item.key) {
+    case "possible-loss":
+      return {
+        ...item,
+        icon: AlertTriangle,
+      };
+    case "recoverable-value":
+      return {
+        ...item,
+        icon: BanknoteArrowDown,
+      };
+    case "risky-products":
+      return {
+        ...item,
+        icon: PackageSearch,
+      };
+    case "tasks-today":
+      return {
+        ...item,
+        icon: CalendarClock,
+      };
+    default:
+      throw new Error(`Unsupported KPI card key: ${String(item.key)}`);
+  }
+}
 
 const placeholderRows = [
   {
@@ -107,43 +107,6 @@ const actionPlanRows = [
     badge: "Queued",
   },
 ] as const;
-
-function KpiStrip() {
-  return (
-    <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-      {kpiCards.map((card) => {
-        const Icon = card.icon;
-
-        return (
-          <article
-            key={card.label}
-            className="rounded-3xl border border-border/80 bg-card/90 p-5 shadow-[0_18px_50px_-42px_rgba(15,23,42,0.55)]"
-          >
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                  {card.tone}
-                </p>
-                <h2 className="mt-2 text-sm font-medium text-foreground/80">
-                  {card.label}
-                </h2>
-              </div>
-              <div className="rounded-2xl border border-border/80 bg-background/80 p-2 text-foreground/80">
-                <Icon className="size-4" />
-              </div>
-            </div>
-            <p className="mt-6 text-3xl font-semibold tracking-tight text-foreground">
-              {card.value}
-            </p>
-            <p className="mt-3 text-sm leading-6 text-muted-foreground">
-              {card.helper}
-            </p>
-          </article>
-        );
-      })}
-    </div>
-  );
-}
 
 function MainPane() {
   return (
@@ -349,12 +312,12 @@ function DetailHint() {
         <ul className="mt-5 space-y-3 text-sm leading-6 text-muted-foreground">
           <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
             <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-            Part 9 adds the real header structure and visual branch control.
+            Part 9 locked in the real header structure and URL-backed branch control.
           </li>
           <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
             <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-            Part 10 and Part 11 replace the KPI placeholders with reusable UI
-            and live values.
+            Part 10 now replaces the KPI placeholders with reusable presentation
+            cards, while Part 11 wires them to live values.
           </li>
           <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
             <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
@@ -392,7 +355,8 @@ export default async function Home({ searchParams }: HomeProps) {
     (await searchParams).branch,
     branches.map((branch) => branch.branchId),
   );
-  const generatedAt = new Date(`${SEED_REFERENCE_DATE}T00:00:00.000Z`).toISOString();
+  const dashboardData = getDashboardData(selectedBranchId);
+  const kpiCards = buildDashboardKpiPresentationItems(dashboardData).map(toKpiCardItem);
 
   return (
     <DashboardLayout
@@ -400,10 +364,10 @@ export default async function Home({ searchParams }: HomeProps) {
         <DashboardHeader
           branches={branches}
           selectedBranchId={selectedBranchId}
-          generatedAt={generatedAt}
+          generatedAt={dashboardData.generatedAt}
         />
       }
-      kpiStrip={<KpiStrip />}
+      kpiStrip={<KpiCards items={kpiCards} />}
       mainPane={<MainPane />}
       sidePane={<SidePane />}
       detailHint={<DetailHint />}

@@ -38,6 +38,7 @@ function getKpiValue(dashboardData, key) {
     strict_1.default.equal(getKpiValue(dashboardData, "net-saved-value"), summary.totalNetSavedValueAzN);
     strict_1.default.equal(getKpiValue(dashboardData, "risky-products"), recommendations.length);
     strict_1.default.equal(getKpiValue(dashboardData, "tasks-today"), recommendations.length);
+    strict_1.default.equal(getKpiValue(dashboardData, "tasks-today"), dashboardData.actionPlan.length);
 });
 (0, node_test_1.default)("riskTable includes only medium, high, and critical products", () => {
     const dashboardData = (0, dashboardData_1.getDashboardData)("ganjlik");

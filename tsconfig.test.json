@@ -25,6 +25,8 @@
     "src/lib/explanation.ts",
     "src/lib/explanation.test.ts",
     "src/lib/dashboardData.ts",
-    "src/lib/dashboardData.test.ts"
+    "src/lib/dashboardData.test.ts",
+    "src/lib/dashboardKpiPresentation.ts",
+    "src/lib/dashboardKpiPresentation.test.ts"
   ]
 }

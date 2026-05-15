@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, and the Part 9 header and branch control: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, and an active URL-backed branch header ready for later data wiring.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, the Part 9 header and branch control, the Part 10 KPI card UI, and the Part 11 KPI data wiring slice: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, an active URL-backed branch header, polished reusable KPI cards, and live branch-aware KPI values wired from the canonical dashboard data contract while keeping tasks-today visible.
 
 ## Repo Structure
 
@@ -19,7 +19,7 @@ bravo-neuro/
 |   |   +-- DashboardLayout.tsx
 |   |   +-- setup-progress-chart.tsx      (legacy Part 0 artifact, no longer used by `/`)
 |   |   +-- DashboardHeader.tsx
-|   |   +-- KpiCards.tsx                 (planned, not created yet)
+|   |   +-- KpiCards.tsx
 |   |   +-- RiskTable.tsx                (planned, not created yet)
 |   |   +-- ProductRiskDrawer.tsx        (planned, not created yet)
 |   |   +-- RecommendationCard.tsx       (planned, not created yet)
@@ -44,6 +44,8 @@ bravo-neuro/
 |       +-- explanation.test.ts
 |       +-- dashboardData.ts
 |       +-- dashboardData.test.ts
+|       +-- dashboardKpiPresentation.ts
+|       +-- dashboardKpiPresentation.test.ts
 |       \-- formatters.ts                (planned, not created yet)
 +-- data/
 |   +-- .gitkeep
@@ -59,7 +61,7 @@ bravo-neuro/
 |   +-- next.svg
 |   +-- vercel.svg
 |   +-- window.svg
-|   \-- bravo-neuro-logo.svg            (planned, not created yet)
+|   \-- bravo-neuro-logo.svg
 +-- README.md
 +-- AGENTS.md
 +-- CLAUDE.md
@@ -86,7 +88,9 @@ Part 6 is complete: `src/lib/explanation.ts` converts ordered risk drivers plus 
 Part 7 is complete: `src/lib/dashboardData.ts` composes branch loading, scoring, recommendations, savings, and explanations into stable branch dashboard and product-detail payloads for future Server Components or optional API wrappers.
 Part 8 is complete: `src/app/page.tsx` and `src/components/DashboardLayout.tsx` now provide a responsive static dashboard shell with a top bar, KPI strip, risk-table region, action-plan side rail, and reserved product-detail surface, while intentionally keeping data connection and deeper interaction logic for later parts.
 Part 9 is complete: `src/components/DashboardHeader.tsx` provides the active header, selected branch card, demo date, daily status text, and URL-backed branch selector. The `branch` query parameter now controls header state and safely falls back to the default branch for invalid values.
-Parts 10 and later will activate KPI card UI, KPI data wiring, risk table data, drawer detail, task interaction, and only add route handlers if a public HTTP surface is still needed.
+Part 10 is complete: `src/components/KpiCards.tsx` now provides a reusable KPI strip with polished mock values, icons, helper text, and status badges while intentionally keeping the content static until Part 11 connects branch-aware dashboard data.
+Part 11 is complete: `src/app/page.tsx` now resolves the selected branch on the server, loads the canonical branch dashboard payload from `src/lib/dashboardData.ts`, and maps the four visible KPI cards to live branch-aware values and copy through `src/lib/dashboardKpiPresentation.ts`, while intentionally keeping `tasks-today` visible and leaving risk-table, drawer, and task interaction work for later parts.
+Parts 12 and later will activate risk table data, drawer detail, task interaction, and only add route handlers if a public HTTP surface is still needed.
 
 ## Part 1 Seed Data
 
@@ -115,3 +119,5 @@ The seed dataset is designed for the hackathon story in the technical plan:
 `src/components/DashboardLayout.tsx` and `src/app/page.tsx` are the canonical Part 8 layout foundation. They define the responsive dashboard shell and placeholder regions that later parts will replace with KPI cards, risk table rows, drawer content, and task actions.
 
 `src/components/DashboardHeader.tsx` is the canonical Part 9 header and branch-control surface. It is intentionally the only client component in this slice: it updates visible branch state and the `?branch=` URL parameter while leaving KPI cards, table rows, action-plan content, and product-detail data wiring reserved for later parts.
+
+`src/components/KpiCards.tsx` is the canonical KPI presentation surface. It remains presentation-only: Part 10 established the reusable card UI, and Part 11 now feeds it live branch-aware values, helper text, icons, and status badges without moving dashboard data logic into the component itself.

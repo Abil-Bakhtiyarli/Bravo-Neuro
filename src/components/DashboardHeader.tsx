@@ -75,7 +75,7 @@ export default function DashboardHeader({
             Bravo Neuro
           </span>
           <span className="rounded-full border border-dashed border-border/80 px-2.5 py-1">
-            Part 9 branch control active
+            Part 10 KPI cards active
           </span>
         </div>
         <div className="space-y-2">
