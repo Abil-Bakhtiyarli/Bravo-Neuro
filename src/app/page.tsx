@@ -6,6 +6,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 
+import AppShell from "@/components/AppShell";
 import DashboardDemoExperience from "@/components/DashboardDemoExperience";
 import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
@@ -84,27 +85,29 @@ export default async function Home({ searchParams }: HomeProps) {
     .map(toKpiCardItem);
 
   return (
-    <DashboardLayout
-      topBar={
-        <DashboardHeader
-          branches={branches}
-          selectedBranchId={selectedBranchId}
-          generatedAt={dashboardData.generatedAt}
-        />
-      }
-      kpiStrip={<KpiCards items={kpiCards} orientation="grid" />}
-      mainStory={
-        <DashboardDemoExperience
-          key={selectedBranchId}
-          branchId={selectedBranchId}
-          branchName={dashboardData.branch.branchName}
-          tasks={dashboardData.actionPlan}
-          rows={dashboardData.riskTable}
-          productDetailsById={dashboardData.productDetailsById}
-          monthlySavingsSeries={dashboardData.monthlySavingsSeries}
-        />
-      }
-      secondarySection={null}
-    />
+    <AppShell>
+      <DashboardLayout
+        topBar={
+          <DashboardHeader
+            branches={branches}
+            selectedBranchId={selectedBranchId}
+            generatedAt={dashboardData.generatedAt}
+          />
+        }
+        kpiStrip={<KpiCards items={kpiCards} orientation="grid" />}
+        mainStory={
+          <DashboardDemoExperience
+            key={selectedBranchId}
+            branchId={selectedBranchId}
+            branchName={dashboardData.branch.branchName}
+            tasks={dashboardData.actionPlan}
+            rows={dashboardData.riskTable}
+            productDetailsById={dashboardData.productDetailsById}
+            monthlySavingsSeries={dashboardData.monthlySavingsSeries}
+          />
+        }
+        secondarySection={null}
+      />
+    </AppShell>
   );
 }

@@ -16,6 +16,7 @@ bravo-neuro/
 |   |   +-- favicon.ico
 |   |   \-- api/                          (optional later thin wrappers, not created yet)
 |   +-- components/
+|   |   +-- AppShell.tsx
 |   |   +-- DashboardLayout.tsx
 |   |   +-- setup-progress-chart.tsx      (legacy Part 0 artifact, no longer used by `/`)
 |   |   +-- DashboardHeader.tsx
@@ -26,6 +27,7 @@ bravo-neuro/
 |   |   +-- ProductRiskDrawer.tsx
 |   |   +-- RecommendationCard.tsx
 |   |   +-- DailyActionPlan.tsx
+|   |   +-- Sidebar.tsx
 |   |   +-- BranchSelector.tsx           (planned, not created yet)
 |   |   +-- SavingsCard.tsx
 |   |   \-- ui/
@@ -121,23 +123,11 @@ Part 03 is complete as the selected-product and modal refactor pass: `src/compon
 
 Part 04 is complete as the compact priority queue pass: `src/components/DailyActionPlan.tsx` now replaces the old dense manager handoff cards with a smaller priority queue that keeps branch-scoped local task persistence and URL-backed product selection intact, shows the decision-critical fields on every row, and expands checklist steps only for the currently selected task. This pass removes the repeated metric tiles and stale helper footer, keeps one status CTA per row, makes the top critical task visually dominant through stronger priority/selection styling, and updates the component tests to cover the new compact copy and selected-only checklist behavior. The refactor intentionally preserves the existing `src/lib/actionPlan.ts` ranking logic and the shared `DashboardDemoExperience` selection source, and `corepack.cmd pnpm lint`, `corepack.cmd pnpm test`, and `corepack.cmd pnpm build` pass after the queue redesign.
 
+## UI Pivot Track
 
+The parts below are a separate three-digit UI pivot sequence. They do not replace the original Part 0-19 implementation history or the earlier UI Improvement Track Part 00-04 sequence above.
 
-Execution sequence:
-
-1. Refactor `src/components/DashboardDemoExperience.tsx` so the main demo grid stays two-column on desktop, keeps the selected-product panel alone in the right column, applies `xl` sticky positioning to that panel, and moves `MonthlySavingsChart` below `RiskTable` as a separate full-width proof section.
-2. Preserve the current selection contract by keeping `getVisibleSelectedProductId`, `updateRiskTableSearchParams`, and the existing URL-backed selection cleanup logic unchanged, while ensuring the open-detail action still targets the currently selected product.
-3. Convert `src/components/ProductRiskDrawer.tsx` from a right-edge sheet mental model to a centered wide modal using the existing Base UI dialog primitives, keeping the current detail payload, close behavior, scroll containment, and recommendation/savings proof sections.
-4. Tighten surrounding component copy so `DailyActionPlan` and `RiskTable` reference product detail as a modal/detail surface rather than a drawer, and remove any stale language that conflicts with the new centered presentation.
-5. Clear the React hook lint issues in `src/components/DailyActionPlan.tsx` and `src/components/MonthlySavingsChart.tsx` without changing behavior, then extend or update component tests so the layout order, sticky selected-product panel, and modal wording are covered.
-
-Acceptance criteria:
-
-- The selected-product panel is the only right-column story block on desktop and remains visible while the user scans the queue/watchlist.
-- `MonthlySavingsChart` no longer competes with the first-screen story and appears below the watchlist as secondary proof.
-- Opening product detail shows a centered modal, not a right-edge drawer/sheet.
-- Query-backed selection, filtering, branch switching, and task persistence still behave the same.
-- `corepack.cmd pnpm lint`, `corepack.cmd pnpm test`, and `corepack.cmd pnpm build` pass after the refactor.
+Part 001 is complete as the SaaS app shell and left sidebar pass: `src/components/AppShell.tsx` now owns the viewport-level dashboard shell with a desktop sidebar, compact mobile nav, and independent main-content scrolling, `src/components/Sidebar.tsx` now provides the active dashboard entry plus intentionally disabled upcoming sections, `src/components/DashboardLayout.tsx` now acts only as the inner page composition helper instead of the whole page shell, and `src/app/page.tsx` now wraps the existing branch-aware dashboard composition in the new shell without changing business logic, branch resolution, KPI wiring, risk selection, or product-detail modal behavior. `README.md` now tracks this new pivot sequence separately after the existing UI Improvement Track without renumbering any earlier parts.
 
 ## Part 1 Seed Data
 
