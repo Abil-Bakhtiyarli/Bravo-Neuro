@@ -6,15 +6,15 @@ type BranchComparisonCardProps = {
 };
 
 const riskBadgeStyles = {
-  critical: "border-rose-300/80 bg-rose-100 text-rose-800",
-  high: "border-amber-300/80 bg-amber-100 text-amber-800",
-  medium: "border-sky-300/80 bg-sky-100 text-sky-800",
-  low: "border-emerald-300/80 bg-emerald-100 text-emerald-800",
+  critical: "border-rose-300/65 bg-rose-100/60 text-rose-900",
+  high: "border-amber-300/65 bg-amber-100/60 text-amber-900",
+  medium: "border-sky-300/65 bg-sky-100/60 text-sky-900",
+  low: "border-emerald-300/65 bg-emerald-100/60 text-emerald-900",
 } as const;
 
 export default function BranchComparisonCard({ comparisons }: BranchComparisonCardProps) {
   return (
-    <section className="animate-demo-fade-up animate-demo-delay-3 rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)] sm:p-6">
+    <section className="demo-card animate-demo-fade-up animate-demo-delay-3 p-5 sm:p-6">
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
         Branch comparison
       </p>
@@ -27,10 +27,10 @@ export default function BranchComparisonCard({ comparisons }: BranchComparisonCa
           <article
             key={branch.branchId}
             className={cn(
-              "rounded-2xl border p-4 transition-[background-color,border-color,box-shadow,transform] duration-200",
+              "demo-surface-interactive rounded-2xl border p-4 transition-[background-color,border-color,box-shadow,transform] duration-200",
               branch.isSelected
-                ? "border-emerald-300/80 bg-emerald-50/70 shadow-[0_18px_45px_-38px_rgba(5,150,105,0.5)]"
-                : "border-border/75 bg-background/88 hover:-translate-y-0.5 hover:shadow-[0_16px_36px_-30px_rgba(15,23,42,0.38)]",
+                ? "demo-surface-interactive-selected"
+                : "demo-surface-interactive-hover",
             )}
           >
             <div className="flex flex-wrap items-start justify-between gap-3">
@@ -38,7 +38,7 @@ export default function BranchComparisonCard({ comparisons }: BranchComparisonCa
                 <div className="flex flex-wrap items-center gap-2">
                   <p className="text-sm font-semibold text-foreground">{branch.branchName}</p>
                   {branch.isSelected ? (
-                    <span className="rounded-full border border-emerald-200/90 bg-emerald-100/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-emerald-800">
+                    <span className="rounded-full border border-emerald-300/65 bg-emerald-100/65 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-emerald-900">
                       Active
                     </span>
                   ) : null}

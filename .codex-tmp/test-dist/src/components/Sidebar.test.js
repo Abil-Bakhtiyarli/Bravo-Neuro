@@ -14,6 +14,7 @@ const Sidebar_1 = __importDefault(require("./Sidebar"));
     strict_1.default.match(markup, /href="\/actions"/);
     strict_1.default.match(markup, /href="\/branches"/);
     strict_1.default.match(markup, /aria-current="page"/);
+    strict_1.default.match(markup, /src="\/bravo-neuro-logo\.svg"/);
     strict_1.default.match(markup, /Live snapshot/);
     strict_1.default.match(markup, /Overview, risk, actions, and branches stay in one branch context/);
     strict_1.default.match(markup, /Soon/);

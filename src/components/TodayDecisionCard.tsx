@@ -86,7 +86,7 @@ export default function TodayDecisionCard({
     0;
 
   return (
-    <section className="animate-demo-fade-up animate-demo-delay-1 rounded-3xl border border-emerald-200/80 bg-[linear-gradient(180deg,rgba(236,253,245,0.9),rgba(255,255,255,0.98))] p-5 shadow-[0_20px_60px_-40px_rgba(5,150,105,0.45)] sm:p-6">
+    <section className="animate-demo-fade-up animate-demo-delay-1 rounded-3xl border border-emerald-300/70 bg-[linear-gradient(180deg,rgba(227,246,237,0.92),rgba(241,247,244,0.96))] p-5 shadow-[0_18px_36px_-28px_rgba(5,150,105,0.22)] sm:p-6">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-800">
@@ -110,13 +110,13 @@ export default function TodayDecisionCard({
       </div>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
-        <div className="rounded-2xl border border-border/70 bg-background/90 p-4">
+        <div className="demo-surface-panel p-4">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Risk level
           </p>
           <p className="mt-2 text-lg font-semibold capitalize text-foreground">{riskLevel}</p>
         </div>
-        <div className="rounded-2xl border border-border/70 bg-background/90 p-4">
+        <div className="demo-surface-panel p-4">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Expected net saved
           </p>
@@ -124,7 +124,7 @@ export default function TodayDecisionCard({
         </div>
       </div>
 
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-emerald-200/80 pt-5">
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-emerald-300/65 pt-5">
         <p className="text-sm text-foreground/70">Open the full proof and confirm the next move.</p>
         <Button type="button" onClick={() => onOpenProduct(productId)}>
           View product

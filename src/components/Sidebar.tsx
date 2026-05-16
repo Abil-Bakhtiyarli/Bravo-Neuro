@@ -9,6 +9,7 @@ import {
   Store,
   TrendingUp,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -51,8 +52,8 @@ function NavLink({
     item.disabled
       ? "cursor-not-allowed border border-transparent text-muted-foreground/70"
       : isActive
-        ? "bg-emerald-50 text-emerald-900 shadow-[0_14px_30px_-24px_rgba(5,150,105,0.7)] ring-1 ring-emerald-200/80"
-        : "text-foreground/78 hover:-translate-y-0.5 hover:bg-background/75 hover:text-foreground",
+        ? "border border-emerald-300/65 bg-emerald-100/55 text-emerald-950 shadow-[0_12px_24px_-22px_rgba(5,150,105,0.28)] ring-1 ring-emerald-200/50"
+        : "text-foreground/78 hover:-translate-y-0.5 hover:border hover:border-border/85 hover:bg-muted/72 hover:text-foreground",
   );
 
   if (item.disabled) {
@@ -82,13 +83,19 @@ type SidebarProps = {
 export default function Sidebar({ pathnameOverride }: SidebarProps) {
   return (
     <>
-      <div className="border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur lg:hidden">
+      <div className="border-b border-border/90 bg-sidebar/94 px-4 py-3 backdrop-blur lg:hidden">
         <div className="flex items-center justify-between gap-3">
           <div className="min-w-0">
-            <p className="text-sm font-semibold tracking-[0.18em] text-foreground">BRAVO NEURO</p>
-            <p className="text-xs text-muted-foreground">AI Retail Waste Control</p>
+            <Image
+              src="/bravo-neuro-logo.svg"
+              alt="Bravo Neuro"
+              width={1289}
+              height={816}
+              className="h-8 w-auto"
+              priority
+            />
           </div>
-          <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-emerald-800">
+          <span className="rounded-full border border-emerald-300/65 bg-emerald-100/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-emerald-900">
             Live
           </span>
         </div>
@@ -99,11 +106,17 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
         </nav>
       </div>
 
-      <aside className="hidden w-64 shrink-0 border-r border-border/70 bg-sidebar/96 lg:flex lg:h-screen lg:flex-col">
+      <aside className="hidden w-64 shrink-0 border-r border-border/90 bg-sidebar/96 lg:flex lg:h-screen lg:flex-col">
         <div className="flex h-full flex-col px-5 py-6">
-          <div className="border-b border-border/70 pb-5">
-            <p className="text-sm font-semibold tracking-[0.22em] text-foreground">BRAVO NEURO</p>
-            <p className="mt-2 text-sm leading-6 text-muted-foreground">AI Retail Waste Control</p>
+          <div className="border-b border-border/90 pb-5">
+            <Image
+              src="/bravo-neuro-logo.svg"
+              alt="Bravo Neuro"
+              width={1289}
+              height={816}
+              className="h-11 w-auto"
+              priority
+            />
           </div>
 
           <nav className="mt-5 flex flex-1 flex-col gap-1.5">
@@ -112,8 +125,8 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
             ))}
           </nav>
 
-          <div className="border-t border-border/70 pt-5">
-            <div className="rounded-3xl border border-emerald-200/80 bg-emerald-50/85 p-4">
+          <div className="border-t border-border/90 pt-5">
+            <div className="rounded-3xl border border-emerald-300/70 bg-emerald-50/65 p-4 shadow-[0_14px_28px_-26px_rgba(5,150,105,0.18)]">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-800">
                 Live snapshot
               </p>
@@ -121,7 +134,7 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
                 Overview, risk, actions, and branches stay in one branch context.
               </p>
             </div>
-            <div className="mt-4 rounded-3xl border border-border/75 bg-background/92 p-4">
+            <div className="demo-card mt-4 p-4">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Session
               </p>

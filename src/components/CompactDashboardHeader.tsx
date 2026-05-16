@@ -32,7 +32,7 @@ function CompactDashboardHeaderPanel({
   onBranchChange,
 }: CompactDashboardHeaderPanelProps) {
   return (
-    <section className="animate-demo-fade-up rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)] sm:p-6">
+    <section className="demo-card animate-demo-fade-up p-5 sm:p-6">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div className="min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -42,15 +42,15 @@ function CompactDashboardHeaderPanel({
             Branch overview
           </h1>
           <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border/75 bg-background/90 px-3 py-1.5">
+            <span className="demo-surface-chip inline-flex items-center gap-2 px-3 py-1.5">
               <Store className="size-4" />
               {branches.find((branch) => branch.branchId === selectedBranchId)?.branchName ?? branches[0]?.branchName}
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-border/75 bg-background/90 px-3 py-1.5">
+            <span className="demo-surface-chip inline-flex items-center gap-2 px-3 py-1.5">
               <CalendarClock className="size-4" />
               {formatDemoDate(generatedAt)}
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200/80 bg-emerald-50/90 px-3 py-1.5 text-emerald-800">
+            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-300/70 bg-emerald-50/65 px-3 py-1.5 text-emerald-900">
               AI risk scan completed
             </span>
           </div>
@@ -61,7 +61,7 @@ function CompactDashboardHeaderPanel({
             Branch
             <div className="relative mt-2">
               <select
-                className="w-full appearance-none rounded-2xl border border-border/80 bg-background px-4 py-3 pr-10 text-sm font-medium tracking-normal text-foreground outline-none transition focus:border-foreground/40 focus:ring-2 focus:ring-foreground/10"
+                className="demo-surface-panel w-full appearance-none px-4 py-3 pr-10 text-sm font-medium tracking-normal text-foreground outline-none transition focus:border-foreground/40 focus:ring-2 focus:ring-foreground/10"
                 value={selectedBranchId}
                 onChange={(event) => onBranchChange(event.target.value)}
               >
@@ -75,7 +75,7 @@ function CompactDashboardHeaderPanel({
             </div>
           </label>
 
-          <div className="rounded-2xl border border-emerald-200/80 bg-emerald-50/90 px-4 py-3 text-sm font-medium text-emerald-900">
+          <div className="rounded-2xl border border-emerald-300/70 bg-emerald-50/65 px-4 py-3 text-sm font-medium text-emerald-900">
             Live branch data
           </div>
         </div>

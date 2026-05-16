@@ -12,6 +12,7 @@ test("Sidebar enables the live detail pages and keeps future sections disabled",
   assert.match(markup, /href="\/actions"/);
   assert.match(markup, /href="\/branches"/);
   assert.match(markup, /aria-current="page"/);
+  assert.match(markup, /src="\/bravo-neuro-logo\.svg"/);
   assert.match(markup, /Live snapshot/);
   assert.match(markup, /Overview, risk, actions, and branches stay in one branch context/);
   assert.match(markup, /Soon/);

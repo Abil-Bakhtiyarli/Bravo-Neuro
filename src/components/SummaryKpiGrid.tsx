@@ -26,20 +26,20 @@ const iconByKey: Record<DashboardKpiPresentationIconKey, typeof AlertTriangle> =
 
 const toneStyles: Record<DashboardKpiPresentationTone, { badge: string; icon: string }> = {
   warning: {
-    badge: "border-amber-200/90 bg-amber-50/90 text-amber-700",
-    icon: "bg-amber-50/80 text-amber-700",
+    badge: "border-amber-300/60 bg-amber-100/55 text-amber-800",
+    icon: "bg-amber-100/60 text-amber-800",
   },
   success: {
-    badge: "border-emerald-200/90 bg-emerald-50/90 text-emerald-700",
-    icon: "bg-emerald-50/80 text-emerald-700",
+    badge: "border-emerald-300/60 bg-emerald-100/55 text-emerald-800",
+    icon: "bg-emerald-100/60 text-emerald-800",
   },
   neutral: {
-    badge: "border-border/80 bg-background/88 text-foreground/75",
-    icon: "bg-background/88 text-foreground/80",
+    badge: "border-border/90 bg-muted/76 text-foreground/78",
+    icon: "bg-muted/82 text-foreground/80",
   },
   info: {
-    badge: "border-sky-200/90 bg-sky-50/90 text-sky-700",
-    icon: "bg-sky-50/80 text-sky-700",
+    badge: "border-sky-300/60 bg-sky-100/55 text-sky-800",
+    icon: "bg-sky-100/60 text-sky-800",
   },
 };
 
@@ -53,7 +53,7 @@ export default function SummaryKpiGrid({ items }: SummaryKpiGridProps) {
         return (
           <article
             key={item.key}
-            className="animate-demo-fade-up rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)] transition-transform duration-200 hover:-translate-y-0.5"
+            className="demo-card animate-demo-fade-up p-5 transition-transform duration-200 hover:-translate-y-0.5"
           >
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
@@ -62,7 +62,7 @@ export default function SummaryKpiGrid({ items }: SummaryKpiGridProps) {
                   {item.displayValue}
                 </p>
               </div>
-              <span className={`rounded-2xl border border-border/70 p-2.5 ${styles.icon}`}>
+              <span className={`demo-surface-panel p-2.5 ${styles.icon}`}>
                 <Icon className="size-4" />
               </span>
             </div>

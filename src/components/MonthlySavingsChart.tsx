@@ -37,7 +37,7 @@ export default function MonthlySavingsChart({
 
   if (series.length === 0) {
     return (
-      <section className="animate-demo-fade-up rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)]">
+      <section className="demo-card animate-demo-fade-up p-5">
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
           Monthly savings trend
         </div>
@@ -55,7 +55,7 @@ export default function MonthlySavingsChart({
   const sixMonthTotal = series.reduce((total, point) => total + point.netSavedValueAzN, 0);
 
   return (
-    <section className="animate-demo-fade-up rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)]">
+    <section className="demo-card animate-demo-fade-up p-5">
       <div className="flex items-center justify-between gap-3">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -65,7 +65,7 @@ export default function MonthlySavingsChart({
             Monthly net saved value
           </h2>
         </div>
-        <span className="rounded-full border border-border/80 bg-background/88 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/75">
+        <span className="demo-surface-chip px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/75">
           {branchName}
         </span>
       </div>
@@ -73,7 +73,7 @@ export default function MonthlySavingsChart({
       <p className="mt-3 text-sm text-muted-foreground">Six-month recovery trend for the active branch.</p>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
-        <div className="rounded-2xl border border-border/70 bg-background/88 px-3.5 py-3">
+        <div className="demo-surface-panel px-3.5 py-3">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Latest month
           </p>
@@ -81,7 +81,7 @@ export default function MonthlySavingsChart({
             {latestMonth.monthLabel} {formatCurrency(latestMonth.netSavedValueAzN)}
           </p>
         </div>
-        <div className="rounded-2xl border border-border/70 bg-background/88 px-3.5 py-3">
+        <div className="demo-surface-panel px-3.5 py-3">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Six-month total
           </p>
@@ -89,7 +89,7 @@ export default function MonthlySavingsChart({
         </div>
       </div>
 
-      <div className="mt-4 h-56 min-w-0 rounded-3xl border border-border/75 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,250,252,0.92))] p-3">
+      <div className="demo-surface-panel mt-4 h-56 min-w-0 rounded-3xl bg-[linear-gradient(180deg,rgba(237,242,247,0.94),rgba(229,235,241,0.92))] p-3">
         {isChartReady ? (
           <ResponsiveContainer width="100%" height="100%" minWidth={0}>
             <BarChart data={series} margin={{ top: 12, right: 8, left: -24, bottom: 0 }}>
@@ -106,8 +106,9 @@ export default function MonthlySavingsChart({
                 labelFormatter={(label) => `Month: ${label}`}
                 contentStyle={{
                   borderRadius: "18px",
-                  border: "1px solid rgba(203, 213, 225, 0.85)",
-                  boxShadow: "0 16px 38px -24px rgba(15,23,42,0.45)",
+                  border: "1px solid rgba(180, 192, 205, 0.9)",
+                  background: "rgba(239, 244, 248, 0.98)",
+                  boxShadow: "0 12px 28px -20px rgba(15,23,42,0.28)",
                 }}
               />
               <Bar
@@ -119,7 +120,7 @@ export default function MonthlySavingsChart({
             </BarChart>
           </ResponsiveContainer>
         ) : (
-          <div aria-hidden="true" className="h-full w-full rounded-[1.25rem] bg-white/40" />
+          <div aria-hidden="true" className="h-full w-full rounded-[1.25rem] bg-slate-200/45" />
         )}
       </div>
     </section>
