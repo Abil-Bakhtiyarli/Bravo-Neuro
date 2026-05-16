@@ -56,7 +56,7 @@ function CompactDashboardHeaderPanel({
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
           <label className="min-w-[14rem] text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Branch
             <div className="relative mt-2">
@@ -75,8 +75,12 @@ function CompactDashboardHeaderPanel({
             </div>
           </label>
 
-          <div className="rounded-2xl border border-emerald-300/70 bg-emerald-50/65 px-4 py-3 text-sm font-medium text-emerald-900">
-            Live branch data
+          <div className="flex items-center gap-2 rounded-2xl border border-emerald-300/70 bg-emerald-50/65 px-4 py-3 text-sm font-medium text-emerald-900">
+            <span aria-hidden="true" className="relative inline-flex size-3 items-center justify-center">
+              <span className="animate-demo-live-pulse absolute inset-0 rounded-full bg-emerald-400/55" />
+              <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
+            </span>
+            Live data
           </div>
         </div>
       </div>

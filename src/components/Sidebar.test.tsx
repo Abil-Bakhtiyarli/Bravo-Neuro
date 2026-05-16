@@ -16,8 +16,9 @@ test("Sidebar enables the live detail pages and keeps future sections disabled",
   assert.match(markup, /href="\/assistant"/);
   assert.match(markup, /aria-current="page"/);
   assert.match(markup, /src="\/bravo-neuro-logo\.svg"/);
-  assert.match(markup, /Live snapshot/);
-  assert.match(markup, /Overview, risk, actions, transfers, forecast, branches, and the assistant stay in one branch context/);
+  assert.doesNotMatch(markup, /Live snapshot/);
+  assert.doesNotMatch(markup, /Session/);
+  assert.doesNotMatch(markup, /Hackathon build/);
   assert.doesNotMatch(markup, /Transfers<\/span>\s*<span[^>]*>Soon/);
   assert.doesNotMatch(markup, /Revenue Forecast<\/span>\s*<span[^>]*>Soon/);
   assert.doesNotMatch(markup, /AI Assistant<\/span>\s*<span[^>]*>Soon/);

@@ -16,7 +16,7 @@ test("Assistant page renders the branch-aware assistant shell and context panel"
   const markup = renderToStaticMarkup(element);
 
   assert.match(markup, /AI assistant/);
-  assert.match(markup, /Branch-aware Gemini assistant/);
+  assert.match(markup, /Branch-aware assistant/);
   assert.match(markup, /Live branch context/);
   assert.match(markup, /Selected product/);
 });

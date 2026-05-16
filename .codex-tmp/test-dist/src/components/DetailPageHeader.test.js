@@ -16,6 +16,6 @@ const DetailPageHeader_1 = __importDefault(require("./DetailPageHeader"));
     strict_1.default.match(markup, /Risk products/);
     strict_1.default.match(markup, /Branch-level expiry, stock, and waste-risk queue/);
     strict_1.default.match(markup, /Branch/);
-    strict_1.default.match(markup, /Live branch data/);
+    strict_1.default.match(markup, /Live data/);
     strict_1.default.doesNotMatch(markup, /Demo Mode/);
 });

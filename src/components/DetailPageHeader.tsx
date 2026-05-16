@@ -62,7 +62,7 @@ export function DetailPageHeaderPanel({
   onBranchChange,
 }: DetailPageHeaderPanelProps) {
   return (
-    <section className="animate-demo-fade-up rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)] sm:p-6">
+    <section className="animate-demo-fade-up relative rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)] sm:p-6">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div className="min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -84,7 +84,7 @@ export function DetailPageHeaderPanel({
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
           <label className="min-w-[14rem] text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Branch
             <div className="relative mt-2">
@@ -103,8 +103,12 @@ export function DetailPageHeaderPanel({
             </div>
           </label>
 
-          <div className="rounded-2xl border border-emerald-200/80 bg-emerald-50/90 px-4 py-3 text-sm font-medium text-emerald-900">
-            Live branch data
+          <div className="flex items-center gap-2 rounded-2xl border border-emerald-200/80 bg-emerald-50/90 px-4 py-3 text-sm font-medium text-emerald-900">
+            <span aria-hidden="true" className="relative inline-flex size-3 items-center justify-center">
+              <span className="animate-demo-live-pulse absolute inset-0 rounded-full bg-emerald-400/55" />
+              <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
+            </span>
+            Live data
           </div>
         </div>
       </div>

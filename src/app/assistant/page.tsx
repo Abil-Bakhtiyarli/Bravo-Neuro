@@ -35,7 +35,7 @@ export default async function AssistantPage({
           branches={branches}
           selectedBranchId={selectedBranchId}
           title="AI assistant"
-          subtitle="Grounded branch analysis with Gemini, limited to the current Bravo snapshot and selected product context."
+          subtitle="Grounded branch analysis limited to the current Bravo snapshot and selected product context."
           generatedAt={contextSnapshot.branch.generatedAt}
           preservedSearchParamKeys={["product"]}
           staticMode={testStaticMode}

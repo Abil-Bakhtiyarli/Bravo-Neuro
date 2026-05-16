@@ -124,23 +124,6 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
               <NavLink key={item.href} item={item} pathnameOverride={pathnameOverride} />
             ))}
           </nav>
-
-          <div className="border-t border-border/90 pt-5">
-            <div className="rounded-3xl border border-emerald-300/70 bg-emerald-50/65 p-4 shadow-[0_14px_28px_-26px_rgba(5,150,105,0.18)]">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-800">
-                Live snapshot
-              </p>
-              <p className="mt-2 text-sm leading-6 text-emerald-950/85">
-                Overview, risk, actions, transfers, forecast, branches, and the assistant stay in one branch context.
-              </p>
-            </div>
-            <div className="demo-card mt-4 p-4">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Session
-              </p>
-              <p className="mt-2 text-sm font-medium text-foreground">Hackathon build</p>
-            </div>
-          </div>
         </div>
       </aside>
     </>

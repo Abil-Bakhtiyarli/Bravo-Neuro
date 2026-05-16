@@ -336,7 +336,7 @@ export default function AssistantExperience({
                 Guided analysis
               </p>
               <h2 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
-                Branch-aware Gemini assistant
+                Branch-aware assistant
               </h2>
               <p className="mt-2 max-w-3xl text-sm leading-6 text-foreground/75">
                 Ask for grounded reasoning about risk, savings, transfers, or branch actions. The assistant only answers from the current Bravo data context.

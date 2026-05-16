@@ -25,6 +25,6 @@ test("DetailPageHeader renders the branch selector, subtitle, and live data surf
   assert.match(markup, /Risk products/);
   assert.match(markup, /Branch-level expiry, stock, and waste-risk queue/);
   assert.match(markup, /Branch/);
-  assert.match(markup, /Live branch data/);
+  assert.match(markup, /Live data/);
   assert.doesNotMatch(markup, /Demo Mode/);
 });
