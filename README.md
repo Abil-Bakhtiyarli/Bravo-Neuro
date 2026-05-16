@@ -107,6 +107,14 @@ Part 17 is complete: `src/components/SavingsCard.tsx`, `src/components/ProductRi
 Part 18 is complete: `src/components/DailyActionPlan.tsx`, `src/app/page.tsx`, `src/lib/actionPlan.ts`, `src/lib/dashboardData.ts`, and `src/lib/types.ts` now replace the static side rail with a real recommendation-backed manager queue that stays branch-scoped, priority-ranked, locally persistent across refreshes, and wired to the existing product drawer flow through the `product` query parameter while keeping all task state route-free.
 Part 19 is complete: `data/monthly_savings_history.json`, `src/lib/seedData.ts`, `src/lib/dashboardData.ts`, `src/lib/types.ts`, `src/components/MonthlySavingsChart.tsx`, `src/app/page.tsx`, and the active presentation surfaces now add a real branch-scoped six-month net-saved chart above the KPI rail, validate seeded monthly history, and polish stale copy, badges, spacing, and empty states so the demo feels branch-aware instead of staged.
 
+## UI Improvement Track
+
+The parts below are a separate post-Part-19 demo UI improvement sequence from the updated Codex plan document. They do not replace the original Part 0-19 implementation history above.
+
+Part 00 is complete as a baseline checkpoint for the UI improvement track: work continues on the `codex-demo-ui-polish` branch, `node_modules` was already present so no install was needed, `corepack.cmd pnpm build` passes, `corepack.cmd pnpm lint` currently fails on two pre-existing React hook lint errors in `src/components/DailyActionPlan.tsx` and `src/components/MonthlySavingsChart.tsx`, the local dashboard responds at `/`, and the UI refactor intentionally stops here without mixing baseline fixes into later polish parts. A baseline screenshot was attempted for `.codex-tmp/`, but the current local capture environment did not produce a file, so that artifact still needs to be captured before the visual before/after comparison is complete.
+
+Part 01 is complete as the global demo polish helper pass: `src/app/globals.css` now defines reusable `animate-demo-fade-up`, `animate-demo-slide-in-right`, `animate-demo-soft-pulse-critical`, and `animate-demo-delay-1` through `animate-demo-delay-4` helpers, plus optional `demo-card`, `demo-section-title`, and `demo-muted-label` utility classes for later UI improvement parts. This pass includes one shared `prefers-reduced-motion` override block, adds no dependencies, and intentionally avoids layout, component-structure, query-param, or business-logic changes.
+
 ## Part 1 Seed Data
 
 The seed dataset is designed for the hackathon story in the technical plan:
