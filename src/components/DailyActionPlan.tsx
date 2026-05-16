@@ -31,6 +31,8 @@ type TaskStatusMap = Partial<Record<string, TaskStatus>>;
 export type DailyActionPlanProps = {
   branchId: BranchId;
   tasks: readonly ActionPlanItem[];
+  selectedProductId?: string | null;
+  onSelectTask?: (productId: string) => void;
 };
 
 type DailyActionPlanPanelProps = {
@@ -385,11 +387,16 @@ export function DailyActionPlanPanel({
   );
 }
 
-export default function DailyActionPlan({ branchId, tasks }: DailyActionPlanProps) {
+export default function DailyActionPlan({
+  branchId,
+  tasks,
+  selectedProductId: controlledSelectedProductId,
+  onSelectTask: controlledOnSelectTask,
+}: DailyActionPlanProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const selectedProductId = searchParams.get("product");
+  const selectedProductId = controlledSelectedProductId ?? searchParams.get("product");
   const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>({});
 
   const visibleTasks = useMemo(() => mergeTaskStatuses(tasks, taskStatuses), [taskStatuses, tasks]);
@@ -409,6 +416,11 @@ export default function DailyActionPlan({ branchId, tasks }: DailyActionPlanProp
   }
 
   function handleSelectTask(productId: string) {
+    if (controlledOnSelectTask) {
+      controlledOnSelectTask(productId);
+      return;
+    }
+
     const nextParams = buildTaskSelectionSearchParams(
       new URLSearchParams(searchParams.toString()),
       productId,

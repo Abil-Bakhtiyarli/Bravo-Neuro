@@ -115,6 +115,8 @@ Part 00 is complete as a baseline checkpoint for the UI improvement track: work 
 
 Part 01 is complete as the global demo polish helper pass: `src/app/globals.css` now defines reusable `animate-demo-fade-up`, `animate-demo-slide-in-right`, `animate-demo-soft-pulse-critical`, and `animate-demo-delay-1` through `animate-demo-delay-4` helpers, plus optional `demo-card`, `demo-section-title`, and `demo-muted-label` utility classes for later UI improvement parts. This pass includes one shared `prefers-reduced-motion` override block, adds no dependencies, and intentionally avoids layout, component-structure, query-param, or business-logic changes.
 
+Part 02 is complete as the demo-first page layout restructure: `src/components/DashboardLayout.tsx` now exposes full-width header and KPI strip regions plus a main story grid, `src/app/page.tsx` now promotes only the three demo KPIs to the top, and `src/components/DashboardDemoExperience.tsx` now centralizes the shared URL-backed product selection, risk filtering, and deeper proof wiring across the action queue, selected-product panel, watchlist, monthly savings chart, and optional detail drawer. This pass preserves the existing server-driven dashboard snapshot, branch query behavior, task persistence, and `src/lib` business logic while moving secondary proof lower so it no longer competes with the first-screen story.
+
 ## Part 1 Seed Data
 
 The seed dataset is designed for the hackathon story in the technical plan:

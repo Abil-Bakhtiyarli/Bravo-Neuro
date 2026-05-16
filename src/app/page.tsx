@@ -6,12 +6,10 @@ import {
   TrendingUp,
 } from "lucide-react";
 
-import DailyActionPlan from "@/components/DailyActionPlan";
+import DashboardDemoExperience from "@/components/DashboardDemoExperience";
 import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
 import KpiCards, { type KpiCardItem } from "@/components/KpiCards";
-import MonthlySavingsChart from "@/components/MonthlySavingsChart";
-import RiskTableExperience from "@/components/RiskTableExperience";
 import { getAvailableBranchOptions, getDashboardData } from "@/lib/dashboardData";
 import {
   buildDashboardKpiPresentationItems,
@@ -51,15 +49,6 @@ function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
   }
 }
 
-type MainPaneProps = {
-  rows: ReturnType<typeof getDashboardData>["riskTable"];
-  productDetailsById: ReturnType<typeof getDashboardData>["productDetailsById"];
-};
-
-function RiskTablePane({ rows, productDetailsById }: MainPaneProps) {
-  return <RiskTableExperience rows={rows} productDetailsById={productDetailsById} />;
-}
-
 type HomeProps = {
   searchParams: Promise<{ branch?: string | string[] }>;
 };
@@ -86,7 +75,13 @@ export default async function Home({ searchParams }: HomeProps) {
     branches.map((branch) => branch.branchId),
   );
   const dashboardData = getDashboardData(selectedBranchId);
-  const kpiCards = buildDashboardKpiPresentationItems(dashboardData).map(toKpiCardItem);
+  const kpiCards = buildDashboardKpiPresentationItems(dashboardData)
+    .filter((item) =>
+      item.key === "possible-loss" ||
+      item.key === "recoverable-value" ||
+      item.key === "risky-products",
+    )
+    .map(toKpiCardItem);
 
   return (
     <DashboardLayout
@@ -97,28 +92,19 @@ export default async function Home({ searchParams }: HomeProps) {
           generatedAt={dashboardData.generatedAt}
         />
       }
-      topRowMain={
-        <DailyActionPlan
+      kpiStrip={<KpiCards items={kpiCards} orientation="grid" />}
+      mainStory={
+        <DashboardDemoExperience
           key={selectedBranchId}
           branchId={selectedBranchId}
+          branchName={dashboardData.branch.branchName}
           tasks={dashboardData.actionPlan}
-        />
-      }
-      kpiRail={
-        <div className="space-y-4">
-          <MonthlySavingsChart
-            branchName={dashboardData.branch.branchName}
-            series={dashboardData.monthlySavingsSeries}
-          />
-          <KpiCards items={kpiCards} orientation="rail" />
-        </div>
-      }
-      bottomSection={
-        <RiskTablePane
           rows={dashboardData.riskTable}
           productDetailsById={dashboardData.productDetailsById}
+          monthlySavingsSeries={dashboardData.monthlySavingsSeries}
         />
       }
+      secondarySection={null}
     />
   );
 }
