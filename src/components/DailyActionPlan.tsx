@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   ArrowRightLeft,
   BadgePercent,
@@ -386,21 +386,22 @@ export function DailyActionPlanPanel({
 }
 
 export default function DailyActionPlan({ branchId, tasks }: DailyActionPlanProps) {
+  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const selectedProductId = searchParams.get("product");
-  const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>(() => {
-    if (typeof window === "undefined") {
-      return {};
-    }
-
-    return parsePersistedTaskStatuses(
-      window.localStorage.getItem(getTaskStorageKey(branchId)),
-      tasks.map((task) => task.taskId),
-    );
-  });
+  const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>({});
 
   const visibleTasks = useMemo(() => mergeTaskStatuses(tasks, taskStatuses), [taskStatuses, tasks]);
+
+  useEffect(() => {
+    setTaskStatuses(
+      parsePersistedTaskStatuses(
+        window.localStorage.getItem(getTaskStorageKey(branchId)),
+        tasks.map((task) => task.taskId),
+      ),
+    );
+  }, [branchId, tasks]);
 
   function persistTaskStatuses(nextStatuses: TaskStatusMap) {
     setTaskStatuses(nextStatuses);
@@ -413,7 +414,7 @@ export default function DailyActionPlan({ branchId, tasks }: DailyActionPlanProp
       productId,
     );
 
-    window.history.pushState(null, "", buildUrl(pathname, nextParams));
+    router.push(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleAdvanceStatus(taskId: string) {

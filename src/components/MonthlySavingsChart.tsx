@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis } from "recharts";
 
 import type { MonthlySavingsSeriesPoint } from "@/lib/types";
@@ -22,6 +23,12 @@ export default function MonthlySavingsChart({
   branchName,
   series,
 }: MonthlySavingsChartProps) {
+  const [isChartReady, setIsChartReady] = useState(false);
+
+  useEffect(() => {
+    setIsChartReady(true);
+  }, []);
+
   if (series.length === 0) {
     return (
       <section className="rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)]">
@@ -78,34 +85,38 @@ export default function MonthlySavingsChart({
         </div>
       </div>
 
-      <div className="mt-4 h-56 rounded-3xl border border-border/75 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,250,252,0.92))] p-3">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={series} margin={{ top: 12, right: 8, left: -24, bottom: 0 }}>
-            <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.3)" />
-            <XAxis
-              dataKey="monthLabel"
-              tickLine={false}
-              axisLine={false}
-              tick={{ fill: "rgba(71, 85, 105, 0.9)", fontSize: 12 }}
-            />
-            <Tooltip
-              cursor={{ fill: "rgba(15, 23, 42, 0.04)" }}
-              formatter={(value) => [formatCurrency(Number(value ?? 0)), "Net saved"]}
-              labelFormatter={(label) => `Month: ${label}`}
-              contentStyle={{
-                borderRadius: "18px",
-                border: "1px solid rgba(203, 213, 225, 0.85)",
-                boxShadow: "0 16px 38px -24px rgba(15,23,42,0.45)",
-              }}
-            />
-            <Bar
-              dataKey="netSavedValueAzN"
-              radius={[12, 12, 0, 0]}
-              fill="var(--color-chart-1)"
-              maxBarSize={28}
-            />
-          </BarChart>
-        </ResponsiveContainer>
+      <div className="mt-4 h-56 min-w-0 rounded-3xl border border-border/75 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,250,252,0.92))] p-3">
+        {isChartReady ? (
+          <ResponsiveContainer width="100%" height="100%" minWidth={0}>
+            <BarChart data={series} margin={{ top: 12, right: 8, left: -24, bottom: 0 }}>
+              <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="rgba(148, 163, 184, 0.3)" />
+              <XAxis
+                dataKey="monthLabel"
+                tickLine={false}
+                axisLine={false}
+                tick={{ fill: "rgba(71, 85, 105, 0.9)", fontSize: 12 }}
+              />
+              <Tooltip
+                cursor={{ fill: "rgba(15, 23, 42, 0.04)" }}
+                formatter={(value) => [formatCurrency(Number(value ?? 0)), "Net saved"]}
+                labelFormatter={(label) => `Month: ${label}`}
+                contentStyle={{
+                  borderRadius: "18px",
+                  border: "1px solid rgba(203, 213, 225, 0.85)",
+                  boxShadow: "0 16px 38px -24px rgba(15,23,42,0.45)",
+                }}
+              />
+              <Bar
+                dataKey="netSavedValueAzN"
+                radius={[12, 12, 0, 0]}
+                fill="var(--color-chart-1)"
+                maxBarSize={28}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        ) : (
+          <div aria-hidden="true" className="h-full w-full rounded-[1.25rem] bg-white/40" />
+        )}
       </div>
     </section>
   );
