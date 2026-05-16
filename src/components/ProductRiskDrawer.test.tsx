@@ -28,6 +28,8 @@ test("ProductRiskDrawer renders the selected product story when open", () => {
   assert.match(markup, /With action/);
   assert.match(markup, /Action cost/);
   assert.match(markup, /Net saved value/);
+   assert.match(markup, /Product detail/);
+   assert.doesNotMatch(markup, /Product detail drawer/);
 });
 
 test("ProductRiskDrawer omits content when closed", () => {

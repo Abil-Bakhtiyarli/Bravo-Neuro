@@ -153,7 +153,7 @@ export default function RiskTable({
               </h2>
             </div>
             <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
-              Review the selected branch&apos;s products in priority order, then open the drawer
+              Review the selected branch&apos;s products in priority order, then open the detail
               to confirm the risk story and action economics.
             </p>
           </div>

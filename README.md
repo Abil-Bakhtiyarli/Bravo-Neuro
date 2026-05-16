@@ -117,6 +117,26 @@ Part 01 is complete as the global demo polish helper pass: `src/app/globals.css`
 
 Part 02 is complete as the demo-first page layout restructure: `src/components/DashboardLayout.tsx` now exposes full-width header and KPI strip regions plus a main story grid, `src/app/page.tsx` now promotes only the three demo KPIs to the top, and `src/components/DashboardDemoExperience.tsx` now centralizes the shared URL-backed product selection, risk filtering, and deeper proof wiring across the action queue, selected-product panel, watchlist, monthly savings chart, and optional detail drawer. This pass preserves the existing server-driven dashboard snapshot, branch query behavior, task persistence, and `src/lib` business logic while moving secondary proof lower so it no longer competes with the first-screen story.
 
+Part 03 is complete as the selected-product and modal refactor pass: `src/components/DashboardDemoExperience.tsx` now keeps the selected-product panel alone in the right desktop column with `xl` sticky positioning, moves `src/components/MonthlySavingsChart.tsx` below `src/components/RiskTable.tsx` as a full-width section, and preserves the existing URL-backed product-selection plus open-detail flow. `src/components/ProductRiskDrawer.tsx` now presents product proof in a centered wide modal instead of a right-edge sheet, while `src/components/DailyActionPlan.tsx`, `src/components/RiskTable.tsx`, and the component tests update stale drawer copy and cover the new layout/modal presentation. This pass also clears the previously documented React hook lint failures in `src/components/DailyActionPlan.tsx` and `src/components/MonthlySavingsChart.tsx`, so `corepack.cmd pnpm lint`, `corepack.cmd pnpm test`, and `corepack.cmd pnpm build` now all pass.
+
+
+
+Execution sequence:
+
+1. Refactor `src/components/DashboardDemoExperience.tsx` so the main demo grid stays two-column on desktop, keeps the selected-product panel alone in the right column, applies `xl` sticky positioning to that panel, and moves `MonthlySavingsChart` below `RiskTable` as a separate full-width proof section.
+2. Preserve the current selection contract by keeping `getVisibleSelectedProductId`, `updateRiskTableSearchParams`, and the existing URL-backed selection cleanup logic unchanged, while ensuring the open-detail action still targets the currently selected product.
+3. Convert `src/components/ProductRiskDrawer.tsx` from a right-edge sheet mental model to a centered wide modal using the existing Base UI dialog primitives, keeping the current detail payload, close behavior, scroll containment, and recommendation/savings proof sections.
+4. Tighten surrounding component copy so `DailyActionPlan` and `RiskTable` reference product detail as a modal/detail surface rather than a drawer, and remove any stale language that conflicts with the new centered presentation.
+5. Clear the React hook lint issues in `src/components/DailyActionPlan.tsx` and `src/components/MonthlySavingsChart.tsx` without changing behavior, then extend or update component tests so the layout order, sticky selected-product panel, and modal wording are covered.
+
+Acceptance criteria:
+
+- The selected-product panel is the only right-column story block on desktop and remains visible while the user scans the queue/watchlist.
+- `MonthlySavingsChart` no longer competes with the first-screen story and appears below the watchlist as secondary proof.
+- Opening product detail shows a centered modal, not a right-edge drawer/sheet.
+- Query-backed selection, filtering, branch switching, and task persistence still behave the same.
+- `corepack.cmd pnpm lint`, `corepack.cmd pnpm test`, and `corepack.cmd pnpm build` pass after the refactor.
+
 ## Part 1 Seed Data
 
 The seed dataset is designed for the hackathon story in the technical plan:

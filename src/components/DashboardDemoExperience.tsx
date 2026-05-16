@@ -132,7 +132,7 @@ function SelectedProductPanel({
         <p className="demo-muted-label">Selected product</p>
         <h2 className="mt-3 demo-section-title">Choose a product to review</h2>
         <p className="mt-3 text-sm leading-6 text-muted-foreground">
-          Pick a task or watchlist row to load the selected product story and open the full proof drawer.
+          Pick a task or watchlist row to load the selected product story and open the full proof detail.
         </p>
       </section>
     );
@@ -235,7 +235,7 @@ function SelectedProductPanel({
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-border/70 pt-5">
         <p className="text-sm text-muted-foreground">
-          Open the full product drawer for methodology, savings detail, and recommendation proof.
+          Open the full product detail for methodology, savings detail, and recommendation proof.
         </p>
         <Button type="button" onClick={onOpenDrawer}>
           Open product detail
@@ -325,12 +325,11 @@ export default function DashboardDemoExperience({
           selectedProductId={selectedProductId}
           onSelectTask={handleSelectProduct}
         />
-        <div className="min-w-0 space-y-6">
+        <div className="min-w-0 xl:sticky xl:top-8">
           <SelectedProductPanel
             detail={selectedDetail}
             onOpenDrawer={() => setDrawerProductId(selectedProductId)}
           />
-          <MonthlySavingsChart branchName={branchName} series={monthlySavingsSeries} />
         </div>
       </div>
       <RiskTable
@@ -342,6 +341,7 @@ export default function DashboardDemoExperience({
         onRiskFilterChange={handleRiskFilterChange}
         onSelectProduct={handleSelectProduct}
       />
+      <MonthlySavingsChart branchName={branchName} series={monthlySavingsSeries} />
       <ProductRiskDrawer
         detail={selectedDetail}
         open={drawerProductId === selectedProductId && selectedDetail !== null}

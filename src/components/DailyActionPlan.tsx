@@ -363,7 +363,7 @@ export function DailyActionPlanPanel({
               <div className="mt-4 flex items-center justify-between gap-3 border-t border-border/70 pt-4">
                 <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
                   <PackageSearch className="size-4" />
-                  Open the product drawer to review the supporting risk story and savings case.
+                  Open the product detail to review the supporting risk story and savings case.
                 </div>
                 <Button
                   type="button"
@@ -402,12 +402,18 @@ export default function DailyActionPlan({
   const visibleTasks = useMemo(() => mergeTaskStatuses(tasks, taskStatuses), [taskStatuses, tasks]);
 
   useEffect(() => {
-    setTaskStatuses(
-      parsePersistedTaskStatuses(
-        window.localStorage.getItem(getTaskStorageKey(branchId)),
-        tasks.map((task) => task.taskId),
-      ),
-    );
+    const frameId = window.requestAnimationFrame(() => {
+      setTaskStatuses(
+        parsePersistedTaskStatuses(
+          window.localStorage.getItem(getTaskStorageKey(branchId)),
+          tasks.map((task) => task.taskId),
+        ),
+      );
+    });
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+    };
   }, [branchId, tasks]);
 
   function persistTaskStatuses(nextStatuses: TaskStatusMap) {

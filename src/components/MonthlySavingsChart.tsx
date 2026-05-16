@@ -26,7 +26,13 @@ export default function MonthlySavingsChart({
   const [isChartReady, setIsChartReady] = useState(false);
 
   useEffect(() => {
-    setIsChartReady(true);
+    const frameId = window.requestAnimationFrame(() => {
+      setIsChartReady(true);
+    });
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+    };
   }, []);
 
   if (series.length === 0) {
