@@ -8,8 +8,7 @@ import {
 import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
 import KpiCards, { type KpiCardItem } from "@/components/KpiCards";
-import ProductDetailHint from "@/components/ProductDetailHint";
-import RiskTableController from "@/components/RiskTableController";
+import RiskTableExperience from "@/components/RiskTableExperience";
 import { getAvailableBranchOptions, getDashboardData } from "@/lib/dashboardData";
 import {
   buildDashboardKpiPresentationItems,
@@ -73,10 +72,11 @@ const actionPlanRows = [
 
 type MainPaneProps = {
   rows: ReturnType<typeof getDashboardData>["riskTable"];
+  productDetailsById: ReturnType<typeof getDashboardData>["productDetailsById"];
 };
 
-function MainPane({ rows }: MainPaneProps) {
-  return <RiskTableController rows={rows} />;
+function MainPane({ rows, productDetailsById }: MainPaneProps) {
+  return <RiskTableExperience rows={rows} productDetailsById={productDetailsById} />;
 }
 
 function SidePane() {
@@ -130,10 +130,6 @@ function SidePane() {
   );
 }
 
-function DetailHint({ rows }: MainPaneProps) {
-  return <ProductDetailHint rows={rows} />;
-}
-
 type HomeProps = {
   searchParams: Promise<{ branch?: string | string[] }>;
 };
@@ -172,9 +168,13 @@ export default async function Home({ searchParams }: HomeProps) {
         />
       }
       kpiStrip={<KpiCards items={kpiCards} />}
-      mainPane={<MainPane rows={dashboardData.riskTable} />}
+      mainPane={
+        <MainPane
+          rows={dashboardData.riskTable}
+          productDetailsById={dashboardData.productDetailsById}
+        />
+      }
       sidePane={<SidePane />}
-      detailHint={<DetailHint rows={dashboardData.riskTable} />}
     />
   );
 }

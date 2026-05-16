@@ -92,3 +92,15 @@ test("updateRiskTableSearchParams writes and clears product, query, and risk val
   assert.equal(cleared.get("q"), null);
   assert.equal(cleared.get("risk"), null);
 });
+
+test("clearing only product preserves branch, query, and risk filters", () => {
+  const params = new URLSearchParams("branch=ganjlik&q=yogurt&risk=critical&product=greek-yogurt-500g");
+  const updated = updateRiskTableSearchParams(params, {
+    product: null,
+  });
+
+  assert.equal(updated.get("branch"), "ganjlik");
+  assert.equal(updated.get("q"), "yogurt");
+  assert.equal(updated.get("risk"), "critical");
+  assert.equal(updated.get("product"), null);
+});

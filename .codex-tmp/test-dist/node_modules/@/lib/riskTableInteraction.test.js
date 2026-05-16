@@ -70,3 +70,13 @@ const riskTableInteraction_1 = require("./riskTableInteraction");
     strict_1.default.equal(cleared.get("q"), null);
     strict_1.default.equal(cleared.get("risk"), null);
 });
+(0, node_test_1.default)("clearing only product preserves branch, query, and risk filters", () => {
+    const params = new URLSearchParams("branch=ganjlik&q=yogurt&risk=critical&product=greek-yogurt-500g");
+    const updated = (0, riskTableInteraction_1.updateRiskTableSearchParams)(params, {
+        product: null,
+    });
+    strict_1.default.equal(updated.get("branch"), "ganjlik");
+    strict_1.default.equal(updated.get("q"), "yogurt");
+    strict_1.default.equal(updated.get("risk"), "critical");
+    strict_1.default.equal(updated.get("product"), null);
+});

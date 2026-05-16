@@ -71,10 +71,11 @@ function buildSavings(
       ...assumptions,
       baselineUnitsWithoutAction: roundUnits(assumptions.baselineUnitsWithoutAction),
       unitsAtRisk: roundUnits(assumptions.unitsAtRisk),
-      discountedUnitPriceAzN:
-        assumptions.discountedUnitPriceAzN === undefined
-          ? undefined
-          : roundMoney(assumptions.discountedUnitPriceAzN),
+      ...(assumptions.discountedUnitPriceAzN === undefined
+        ? {}
+        : {
+            discountedUnitPriceAzN: roundMoney(assumptions.discountedUnitPriceAzN),
+          }),
     },
   };
 }

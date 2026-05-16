@@ -316,4 +316,5 @@ export type BranchDashboardData = {
   riskTable: RiskTableItem[];
   actionPlan: ActionPlanItem[];
   topProductIds: ProductId[];
+  productDetailsById: Partial<Record<ProductId, ProductDetailData>>;
 };

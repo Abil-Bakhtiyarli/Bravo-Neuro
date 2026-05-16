@@ -135,6 +135,31 @@ function buildActionPlanItem(entry) {
         expectedRecoveredValueAzN: entry.savings.recoveredValueAzN,
     };
 }
+function buildProductDetailData(record, generatedAt, detailEntry) {
+    return {
+        branch: record.branch,
+        product: record.product,
+        generatedAt,
+        totalStock: record.totalStock,
+        stockValueAzN: record.stockValueAzN,
+        lotCount: record.lotCount,
+        earliestExpiryDate: record.earliestExpiryDate,
+        latestExpiryDate: record.latestExpiryDate,
+        daysUntilEarliestExpiry: record.daysUntilEarliestExpiry,
+        daysOfStockRemaining: record.daysOfStockRemaining,
+        risk: record.risk,
+        inventoryLots: record.inventoryLots,
+        recommendation: detailEntry?.recommendation ?? null,
+        savings: detailEntry?.savings ?? null,
+        explanation: detailEntry?.explanation ?? null,
+    };
+}
+function buildProductDetailsById(recommendationEntries, generatedAt) {
+    return recommendationEntries.reduce((accumulator, entry) => {
+        accumulator[entry.record.product.productId] = buildProductDetailData(entry.record, generatedAt, entry);
+        return accumulator;
+    }, {});
+}
 function getAvailableBranchOptions() {
     return (0, dataLoader_1.getAvailableBranches)();
 }
@@ -147,6 +172,7 @@ function getDashboardData(branchId, options) {
         riskTable: bundle.recommendationEntries.map(buildRiskTableItem),
         actionPlan: bundle.recommendationEntries.map(buildActionPlanItem),
         topProductIds: bundle.recommendationEntries.map((entry) => entry.record.product.productId),
+        productDetailsById: buildProductDetailsById(bundle.recommendationEntries, bundle.generatedAt),
     };
 }
 function getProductDetailData(branchId, productId, options) {
@@ -161,21 +187,5 @@ function getProductDetailData(branchId, productId, options) {
     };
     const bundle = buildBranchDashboardBundle(branchId, options);
     const detailEntry = bundle.recommendationEntries.find((entry) => entry.record.product.productId === productId);
-    return {
-        branch: scoredRecord.branch,
-        product: scoredRecord.product,
-        generatedAt: bundle.generatedAt,
-        totalStock: scoredRecord.totalStock,
-        stockValueAzN: scoredRecord.stockValueAzN,
-        lotCount: scoredRecord.lotCount,
-        earliestExpiryDate: scoredRecord.earliestExpiryDate,
-        latestExpiryDate: scoredRecord.latestExpiryDate,
-        daysUntilEarliestExpiry: scoredRecord.daysUntilEarliestExpiry,
-        daysOfStockRemaining: scoredRecord.daysOfStockRemaining,
-        risk: scoredRecord.risk,
-        inventoryLots: scoredRecord.inventoryLots,
-        recommendation: detailEntry?.recommendation ?? null,
-        savings: detailEntry?.savings ?? null,
-        explanation: detailEntry?.explanation ?? null,
-    };
+    return buildProductDetailData(scoredRecord, bundle.generatedAt, detailEntry);
 }

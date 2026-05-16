@@ -27,6 +27,7 @@ function getKpiValue(dashboardData, key) {
     strict_1.default.equal(dashboardData.generatedAt, "2026-05-15T00:00:00.000Z");
     strict_1.default.equal(dashboardData.riskTable.length, dashboardData.actionPlan.length);
     strict_1.default.deepEqual(dashboardData.topProductIds, dashboardData.riskTable.map((item) => item.productId));
+    strict_1.default.deepEqual(Object.keys(dashboardData.productDetailsById), dashboardData.riskTable.map((item) => item.productId));
 });
 (0, node_test_1.default)("dashboard KPI totals match the branch savings summary", () => {
     const records = (0, riskScore_1.calculateWasteRiskForBranch)((0, dataLoader_1.getBranchProductRecords)("ganjlik"));
@@ -83,6 +84,20 @@ function getKpiValue(dashboardData, key) {
     strict_1.default.equal(detailData.recommendation?.summary, riskRow.recommendationSummary);
     strict_1.default.equal(detailData.savings?.netSavedValueAzN, riskRow.netSavedValueAzN);
     strict_1.default.ok(detailData.explanation);
+    const preloadedDetail = dashboardData.productDetailsById[riskRow.productId];
+    strict_1.default.deepEqual(preloadedDetail, detailData);
+});
+(0, node_test_1.default)("productDetailsById exists for every recommendation-backed risk row", () => {
+    const dashboardData = (0, dashboardData_1.getDashboardData)("ganjlik");
+    for (const riskRow of dashboardData.riskTable) {
+        const detail = dashboardData.productDetailsById[riskRow.productId];
+        strict_1.default.ok(detail, `Expected detail payload for ${riskRow.productId}`);
+        strict_1.default.equal(detail.product.productId, riskRow.productId);
+        strict_1.default.equal(detail.risk.roundedScore, riskRow.riskScore);
+        strict_1.default.equal(detail.recommendation?.summary, riskRow.recommendationSummary);
+        strict_1.default.equal(detail.savings?.possibleLossAzN, riskRow.possibleLossAzN);
+        strict_1.default.equal(detail.savings?.netSavedValueAzN, riskRow.netSavedValueAzN);
+    }
 });
 (0, node_test_1.default)("unknown branch throws a DashboardDataError", () => {
     strict_1.default.throws(() => (0, dashboardData_1.getDashboardData)("missing-branch"), (error) => error instanceof dashboardData_1.DashboardDataError &&

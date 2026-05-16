@@ -41,6 +41,10 @@ test("getDashboardData returns a serializable branch dashboard payload", () => {
   assert.equal(dashboardData.generatedAt, "2026-05-15T00:00:00.000Z");
   assert.equal(dashboardData.riskTable.length, dashboardData.actionPlan.length);
   assert.deepEqual(dashboardData.topProductIds, dashboardData.riskTable.map((item) => item.productId));
+  assert.deepEqual(
+    Object.keys(dashboardData.productDetailsById),
+    dashboardData.riskTable.map((item) => item.productId),
+  );
 });
 
 test("dashboard KPI totals match the branch savings summary", () => {
@@ -114,6 +118,25 @@ test("getProductDetailData aligns with the dashboard snapshot for a risky seeded
   assert.equal(detailData.recommendation?.summary, riskRow.recommendationSummary);
   assert.equal(detailData.savings?.netSavedValueAzN, riskRow.netSavedValueAzN);
   assert.ok(detailData.explanation);
+
+  const preloadedDetail = dashboardData.productDetailsById[riskRow.productId];
+
+  assert.deepEqual(preloadedDetail, detailData);
+});
+
+test("productDetailsById exists for every recommendation-backed risk row", () => {
+  const dashboardData = getDashboardData("ganjlik");
+
+  for (const riskRow of dashboardData.riskTable) {
+    const detail = dashboardData.productDetailsById[riskRow.productId];
+
+    assert.ok(detail, `Expected detail payload for ${riskRow.productId}`);
+    assert.equal(detail.product.productId, riskRow.productId);
+    assert.equal(detail.risk.roundedScore, riskRow.riskScore);
+    assert.equal(detail.recommendation?.summary, riskRow.recommendationSummary);
+    assert.equal(detail.savings?.possibleLossAzN, riskRow.possibleLossAzN);
+    assert.equal(detail.savings?.netSavedValueAzN, riskRow.netSavedValueAzN);
+  }
 });
 
 test("unknown branch throws a DashboardDataError", () => {

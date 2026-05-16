@@ -3,7 +3,7 @@
 import { useEffect, useMemo } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
-import type { RiskTableItem } from "@/lib/types";
+import type { BranchDashboardData } from "@/lib/types";
 import {
   filterRiskTableRows,
   getVisibleSelectedProductId,
@@ -11,10 +11,12 @@ import {
   updateRiskTableSearchParams,
 } from "@/lib/riskTableInteraction";
 
+import ProductRiskDrawer from "./ProductRiskDrawer";
 import RiskTable from "./RiskTable";
 
-type RiskTableControllerProps = {
-  rows: readonly RiskTableItem[];
+type RiskTableExperienceProps = {
+  rows: BranchDashboardData["riskTable"];
+  productDetailsById: BranchDashboardData["productDetailsById"];
 };
 
 function buildUrl(pathname: string, searchParams: URLSearchParams) {
@@ -23,7 +25,10 @@ function buildUrl(pathname: string, searchParams: URLSearchParams) {
   return query ? `${pathname}?${query}` : pathname;
 }
 
-export default function RiskTableController({ rows }: RiskTableControllerProps) {
+export default function RiskTableExperience({
+  rows,
+  productDetailsById,
+}: RiskTableExperienceProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
@@ -37,6 +42,7 @@ export default function RiskTableController({ rows }: RiskTableControllerProps) 
     () => getVisibleSelectedProductId(filteredRows, requestedProductId),
     [filteredRows, requestedProductId],
   );
+  const selectedDetail = selectedProductId ? (productDetailsById[selectedProductId] ?? null) : null;
 
   useEffect(() => {
     if (requestedProductId === selectedProductId) {
@@ -80,15 +86,34 @@ export default function RiskTableController({ rows }: RiskTableControllerProps) 
     window.history.replaceState(null, "", buildUrl(pathname, nextParams));
   }
 
+  function handleDrawerOpenChange(open: boolean) {
+    if (open) {
+      return;
+    }
+
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+      product: null,
+    });
+
+    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+  }
+
   return (
-    <RiskTable
-      rows={filteredRows}
-      searchValue={query}
-      riskFilter={riskFilter}
-      selectedProductId={selectedProductId}
-      onSearchChange={handleSearchChange}
-      onRiskFilterChange={handleRiskFilterChange}
-      onSelectProduct={handleSelectProduct}
-    />
+    <>
+      <RiskTable
+        rows={filteredRows}
+        searchValue={query}
+        riskFilter={riskFilter}
+        selectedProductId={selectedProductId}
+        onSearchChange={handleSearchChange}
+        onRiskFilterChange={handleRiskFilterChange}
+        onSelectProduct={handleSelectProduct}
+      />
+      <ProductRiskDrawer
+        detail={selectedDetail}
+        open={selectedDetail !== null}
+        onOpenChange={handleDrawerOpenChange}
+      />
+    </>
   );
 }

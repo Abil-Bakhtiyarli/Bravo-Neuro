@@ -5,7 +5,6 @@ export type DashboardLayoutProps = {
   kpiStrip: ReactNode;
   mainPane: ReactNode;
   sidePane: ReactNode;
-  detailHint?: ReactNode;
 };
 
 export default function DashboardLayout({
@@ -13,7 +12,6 @@ export default function DashboardLayout({
   kpiStrip,
   mainPane,
   sidePane,
-  detailHint,
 }: DashboardLayoutProps) {
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.96),_rgba(241,245,249,0.92)_40%,_rgba(226,232,240,0.9)_100%)] text-foreground">
@@ -28,12 +26,6 @@ export default function DashboardLayout({
           <section className="min-w-0">{mainPane}</section>
           <aside className="min-w-0">{sidePane}</aside>
         </div>
-
-        {detailHint ? (
-          <section className="rounded-3xl border border-border/80 bg-card/88 p-4 shadow-[0_18px_50px_-40px_rgba(15,23,42,0.5)] sm:p-5">
-            {detailHint}
-          </section>
-        ) : null}
       </div>
     </main>
   );
