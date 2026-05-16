@@ -42,7 +42,7 @@ type DailyActionPlanPanelProps = {
   onAdvanceStatus: (taskId: string) => void;
 };
 
-const TASK_STATUS_STORAGE_KEY = "bravo-neuro:task-status:v1";
+const TASK_STATUS_STORAGE_KEY = "bravo-neuro:task-status:v2";
 
 const actionTypeMeta: Record<
   RecommendationActionType,

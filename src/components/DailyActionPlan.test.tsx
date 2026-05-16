@@ -87,5 +87,5 @@ test("buildTaskSelectionSearchParams reuses product selection and clears conflic
 });
 
 test("getTaskStorageKey scopes persisted state by branch", () => {
-  assert.equal(getTaskStorageKey("ganjlik"), "bravo-neuro:task-status:v1:ganjlik");
+  assert.equal(getTaskStorageKey("ganjlik"), "bravo-neuro:task-status:v2:ganjlik");
 });
