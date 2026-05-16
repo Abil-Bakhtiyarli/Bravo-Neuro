@@ -14,9 +14,14 @@ bravo-neuro/
 |   |   +-- page.tsx
 |   |   +-- globals.css
 |   |   +-- favicon.ico
-|   |   \-- api/                          (optional later thin wrappers, not created yet)
+|   |   +-- assistant/
+|   |   |   \-- page.tsx
+|   |   \-- api/
+|   |       \-- assistant/
+|   |           \-- route.ts
 |   +-- components/
 |   |   +-- AppShell.tsx
+|   |   +-- AssistantExperience.tsx
 |   |   +-- DashboardLayout.tsx
 |   |   +-- setup-progress-chart.tsx      (legacy Part 0 artifact, no longer used by `/`)
 |   |   +-- DashboardHeader.tsx
@@ -54,6 +59,10 @@ bravo-neuro/
 |       +-- dashboardKpiPresentation.test.ts
 |       +-- riskTableInteraction.ts
 |       +-- riskTableInteraction.test.ts
+|       +-- assistant/
+|       |   +-- context.ts
+|       |   +-- context.test.ts
+|       |   \-- gemini.ts
 |       +-- savingsComparison.ts
 |       \-- formatters.ts                (planned, not created yet)
 +-- data/
@@ -138,6 +147,8 @@ Part 004 is complete as the polish and copy-tightening pass: `src/components/Sid
 Part 005 is complete as the eyestrain-reduction pass: `src/app/globals.css` now darkens the light-mode background, card, popover, sidebar, muted, and border tokens slightly, replaces the harsher white shell gradients with softer blue-green tints, and adds shared surface-hierarchy utilities so shell, card, panel, chip, hover, and selected states no longer collapse into the same near-white treatment. `src/components/AppShell.tsx`, `src/components/Sidebar.tsx`, `src/components/CompactDashboardHeader.tsx`, `src/components/SummaryKpiGrid.tsx`, `src/components/MonthlySavingsChart.tsx`, `src/components/TodayDecisionCard.tsx`, `src/components/TopRiskProductsCard.tsx`, and `src/components/BranchComparisonCard.tsx` now adopt those calmer surfaces, softer shadows, stronger borders, and less fluorescent badge fills without changing routes, component APIs, query params, or business logic. This pass intentionally keeps the product as one muted light theme instead of adding dark mode, and `corepack.cmd pnpm lint` plus the targeted `AppShell`, `Sidebar`, `DashboardOverview`, and `MonthlySavingsChart` component tests pass after the presentation-only update.
 
 Part 006 is complete as the transfers-and-forecast detail-pages pass: `src/components/Sidebar.tsx` now enables the live `/transfers` and `/forecast` navigation entries while keeping only the assistant route disabled, `src/app/transfers/page.tsx` and `src/app/forecast/page.tsx` now follow the shared `AppShell` plus `DetailPageHeader` pattern, and `src/lib/operationsDemoData.ts` now provides typed branch-scoped demo data for believable transfer lanes and short-horizon revenue forecasts anchored to the seeded branch/product context. `src/components/TransfersOverview.tsx`, `src/components/RevenueForecastOverview.tsx`, and `src/components/RevenueForecastChart.tsx` now render the new KPI cards, transfer list, forecast chart, category table, and driver panels without introducing APIs or persistence, while the sidebar and new route tests cover the live navigation state and branch-aware page output. This pass intentionally keeps both pages as demo-ready summaries instead of deep workflow tools, and `corepack.cmd pnpm lint`, `corepack.cmd pnpm test`, and `corepack.cmd pnpm build` are the required verification commands for the completed route expansion.
+
+Part 007 is complete as the Gemini assistant route pass: `src/components/Sidebar.tsx` now enables the live `/assistant` navigation entry, `src/app/assistant/page.tsx` now follows the shared `AppShell` plus `DetailPageHeader` detail-page pattern, and `src/components/AssistantExperience.tsx` now provides a branch-aware interactive assistant surface with colored prompt chips, streamed chat rendering, lightweight citations, and a contextual right rail for branch KPIs, selected-product detail, and the current action queue. `src/lib/assistant/context.ts` now builds compact assistant snapshots only from the canonical `src/lib/dashboardData.ts` and `getProductDetailData()` contracts, while `src/lib/assistant/gemini.ts` plus `src/app/api/assistant/route.ts` add the server-only Gemini integration, read-only tool-calling loop, `GEMINI_API_KEY` / optional `GEMINI_MODEL` environment support, and streamed chat endpoint without duplicating dashboard business logic in the UI. This pass keeps the assistant read-only, branch-scoped, and resilient to larger fake datasets that keep the same product schema, and `corepack.cmd pnpm lint`, `corepack.cmd pnpm test`, and `corepack.cmd pnpm build` are the required verification commands for the completed assistant route.
 
 ## Part 1 Seed Data
 

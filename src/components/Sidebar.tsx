@@ -29,7 +29,7 @@ const navItems: readonly NavItem[] = [
   { label: "Transfers", href: "/transfers", icon: ArrowRightLeft },
   { label: "Revenue Forecast", href: "/forecast", icon: TrendingUp },
   { label: "Branches", href: "/branches", icon: Store },
-  { label: "AI Assistant", href: "/assistant", icon: Bot, disabled: true },
+  { label: "AI Assistant", href: "/assistant", icon: Bot },
 ];
 
 function NavLink({
@@ -131,7 +131,7 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
                 Live snapshot
               </p>
               <p className="mt-2 text-sm leading-6 text-emerald-950/85">
-                Overview, risk, actions, transfers, forecast, and branches stay in one branch context.
+                Overview, risk, actions, transfers, forecast, branches, and the assistant stay in one branch context.
               </p>
             </div>
             <div className="demo-card mt-4 p-4">

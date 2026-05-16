@@ -332,3 +332,60 @@ export type BranchDashboardData = {
   topProductIds: ProductId[];
   productDetailsById: Partial<Record<ProductId, ProductDetailData>>;
 };
+
+export type AssistantChatRole = "user" | "assistant";
+
+export type AssistantChatMessage = {
+  role: AssistantChatRole;
+  content: string;
+};
+
+export type AssistantCitationKind =
+  | "branch-kpi"
+  | "risk-row"
+  | "action-item"
+  | "product-detail"
+  | "savings-series";
+
+export type AssistantCitation = {
+  kind: AssistantCitationKind;
+  label: string;
+  branchId: BranchId;
+  productId?: ProductId;
+};
+
+export type AssistantPromptChip = {
+  id: string;
+  label: string;
+  prompt: string;
+};
+
+export type AssistantBranchSnapshot = {
+  branchId: BranchId;
+  branchName: string;
+  generatedAt: string;
+  kpis: DashboardKpi[];
+  topRiskProducts: RiskTableItem[];
+  actionPlan: ActionPlanItem[];
+  monthlySavingsSeries: MonthlySavingsSeriesPoint[];
+};
+
+export type AssistantContextSnapshot = {
+  branch: AssistantBranchSnapshot;
+  selectedProduct: ProductDetailData | null;
+  selectedProductRiskRow: RiskTableItem | null;
+  selectedProductAction: ActionPlanItem | null;
+  promptChips: AssistantPromptChip[];
+};
+
+export type AssistantChatRequest = {
+  branchId: BranchId;
+  productId?: ProductId | null;
+  message: string;
+  history?: AssistantChatMessage[];
+};
+
+export type AssistantChatResponse = {
+  message: string;
+  citations: AssistantCitation[];
+};
