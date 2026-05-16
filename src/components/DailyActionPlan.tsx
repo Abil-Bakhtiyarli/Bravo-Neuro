@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import {
   ArrowRightLeft,
@@ -384,16 +384,16 @@ export default function DailyActionPlan({ branchId, tasks }: DailyActionPlanProp
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const selectedProductId = searchParams.get("product");
-  const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>(() => {
-    if (typeof window === "undefined") {
-      return {};
-    }
+  const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>({});
 
-    return parsePersistedTaskStatuses(
-      window.localStorage.getItem(getTaskStorageKey(branchId)),
-      tasks.map((task) => task.taskId),
+  useEffect(() => {
+    setTaskStatuses(
+      parsePersistedTaskStatuses(
+        window.localStorage.getItem(getTaskStorageKey(branchId)),
+        tasks.map((task) => task.taskId),
+      ),
     );
-  });
+  }, [branchId, tasks]);
 
   const visibleTasks = useMemo(() => mergeTaskStatuses(tasks, taskStatuses), [taskStatuses, tasks]);
 
