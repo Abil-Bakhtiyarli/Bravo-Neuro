@@ -4,6 +4,7 @@ exports.buildDashboardKpiPresentationItems = buildDashboardKpiPresentationItems;
 const DISPLAY_KPI_ORDER = [
     "possible-loss",
     "recoverable-value",
+    "net-saved-value",
     "risky-products",
     "tasks-today",
 ];
@@ -30,6 +31,8 @@ function buildHelperText(branch, kpi, riskyProductsCount, tasksTodayCount) {
             return `${formatCount(riskyProductsCount)} medium, high, or critical products are queued for manager attention in ${branch.branchName}.`;
         case "tasks-today":
             return `${formatCount(tasksTodayCount)} recommendation-backed manager tasks are visible today for ${branch.branchName}.`;
+        case "net-saved-value":
+            return `${formatAzN(kpi.value)} remains as the branch's net recovery after action costs are deducted in ${branch.branchName}.`;
         default:
             return branch.branchName;
     }
@@ -40,6 +43,8 @@ function buildStatusBadge(key, value) {
             return value > 0 ? "Exposure" : "Stable";
         case "recoverable-value":
             return value > 0 ? "Recovery" : "Clear";
+        case "net-saved-value":
+            return value > 0 ? "Net gain" : "Flat";
         case "risky-products":
             return value > 0 ? "Priority" : "Clear";
         case "tasks-today":
@@ -53,6 +58,8 @@ function buildTone(key) {
         case "possible-loss":
             return "warning";
         case "recoverable-value":
+            return "success";
+        case "net-saved-value":
             return "success";
         case "risky-products":
             return "neutral";

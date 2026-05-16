@@ -2,16 +2,16 @@ import type { ReactNode } from "react";
 
 export type DashboardLayoutProps = {
   topBar: ReactNode;
-  kpiStrip: ReactNode;
-  mainPane: ReactNode;
-  sidePane: ReactNode;
+  topRowMain: ReactNode;
+  kpiRail: ReactNode;
+  bottomSection: ReactNode;
 };
 
 export default function DashboardLayout({
   topBar,
-  kpiStrip,
-  mainPane,
-  sidePane,
+  topRowMain,
+  kpiRail,
+  bottomSection,
 }: DashboardLayoutProps) {
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.96),_rgba(241,245,249,0.92)_40%,_rgba(226,232,240,0.9)_100%)] text-foreground">
@@ -20,12 +20,12 @@ export default function DashboardLayout({
           {topBar}
         </section>
 
-        <section>{kpiStrip}</section>
-
-        <div className="grid gap-6 xl:grid-cols-[minmax(0,1.75fr)_minmax(20rem,0.95fr)] xl:items-start">
-          <section className="min-w-0">{mainPane}</section>
-          <aside className="min-w-0">{sidePane}</aside>
+        <div className="grid gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(19rem,0.8fr)] xl:items-start">
+          <section className="min-w-0">{topRowMain}</section>
+          <aside className="min-w-0">{kpiRail}</aside>
         </div>
+
+        <section className="min-w-0">{bottomSection}</section>
       </div>
     </main>
   );

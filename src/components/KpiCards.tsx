@@ -14,6 +14,7 @@ export type KpiCardItem = {
 
 export type KpiCardsProps = {
   items: readonly KpiCardItem[];
+  orientation?: "grid" | "rail";
 };
 
 const toneStyles: Record<KpiCardTone, { badge: string; icon: string; ring: string }> = {
@@ -43,9 +44,11 @@ const toneStyles: Record<KpiCardTone, { badge: string; icon: string; ring: strin
   },
 };
 
-export default function KpiCards({ items }: KpiCardsProps) {
+export default function KpiCards({ items, orientation = "grid" }: KpiCardsProps) {
+  const isRail = orientation === "rail";
+
   return (
-    <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+    <div className={isRail ? "grid gap-4 sm:grid-cols-2 xl:grid-cols-1" : "grid gap-4 sm:grid-cols-2 xl:grid-cols-4"}>
       {items.map((item) => {
         const Icon = item.icon;
         const tone = item.accentTone ?? "neutral";
@@ -61,7 +64,7 @@ export default function KpiCards({ items }: KpiCardsProps) {
               aria-hidden="true"
             />
 
-            <div className="relative flex min-h-[12.5rem] flex-col">
+            <div className={`relative flex flex-col ${isRail ? "min-h-[10.75rem]" : "min-h-[12.5rem]"}`}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -78,7 +81,7 @@ export default function KpiCards({ items }: KpiCardsProps) {
                 </div>
               </div>
 
-              <div className="mt-6 flex items-start justify-between gap-4">
+              <div className={`flex items-start justify-between gap-4 ${isRail ? "mt-5" : "mt-6"}`}>
                 <p className="text-3xl font-semibold tracking-tight text-foreground">
                   {item.displayValue}
                 </p>
@@ -89,7 +92,7 @@ export default function KpiCards({ items }: KpiCardsProps) {
                 </span>
               </div>
 
-              <p className="mt-4 text-sm leading-6 text-muted-foreground">
+              <p className={`text-sm leading-6 text-muted-foreground ${isRail ? "mt-3" : "mt-4"}`}>
                 {item.helperText}
               </p>
 

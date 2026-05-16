@@ -3,6 +3,7 @@ import {
   BanknoteArrowDown,
   CalendarClock,
   PackageSearch,
+  TrendingUp,
 } from "lucide-react";
 
 import DailyActionPlan from "@/components/DailyActionPlan";
@@ -29,6 +30,11 @@ function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
         ...item,
         icon: BanknoteArrowDown,
       };
+    case "net-saved-value":
+      return {
+        ...item,
+        icon: TrendingUp,
+      };
     case "risky-products":
       return {
         ...item,
@@ -49,7 +55,7 @@ type MainPaneProps = {
   productDetailsById: ReturnType<typeof getDashboardData>["productDetailsById"];
 };
 
-function MainPane({ rows, productDetailsById }: MainPaneProps) {
+function RiskTablePane({ rows, productDetailsById }: MainPaneProps) {
   return <RiskTableExperience rows={rows} productDetailsById={productDetailsById} />;
 }
 
@@ -90,18 +96,18 @@ export default async function Home({ searchParams }: HomeProps) {
           generatedAt={dashboardData.generatedAt}
         />
       }
-      kpiStrip={<KpiCards items={kpiCards} />}
-      mainPane={
-        <MainPane
-          rows={dashboardData.riskTable}
-          productDetailsById={dashboardData.productDetailsById}
-        />
-      }
-      sidePane={
+      topRowMain={
         <DailyActionPlan
           key={selectedBranchId}
           branchId={selectedBranchId}
           tasks={dashboardData.actionPlan}
+        />
+      }
+      kpiRail={<KpiCards items={kpiCards} orientation="rail" />}
+      bottomSection={
+        <RiskTablePane
+          rows={dashboardData.riskTable}
+          productDetailsById={dashboardData.productDetailsById}
         />
       }
     />
