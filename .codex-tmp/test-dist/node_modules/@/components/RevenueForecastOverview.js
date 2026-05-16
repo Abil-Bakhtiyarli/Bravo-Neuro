@@ -1,0 +1,31 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = RevenueForecastOverview;
+const jsx_runtime_1 = require("react/jsx-runtime");
+const lucide_react_1 = require("lucide-react");
+const utils_1 = require("@/lib/utils");
+const RevenueForecastChart_1 = __importDefault(require("./RevenueForecastChart"));
+const toneStyles = {
+    upside: {
+        badge: "border-emerald-300/65 bg-emerald-100/60 text-emerald-900",
+        panel: "text-emerald-900 bg-emerald-100/60",
+    },
+    risk: {
+        badge: "border-rose-300/65 bg-rose-100/60 text-rose-900",
+        panel: "text-rose-900 bg-rose-100/60",
+    },
+    watch: {
+        badge: "border-sky-300/65 bg-sky-100/60 text-sky-900",
+        panel: "text-sky-900 bg-sky-100/60",
+    },
+};
+const icons = [lucide_react_1.TrendingUp, lucide_react_1.Compass, lucide_react_1.ShieldCheck, lucide_react_1.AlertTriangle];
+function RevenueForecastOverview({ data, }) {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "flex flex-col gap-6", children: [(0, jsx_runtime_1.jsx)("section", { className: "grid gap-4 sm:grid-cols-2 xl:grid-cols-4", children: data.summaryMetrics.map((metric, index) => {
+                    const Icon = icons[index] ?? lucide_react_1.TrendingUp;
+                    return ((0, jsx_runtime_1.jsxs)("article", { className: "demo-card animate-demo-fade-up p-5", children: [(0, jsx_runtime_1.jsxs)("div", { className: "flex items-start justify-between gap-3", children: [(0, jsx_runtime_1.jsxs)("div", { className: "min-w-0", children: [(0, jsx_runtime_1.jsx)("p", { className: "text-sm font-medium text-foreground/80", children: metric.label }), (0, jsx_runtime_1.jsx)("p", { className: "mt-4 text-3xl font-semibold tracking-tight text-foreground", children: metric.value })] }), (0, jsx_runtime_1.jsx)("span", { className: (0, utils_1.cn)("demo-surface-panel p-2.5", toneStyles[metric.tone].panel), children: (0, jsx_runtime_1.jsx)(Icon, { className: "size-4" }) })] }), (0, jsx_runtime_1.jsx)("p", { className: "mt-4 text-sm leading-6 text-muted-foreground", children: metric.helperText })] }, metric.label));
+                }) }), (0, jsx_runtime_1.jsxs)("div", { className: "grid gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(22rem,0.9fr)] xl:items-start", children: [(0, jsx_runtime_1.jsx)(RevenueForecastChart_1.default, { branchName: data.branchName, points: data.chartPoints }), (0, jsx_runtime_1.jsxs)("section", { className: "demo-card animate-demo-fade-up animate-demo-delay-3 p-5 sm:p-6", children: [(0, jsx_runtime_1.jsx)("p", { className: "text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground", children: "Forecast drivers" }), (0, jsx_runtime_1.jsx)("h2", { className: "mt-2 text-xl font-semibold tracking-tight text-foreground", children: "Revenue assumptions to defend in the demo" }), (0, jsx_runtime_1.jsx)("div", { className: "mt-5 space-y-3", children: data.drivers.map((driver) => ((0, jsx_runtime_1.jsxs)("article", { className: "demo-surface-interactive demo-surface-interactive-hover rounded-2xl border p-4", children: [(0, jsx_runtime_1.jsxs)("div", { className: "flex flex-wrap items-start justify-between gap-3", children: [(0, jsx_runtime_1.jsxs)("div", { className: "min-w-0", children: [(0, jsx_runtime_1.jsx)("p", { className: "text-sm font-semibold text-foreground", children: driver.title }), (0, jsx_runtime_1.jsx)("p", { className: "mt-2 text-sm leading-6 text-muted-foreground", children: driver.description })] }), (0, jsx_runtime_1.jsx)("span", { className: (0, utils_1.cn)("inline-flex rounded-full border px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em]", toneStyles[driver.tone].badge), children: driver.tone })] }), (0, jsx_runtime_1.jsx)("p", { className: "mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-foreground/70", children: driver.impactLabel })] }, driver.title))) })] })] }), (0, jsx_runtime_1.jsxs)("section", { className: "demo-card animate-demo-fade-up animate-demo-delay-4 p-5 sm:p-6", children: [(0, jsx_runtime_1.jsx)("p", { className: "text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground", children: "Category breakdown" }), (0, jsx_runtime_1.jsx)("h2", { className: "mt-2 text-xl font-semibold tracking-tight text-foreground", children: "Projected revenue by category" }), (0, jsx_runtime_1.jsx)("p", { className: "mt-3 text-sm leading-6 text-muted-foreground", children: "Each category outlook is intentionally conservative and should read as a branch planning view, not a finance-grade forecast." }), (0, jsx_runtime_1.jsx)("div", { className: "mt-5 overflow-x-auto", children: (0, jsx_runtime_1.jsxs)("table", { className: "min-w-full border-separate border-spacing-y-3", children: [(0, jsx_runtime_1.jsx)("thead", { children: (0, jsx_runtime_1.jsxs)("tr", { className: "text-left text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground", children: [(0, jsx_runtime_1.jsx)("th", { className: "px-3", children: "Category" }), (0, jsx_runtime_1.jsx)("th", { className: "px-3", children: "Projected revenue" }), (0, jsx_runtime_1.jsx)("th", { className: "px-3", children: "Change" }), (0, jsx_runtime_1.jsx)("th", { className: "px-3", children: "Confidence" }), (0, jsx_runtime_1.jsx)("th", { className: "px-3", children: "Callout" })] }) }), (0, jsx_runtime_1.jsx)("tbody", { children: data.categoryBreakdown.map((row) => ((0, jsx_runtime_1.jsxs)("tr", { className: "demo-surface-panel", children: [(0, jsx_runtime_1.jsx)("td", { className: "rounded-l-2xl px-3 py-3 text-sm font-semibold text-foreground", children: row.category }), (0, jsx_runtime_1.jsxs)("td", { className: "px-3 py-3 text-sm text-foreground", children: ["AZN ", row.projectedRevenueAzN.toFixed(1)] }), (0, jsx_runtime_1.jsxs)("td", { className: "px-3 py-3 text-sm text-foreground", children: [row.changePercent >= 0 ? "+" : "", row.changePercent.toFixed(1), "%"] }), (0, jsx_runtime_1.jsxs)("td", { className: "px-3 py-3 text-sm text-foreground", children: [row.confidencePercent, "%"] }), (0, jsx_runtime_1.jsx)("td", { className: "rounded-r-2xl px-3 py-3 text-sm text-muted-foreground", children: row.callout })] }, row.category))) })] }) })] })] }));
+}

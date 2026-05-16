@@ -26,8 +26,8 @@ const navItems: readonly NavItem[] = [
   { label: "Dashboard", href: "/", icon: LayoutDashboard },
   { label: "Risk Products", href: "/risk", icon: AlertTriangle },
   { label: "Discount Actions", href: "/actions", icon: BadgePercent },
-  { label: "Transfers", href: "/transfers", icon: ArrowRightLeft, disabled: true },
-  { label: "Revenue Forecast", href: "/forecast", icon: TrendingUp, disabled: true },
+  { label: "Transfers", href: "/transfers", icon: ArrowRightLeft },
+  { label: "Revenue Forecast", href: "/forecast", icon: TrendingUp },
   { label: "Branches", href: "/branches", icon: Store },
   { label: "AI Assistant", href: "/assistant", icon: Bot, disabled: true },
 ];
@@ -85,13 +85,13 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
     <>
       <div className="border-b border-border/90 bg-sidebar/94 px-4 py-3 backdrop-blur lg:hidden">
         <div className="flex items-center justify-between gap-3">
-          <div className="min-w-0">
+          <div className="flex min-w-0 flex-1 justify-center">
             <Image
               src="/bravo-neuro-logo.svg"
               alt="Bravo Neuro"
               width={1289}
               height={816}
-              className="h-8 w-auto"
+              className="h-12 w-full max-w-[11.5rem] object-contain object-center"
               priority
             />
           </div>
@@ -99,7 +99,7 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
             Live
           </span>
         </div>
-        <nav className="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1">
+        <nav className="-mx-1 mt-4 flex gap-2 overflow-x-auto px-1 pb-1">
           {navItems.map((item) => (
             <NavLink key={item.href} item={item} mobile pathnameOverride={pathnameOverride} />
           ))}
@@ -108,18 +108,18 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
 
       <aside className="hidden w-64 shrink-0 border-r border-border/90 bg-sidebar/96 lg:flex lg:h-screen lg:flex-col">
         <div className="flex h-full flex-col px-5 py-6">
-          <div className="border-b border-border/90 pb-5">
+          <div className="flex justify-center border-b border-border/90 pb-8">
             <Image
               src="/bravo-neuro-logo.svg"
               alt="Bravo Neuro"
               width={1289}
               height={816}
-              className="h-11 w-auto"
+              className="h-24 w-full max-w-[13.5rem] object-contain object-center"
               priority
             />
           </div>
 
-          <nav className="mt-5 flex flex-1 flex-col gap-1.5">
+          <nav className="mt-8 flex flex-1 flex-col gap-1.5">
             {navItems.map((item) => (
               <NavLink key={item.href} item={item} pathnameOverride={pathnameOverride} />
             ))}
@@ -131,7 +131,7 @@ export default function Sidebar({ pathnameOverride }: SidebarProps) {
                 Live snapshot
               </p>
               <p className="mt-2 text-sm leading-6 text-emerald-950/85">
-                Overview, risk, actions, and branches stay in one branch context.
+                Overview, risk, actions, transfers, forecast, and branches stay in one branch context.
               </p>
             </div>
             <div className="demo-card mt-4 p-4">
