@@ -43,6 +43,10 @@ type DashboardDemoExperienceProps = {
   rows: BranchDashboardData["riskTable"];
   productDetailsById: BranchDashboardData["productDetailsById"];
   monthlySavingsSeries: BranchDashboardData["monthlySavingsSeries"];
+  initialRequestedProductId?: string | null;
+  initialQuery?: string;
+  initialRiskFilter?: "all" | "medium" | "high" | "critical";
+  staticMode?: boolean;
 };
 
 const actionTypeMeta: Record<
@@ -253,13 +257,20 @@ export default function DashboardDemoExperience({
   rows,
   productDetailsById,
   monthlySavingsSeries,
+  initialRequestedProductId = null,
+  initialQuery = "",
+  initialRiskFilter = "all",
+  staticMode = false,
 }: DashboardDemoExperienceProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [drawerProductId, setDrawerProductId] = useState<string | null>(null);
-  const query = searchParams.get("q") ?? "";
-  const riskFilter = parseRiskTableFilterValue(searchParams.get("risk"));
-  const requestedProductId = searchParams.get("product");
+  const query = searchParams?.get("q") ?? initialQuery;
+  const requestedRiskFilter = searchParams?.get("risk");
+  const riskFilter = requestedRiskFilter
+    ? parseRiskTableFilterValue(requestedRiskFilter)
+    : initialRiskFilter;
+  const requestedProductId = searchParams?.get("product") ?? initialRequestedProductId;
   const filteredRows = useMemo(
     () => filterRiskTableRows(rows, query, riskFilter),
     [query, riskFilter, rows],
@@ -275,7 +286,7 @@ export default function DashboardDemoExperience({
       return;
     }
 
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       product: selectedProductId,
     });
 
@@ -283,7 +294,7 @@ export default function DashboardDemoExperience({
   }, [pathname, requestedProductId, searchParams, selectedProductId]);
 
   function handleSelectProduct(productId: string) {
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       product: productId,
     });
 
@@ -293,7 +304,7 @@ export default function DashboardDemoExperience({
   function handleSearchChange(nextQuery: string) {
     const nextFilteredRows = filterRiskTableRows(rows, nextQuery, riskFilter);
     const nextSelectedProductId = getVisibleSelectedProductId(nextFilteredRows, requestedProductId);
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       q: nextQuery,
       product: nextSelectedProductId,
     });
@@ -304,7 +315,7 @@ export default function DashboardDemoExperience({
   function handleRiskFilterChange(nextRiskFilter: "all" | "medium" | "high" | "critical") {
     const nextFilteredRows = filterRiskTableRows(rows, query, nextRiskFilter);
     const nextSelectedProductId = getVisibleSelectedProductId(nextFilteredRows, requestedProductId);
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       risk: nextRiskFilter,
       product: nextSelectedProductId,
     });
@@ -324,6 +335,7 @@ export default function DashboardDemoExperience({
           tasks={tasks}
           selectedProductId={selectedProductId}
           onSelectTask={handleSelectProduct}
+          staticMode={staticMode}
         />
         <div className="min-w-0 xl:sticky xl:top-8">
           <SelectedProductPanel

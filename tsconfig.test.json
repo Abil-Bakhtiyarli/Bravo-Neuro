@@ -12,25 +12,7 @@
     "isolatedModules": false
   },
   "include": [
-    "src/lib/types.ts",
-    "src/lib/seedData.ts",
-    "src/lib/dataLoader.ts",
-    "src/lib/dataLoader.test.ts",
-    "src/lib/riskScore.ts",
-    "src/lib/riskScore.test.ts",
-    "src/lib/recommendationEngine.ts",
-    "src/lib/recommendationEngine.test.ts",
-    "src/lib/savings.ts",
-    "src/lib/savings.test.ts",
-    "src/lib/explanation.ts",
-    "src/lib/explanation.test.ts",
-    "src/lib/dashboardData.ts",
-    "src/lib/dashboardData.test.ts",
-    "src/lib/dashboardKpiPresentation.ts",
-    "src/lib/dashboardKpiPresentation.test.ts",
-    "src/lib/riskTableInteraction.ts",
-    "src/lib/riskTableInteraction.test.ts",
-    "src/components/RiskTable.tsx",
-    "src/components/RiskTable.test.tsx"
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ]
 }

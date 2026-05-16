@@ -23,27 +23,36 @@ type NavItem = {
 
 const navItems: readonly NavItem[] = [
   { label: "Dashboard", href: "/", icon: LayoutDashboard },
-  { label: "Risk Products", href: "/risk", icon: AlertTriangle, disabled: true },
-  { label: "Discount Actions", href: "/actions", icon: BadgePercent, disabled: true },
+  { label: "Risk Products", href: "/risk", icon: AlertTriangle },
+  { label: "Discount Actions", href: "/actions", icon: BadgePercent },
   { label: "Transfers", href: "/transfers", icon: ArrowRightLeft, disabled: true },
   { label: "Revenue Forecast", href: "/forecast", icon: TrendingUp, disabled: true },
-  { label: "Branches", href: "/branches", icon: Store, disabled: true },
+  { label: "Branches", href: "/branches", icon: Store },
   { label: "AI Assistant", href: "/assistant", icon: Bot, disabled: true },
 ];
 
-function NavLink({ item, mobile = false }: { item: NavItem; mobile?: boolean }) {
-  const pathname = usePathname();
+function NavLink({
+  item,
+  mobile = false,
+  pathnameOverride,
+}: {
+  item: NavItem;
+  mobile?: boolean;
+  pathnameOverride?: string;
+}) {
+  const pathnameFromRouter = usePathname();
+  const pathname = pathnameOverride ?? pathnameFromRouter;
   const isActive = pathname === item.href;
   const Icon = item.icon;
 
   const sharedClassName = cn(
-    "flex items-center gap-3 rounded-2xl px-3 py-2.5 text-sm font-medium transition-colors",
+    "flex items-center gap-3 rounded-2xl px-3 py-2.5 text-sm font-medium transition-[background-color,color,box-shadow,transform] duration-200",
     mobile ? "whitespace-nowrap" : "w-full",
     item.disabled
       ? "cursor-not-allowed border border-transparent text-muted-foreground/70"
       : isActive
-        ? "bg-emerald-50 text-emerald-900 ring-1 ring-emerald-200/80"
-        : "text-foreground/78 hover:bg-background/75 hover:text-foreground",
+        ? "bg-emerald-50 text-emerald-900 shadow-[0_14px_30px_-24px_rgba(5,150,105,0.7)] ring-1 ring-emerald-200/80"
+        : "text-foreground/78 hover:-translate-y-0.5 hover:bg-background/75 hover:text-foreground",
   );
 
   if (item.disabled) {
@@ -66,7 +75,11 @@ function NavLink({ item, mobile = false }: { item: NavItem; mobile?: boolean }) 
   );
 }
 
-export default function Sidebar() {
+type SidebarProps = {
+  pathnameOverride?: string;
+};
+
+export default function Sidebar({ pathnameOverride }: SidebarProps) {
   return (
     <>
       <div className="border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur lg:hidden">
@@ -76,12 +89,12 @@ export default function Sidebar() {
             <p className="text-xs text-muted-foreground">AI Retail Waste Control</p>
           </div>
           <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-emerald-800">
-            Demo Mode
+            Live
           </span>
         </div>
         <nav className="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1">
           {navItems.map((item) => (
-            <NavLink key={item.href} item={item} mobile />
+            <NavLink key={item.href} item={item} mobile pathnameOverride={pathnameOverride} />
           ))}
         </nav>
       </div>
@@ -95,24 +108,24 @@ export default function Sidebar() {
 
           <nav className="mt-5 flex flex-1 flex-col gap-1.5">
             {navItems.map((item) => (
-              <NavLink key={item.href} item={item} />
+              <NavLink key={item.href} item={item} pathnameOverride={pathnameOverride} />
             ))}
           </nav>
 
           <div className="border-t border-border/70 pt-5">
             <div className="rounded-3xl border border-emerald-200/80 bg-emerald-50/85 p-4">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-800">
-                Demo Mode
+                Live snapshot
               </p>
               <p className="mt-2 text-sm leading-6 text-emerald-950/85">
-                Homepage shell pivot is active. Detail pages land in later parts.
+                Overview, risk, actions, and branches stay in one branch context.
               </p>
             </div>
             <div className="mt-4 rounded-3xl border border-border/75 bg-background/92 p-4">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Session
               </p>
-              <p className="mt-2 text-sm font-medium text-foreground">Hackathon Demo</p>
+              <p className="mt-2 text-sm font-medium text-foreground">Hackathon build</p>
             </div>
           </div>
         </div>

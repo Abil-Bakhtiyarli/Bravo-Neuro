@@ -20,11 +20,18 @@ test("validateMonthlySavingsHistoryRecords rejects duplicate months for a branch
   const duplicateRecord = monthlySavingsHistory.find(
     (record) => record.branchId === "ganjlik" && record.monthKey === "2026-05",
   );
+  const replacedRecordIndex = monthlySavingsHistory.findIndex(
+    (record) => record.branchId === "ganjlik" && record.monthKey === "2026-04",
+  );
 
   assert.ok(duplicateRecord);
+  assert.notEqual(replacedRecordIndex, -1);
+
+  const invalidRecords = [...monthlySavingsHistory];
+  invalidRecords.splice(replacedRecordIndex, 1, duplicateRecord);
 
   assert.throws(
-    () => validateMonthlySavingsHistoryRecords([...monthlySavingsHistory, duplicateRecord], branchIds),
+    () => validateMonthlySavingsHistoryRecords(invalidRecords, branchIds),
     /duplicate monthKey/,
   );
 });

@@ -1,73 +1,15 @@
-import {
-  AlertTriangle,
-  BanknoteArrowDown,
-  CalendarClock,
-  PackageSearch,
-  TrendingUp,
-} from "lucide-react";
-
 import AppShell from "@/components/AppShell";
-import DashboardDemoExperience from "@/components/DashboardDemoExperience";
-import DashboardHeader from "@/components/DashboardHeader";
-import DashboardLayout from "@/components/DashboardLayout";
-import KpiCards, { type KpiCardItem } from "@/components/KpiCards";
+import DashboardOverview from "@/components/DashboardOverview";
+import { buildBranchComparisonSummary } from "@/lib/branchComparison";
+import { resolveSelectedBranchId } from "@/lib/branchSelection";
 import { getAvailableBranchOptions, getDashboardData } from "@/lib/dashboardData";
 import {
   buildDashboardKpiPresentationItems,
-  type DashboardKpiPresentationItem,
 } from "@/lib/dashboardKpiPresentation";
-import type { BranchId } from "@/lib/types";
-
-function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
-  switch (item.key) {
-    case "possible-loss":
-      return {
-        ...item,
-        icon: AlertTriangle,
-      };
-    case "recoverable-value":
-      return {
-        ...item,
-        icon: BanknoteArrowDown,
-      };
-    case "net-saved-value":
-      return {
-        ...item,
-        icon: TrendingUp,
-      };
-    case "risky-products":
-      return {
-        ...item,
-        icon: PackageSearch,
-      };
-    case "tasks-today":
-      return {
-        ...item,
-        icon: CalendarClock,
-      };
-    default:
-      throw new Error(`Unsupported KPI card key: ${String(item.key)}`);
-  }
-}
 
 type HomeProps = {
   searchParams: Promise<{ branch?: string | string[] }>;
 };
-
-function resolveSelectedBranchId(
-  requestedBranch: string | string[] | undefined,
-  branchIds: BranchId[],
-) {
-  const requestedValue = Array.isArray(requestedBranch)
-    ? requestedBranch[0]
-    : requestedBranch;
-
-  if (requestedValue && branchIds.includes(requestedValue)) {
-    return requestedValue;
-  }
-
-  return branchIds[0];
-}
 
 export default async function Home({ searchParams }: HomeProps) {
   const branches = getAvailableBranchOptions();
@@ -76,37 +18,33 @@ export default async function Home({ searchParams }: HomeProps) {
     branches.map((branch) => branch.branchId),
   );
   const dashboardData = getDashboardData(selectedBranchId);
-  const kpiCards = buildDashboardKpiPresentationItems(dashboardData)
+  const kpiItems = buildDashboardKpiPresentationItems(dashboardData)
     .filter((item) =>
+      item.key === "risky-products" ||
+      item.key === "net-saved-value" ||
       item.key === "possible-loss" ||
-      item.key === "recoverable-value" ||
-      item.key === "risky-products",
-    )
-    .map(toKpiCardItem);
+      item.key === "tasks-today",
+    );
+  const branchComparisons = branches.map((branch) =>
+    buildBranchComparisonSummary(
+      getDashboardData(branch.branchId),
+      branch.branchId === selectedBranchId,
+    ),
+  );
 
   return (
     <AppShell>
-      <DashboardLayout
-        topBar={
-          <DashboardHeader
-            branches={branches}
-            selectedBranchId={selectedBranchId}
-            generatedAt={dashboardData.generatedAt}
-          />
-        }
-        kpiStrip={<KpiCards items={kpiCards} orientation="grid" />}
-        mainStory={
-          <DashboardDemoExperience
-            key={selectedBranchId}
-            branchId={selectedBranchId}
-            branchName={dashboardData.branch.branchName}
-            tasks={dashboardData.actionPlan}
-            rows={dashboardData.riskTable}
-            productDetailsById={dashboardData.productDetailsById}
-            monthlySavingsSeries={dashboardData.monthlySavingsSeries}
-          />
-        }
-        secondarySection={null}
+      <DashboardOverview
+        branches={branches}
+        selectedBranchId={selectedBranchId}
+        generatedAt={dashboardData.generatedAt}
+        branchName={dashboardData.branch.branchName}
+        kpiItems={kpiItems}
+        actionPlan={dashboardData.actionPlan}
+        riskTable={dashboardData.riskTable}
+        productDetailsById={dashboardData.productDetailsById}
+        monthlySavingsSeries={dashboardData.monthlySavingsSeries}
+        branchComparisons={branchComparisons}
       />
     </AppShell>
   );

@@ -32,6 +32,7 @@ export type DailyActionPlanProps = {
   tasks: readonly ActionPlanItem[];
   selectedProductId?: string | null;
   onSelectTask?: (productId: string) => void;
+  staticMode?: boolean;
 };
 
 type DailyActionPlanPanelProps = {
@@ -405,16 +406,16 @@ export function DailyActionPlanPanel({
   );
 }
 
-export default function DailyActionPlan({
+function DailyActionPlanInteractive({
   branchId,
   tasks,
   selectedProductId: controlledSelectedProductId,
   onSelectTask: controlledOnSelectTask,
-}: DailyActionPlanProps) {
+}: Omit<DailyActionPlanProps, "staticMode">) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const selectedProductId = controlledSelectedProductId ?? searchParams.get("product");
+  const selectedProductId = controlledSelectedProductId ?? searchParams?.get("product") ?? null;
   const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>({});
 
   const visibleTasks = useMemo(() => mergeTaskStatuses(tasks, taskStatuses), [taskStatuses, tasks]);
@@ -446,7 +447,7 @@ export default function DailyActionPlan({
     }
 
     const nextParams = buildTaskSelectionSearchParams(
-      new URLSearchParams(searchParams.toString()),
+      new URLSearchParams(searchParams?.toString() ?? ""),
       productId,
     );
 
@@ -474,4 +475,36 @@ export default function DailyActionPlan({
       onAdvanceStatus={handleAdvanceStatus}
     />
   );
+}
+
+function DailyActionPlanStatic({
+  tasks,
+  selectedProductId,
+  onSelectTask,
+}: Pick<DailyActionPlanProps, "tasks" | "selectedProductId" | "onSelectTask">) {
+  return (
+    <DailyActionPlanPanel
+      tasks={tasks}
+      selectedProductId={selectedProductId ?? null}
+      onSelectTask={onSelectTask ?? (() => undefined)}
+      onAdvanceStatus={() => undefined}
+    />
+  );
+}
+
+export default function DailyActionPlan({
+  staticMode = false,
+  ...props
+}: DailyActionPlanProps) {
+  if (staticMode) {
+    return (
+      <DailyActionPlanStatic
+        tasks={props.tasks}
+        selectedProductId={props.selectedProductId}
+        onSelectTask={props.onSelectTask}
+      />
+    );
+  }
+
+  return <DailyActionPlanInteractive {...props} />;
 }

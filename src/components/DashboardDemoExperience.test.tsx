@@ -16,6 +16,7 @@ test("DashboardDemoExperience renders selected product before the risk table and
       rows={dashboardData.riskTable}
       productDetailsById={dashboardData.productDetailsById}
       monthlySavingsSeries={dashboardData.monthlySavingsSeries}
+      staticMode
     />,
   );
 
@@ -44,6 +45,8 @@ test("DashboardDemoExperience keeps the open-detail action visible when a produc
       rows={dashboardData.riskTable}
       productDetailsById={dashboardData.productDetailsById}
       monthlySavingsSeries={dashboardData.monthlySavingsSeries}
+      initialRequestedProductId={selectedProductId}
+      staticMode
     />,
   );
 

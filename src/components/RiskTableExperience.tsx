@@ -8,6 +8,7 @@ import {
   filterRiskTableRows,
   getVisibleSelectedProductId,
   parseRiskTableFilterValue,
+  type RiskTableFilterValue,
   updateRiskTableSearchParams,
 } from "@/lib/riskTableInteraction";
 
@@ -17,6 +18,9 @@ import RiskTable from "./RiskTable";
 type RiskTableExperienceProps = {
   rows: BranchDashboardData["riskTable"];
   productDetailsById: BranchDashboardData["productDetailsById"];
+  initialRequestedProductId?: string | null;
+  initialQuery?: string;
+  initialRiskFilter?: RiskTableFilterValue;
 };
 
 function buildUrl(pathname: string, searchParams: URLSearchParams) {
@@ -28,12 +32,18 @@ function buildUrl(pathname: string, searchParams: URLSearchParams) {
 export default function RiskTableExperience({
   rows,
   productDetailsById,
+  initialRequestedProductId = null,
+  initialQuery = "",
+  initialRiskFilter = "all",
 }: RiskTableExperienceProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const query = searchParams.get("q") ?? "";
-  const riskFilter = parseRiskTableFilterValue(searchParams.get("risk"));
-  const requestedProductId = searchParams.get("product");
+  const query = searchParams?.get("q") ?? initialQuery;
+  const requestedRiskFilter = searchParams?.get("risk");
+  const riskFilter = requestedRiskFilter
+    ? parseRiskTableFilterValue(requestedRiskFilter)
+    : initialRiskFilter;
+  const requestedProductId = searchParams?.get("product") ?? initialRequestedProductId;
   const filteredRows = useMemo(
     () => filterRiskTableRows(rows, query, riskFilter),
     [query, riskFilter, rows],
@@ -49,7 +59,7 @@ export default function RiskTableExperience({
       return;
     }
 
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       product: selectedProductId,
     });
 
@@ -57,7 +67,7 @@ export default function RiskTableExperience({
   }, [pathname, requestedProductId, searchParams, selectedProductId]);
 
   function handleSelectProduct(productId: string) {
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       product: productId,
     });
 
@@ -67,7 +77,7 @@ export default function RiskTableExperience({
   function handleSearchChange(nextQuery: string) {
     const nextFilteredRows = filterRiskTableRows(rows, nextQuery, riskFilter);
     const nextSelectedProductId = getVisibleSelectedProductId(nextFilteredRows, requestedProductId);
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       q: nextQuery,
       product: nextSelectedProductId,
     });
@@ -78,7 +88,7 @@ export default function RiskTableExperience({
   function handleRiskFilterChange(nextRiskFilter: "all" | "medium" | "high" | "critical") {
     const nextFilteredRows = filterRiskTableRows(rows, query, nextRiskFilter);
     const nextSelectedProductId = getVisibleSelectedProductId(nextFilteredRows, requestedProductId);
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       risk: nextRiskFilter,
       product: nextSelectedProductId,
     });
@@ -91,7 +101,7 @@ export default function RiskTableExperience({
       return;
     }
 
-    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams.toString()), {
+    const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       product: null,
     });
 

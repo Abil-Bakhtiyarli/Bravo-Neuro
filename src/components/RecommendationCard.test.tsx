@@ -89,8 +89,8 @@ const investigationRecommendation: ProductRecommendation = {
 test("RecommendationCard renders an empty state when no recommendation is available", () => {
   const markup = renderToStaticMarkup(<RecommendationCard recommendation={null} />);
 
-  assert.match(markup, /Recommendation card/);
-  assert.match(markup, /No recommendation is available for this product yet/);
+  assert.match(markup, /Recommended action/);
+  assert.match(markup, /does not need a primary action/);
 });
 
 test("RecommendationCard renders discount metrics", () => {

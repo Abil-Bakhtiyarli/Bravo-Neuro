@@ -1,0 +1,146 @@
+[
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-500g",
+    "categoryWasteRate": 0.16,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-300ml",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant",
+    "categoryWasteRate": 0.12,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-250g",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-200g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-1l",
+    "categoryWasteRate": 0.09,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-500g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-300ml",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant",
+    "categoryWasteRate": 0.09,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-250g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-200g",
+    "categoryWasteRate": 0.12,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-1l",
+    "categoryWasteRate": 0.06,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-500g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-300ml",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread",
+    "categoryWasteRate": 0.09,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-200g",
+    "categoryWasteRate": 0.09,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  }
+]

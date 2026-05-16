@@ -37,7 +37,7 @@ export default function MonthlySavingsChart({
 
   if (series.length === 0) {
     return (
-      <section className="rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)]">
+      <section className="animate-demo-fade-up rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)]">
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
           Monthly savings trend
         </div>
@@ -55,7 +55,7 @@ export default function MonthlySavingsChart({
   const sixMonthTotal = series.reduce((total, point) => total + point.netSavedValueAzN, 0);
 
   return (
-    <section className="rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)]">
+    <section className="animate-demo-fade-up rounded-3xl border border-border/80 bg-card/92 p-5 shadow-[0_20px_54px_-40px_rgba(15,23,42,0.55)]">
       <div className="flex items-center justify-between gap-3">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -70,9 +70,7 @@ export default function MonthlySavingsChart({
         </span>
       </div>
 
-      <p className="mt-3 text-sm leading-6 text-muted-foreground">
-        Six-month branch recovery trend from the seeded operations history.
-      </p>
+      <p className="mt-3 text-sm text-muted-foreground">Six-month recovery trend for the active branch.</p>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
         <div className="rounded-2xl border border-border/70 bg-background/88 px-3.5 py-3">
