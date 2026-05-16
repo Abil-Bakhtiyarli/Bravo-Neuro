@@ -26,11 +26,35 @@ test("DailyActionPlanPanel renders sorted recommendation-backed tasks", () => {
     />,
   );
 
-  assert.match(markup, /Manager handoff queue/);
+  assert.match(markup, /Today&#x27;s branch actions/);
   assert.match(markup, /Priority 1/);
   assert.match(markup, /Accept task/);
-  assert.match(markup, /Selected for detail/);
-  assert.match(markup, /Execution checklist/);
+  assert.match(markup, /Selected/);
+  assert.match(markup, /Selected task checklist/);
+  assert.match(markup, /Expected net saved/);
+  assert.doesNotMatch(markup, /Manager handoff queue/);
+  assert.doesNotMatch(markup, /Execution detail/);
+});
+
+test("DailyActionPlanPanel expands checklist only for the selected task", () => {
+  const [selectedTask, otherTask] = dashboardData.actionPlan;
+
+  assert.ok(selectedTask);
+  assert.ok(otherTask);
+
+  const markup = renderToStaticMarkup(
+    <DailyActionPlanPanel
+      tasks={dashboardData.actionPlan}
+      selectedProductId={selectedTask.productId}
+      onSelectTask={() => undefined}
+      onAdvanceStatus={() => undefined}
+    />,
+  );
+
+  assert.match(markup, new RegExp(selectedTask.checklistSteps[0] ?? ""));
+  assert.match(markup, new RegExp(selectedTask.checklistSteps[1] ?? ""));
+  assert.doesNotMatch(markup, new RegExp(otherTask.checklistSteps[0] ?? ""));
+  assert.doesNotMatch(markup, /Expand after acceptance/);
 });
 
 test("parsePersistedTaskStatuses hydrates only valid task ids and statuses", () => {

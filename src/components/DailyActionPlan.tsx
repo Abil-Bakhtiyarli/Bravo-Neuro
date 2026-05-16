@@ -6,10 +6,8 @@ import {
   ArrowRightLeft,
   BadgePercent,
   CheckCheck,
-  ChevronRight,
   CircleCheckBig,
   ClipboardList,
-  PackageSearch,
   RefreshCcw,
   ScanSearch,
   Store,
@@ -20,6 +18,7 @@ import type {
   ActionPlanItem,
   BranchId,
   RecommendationActionType,
+  RiskLevel,
   TaskStatus,
 } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -79,6 +78,32 @@ const actionTypeMeta: Record<
   },
 };
 
+const riskLevelMeta: Record<
+  RiskLevel,
+  {
+    label: string;
+    badgeClassName: string;
+  }
+> = {
+  critical: {
+    label: "Critical",
+    badgeClassName:
+      "border-rose-300/90 bg-rose-100/90 text-rose-800 animate-demo-soft-pulse-critical",
+  },
+  high: {
+    label: "High",
+    badgeClassName: "border-amber-300/90 bg-amber-100/90 text-amber-800",
+  },
+  medium: {
+    label: "Medium",
+    badgeClassName: "border-sky-300/90 bg-sky-100/90 text-sky-800",
+  },
+  low: {
+    label: "Low",
+    badgeClassName: "border-slate-300/90 bg-slate-100/90 text-slate-700",
+  },
+};
+
 const taskStatusMeta: Record<
   TaskStatus,
   {
@@ -133,6 +158,20 @@ function formatExpiry(daysUntilExpiry: number) {
   }
 
   return `${daysUntilExpiry} days left`;
+}
+
+function formatStockRiskSummary(task: ActionPlanItem) {
+  const scoreLabel = `${task.riskScore}/100 risk score`;
+
+  if (task.daysUntilExpiry <= 1) {
+    return `${scoreLabel}. Act ${task.daysUntilExpiry <= 0 ? "today" : "before tomorrow"} to avoid write-off.`;
+  }
+
+  if (task.daysUntilExpiry <= 3) {
+    return `${scoreLabel}. Short expiry window needs branch action this week.`;
+  }
+
+  return `${scoreLabel}. Exposure is rising and should be handled in this review cycle.`;
 }
 
 export function getTaskStorageKey(branchId: BranchId) {
@@ -210,33 +249,31 @@ export function DailyActionPlanPanel({
       <div className="border-b border-border/80 px-5 py-5 sm:px-6">
         <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           <span className="rounded-full border border-border/80 bg-accent/75 px-2.5 py-1">
-            Daily action plan
-          </span>
-          <span className="rounded-full border border-dashed border-border/80 px-2.5 py-1">
-            Manager execution queue
+            Priority queue
           </span>
         </div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
-          Manager handoff queue
+          Today&apos;s branch actions
         </h2>
         <p className="mt-3 text-sm leading-6 text-muted-foreground">
-          Recommendation-backed tasks stay branch-scoped, priority-ranked, and locally persistent
-          so the branch lead can move from review to execution without leaving the dashboard.
+          Review the highest-risk products first, keep the current selection in sync, and advance
+          task status without leaving the dashboard.
         </p>
       </div>
 
       <div className="space-y-3 p-4 sm:p-5">
         {tasks.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-border/75 bg-background/88 px-4 py-8 text-center text-sm leading-6 text-muted-foreground">
-            No manager actions are queued for this branch right now. Switch branches or revisit the risk filters if you need another product story.
+            No actions are queued for this branch right now. Switch branches to review another
+            product story.
           </div>
         ) : null}
         {tasks.map((task) => {
           const isSelected = task.productId === selectedProductId;
           const actionMeta = actionTypeMeta[task.actionType];
+          const riskMeta = riskLevelMeta[task.riskLevel];
           const statusMeta = taskStatusMeta[task.status];
           const ActionIcon = actionMeta.icon;
-          const isExpanded = task.status !== "pending";
 
           return (
             <article
@@ -249,6 +286,8 @@ export function DailyActionPlanPanel({
                 isSelected
                   ? "border-foreground/30 bg-accent/75 shadow-[0_18px_45px_-34px_rgba(15,23,42,0.7)]"
                   : "border-border/75",
+                task.priorityRank === 1 &&
+                  "border-rose-200/80 bg-gradient-to-r from-rose-50/85 via-background/94 to-background/94",
                 task.status === "completed" && "bg-emerald-50/45",
               )}
               onClick={() => onSelectTask(task.productId)}
@@ -259,11 +298,19 @@ export function DailyActionPlanPanel({
                 }
               }}
             >
-              <div className="flex items-start justify-between gap-3">
-                <div className="space-y-3">
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="rounded-full border border-border/75 bg-card/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/75">
                       Priority {task.priorityRank}
+                    </span>
+                    <span
+                      className={cn(
+                        "inline-flex rounded-full border px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em]",
+                        riskMeta.badgeClassName,
+                      )}
+                    >
+                      {riskMeta.label}
                     </span>
                     <span
                       className={cn(
@@ -282,103 +329,74 @@ export function DailyActionPlanPanel({
                     >
                       {statusMeta.label}
                     </span>
-                  </div>
-
-                  <div>
-                    <div className="flex flex-wrap items-center gap-2">
-                      <h3 className="text-base font-semibold text-foreground">{task.productName}</h3>
-                      {isSelected ? (
-                        <span className="rounded-full border border-foreground/20 bg-background/90 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/75">
-                          Selected for detail
-                        </span>
-                      ) : null}
-                    </div>
-                    <p className="mt-2 text-sm leading-6 text-foreground/80">{task.summary}</p>
-                  </div>
-                </div>
-
-                <div className="rounded-2xl border border-border/75 bg-card/90 px-3 py-2 text-right">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                    Expected net saved
-                  </p>
-                  <p className="mt-1 text-lg font-semibold text-foreground">
-                    {formatCurrency(task.expectedNetSavedValueAzN)}
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-2xl border border-border/70 bg-card/90 px-3.5 py-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                    Expiry window
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-foreground">
-                    {formatExpiry(task.daysUntilExpiry)}
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-border/70 bg-card/90 px-3.5 py-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                    Recovered value
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-foreground">
-                    {formatCurrency(task.expectedRecoveredValueAzN)}
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-border/70 bg-card/90 px-3.5 py-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                    Execution detail
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-foreground">
-                    {task.checklistSteps.length} steps ready
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 rounded-2xl border border-border/70 bg-card/90 p-4">
-                <div className="flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                    <ClipboardList className="size-4" />
-                    Execution checklist
-                  </div>
-                  <span className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground">
-                    {isExpanded ? "Expanded" : "Expand after acceptance"}
-                    <ChevronRight className={cn("size-4 transition-transform", isExpanded && "rotate-90")} />
-                  </span>
-                </div>
-                <ol className="mt-3 space-y-2">
-                  {(isExpanded ? task.checklistSteps : task.checklistSteps.slice(0, 1)).map((step, index) => (
-                    <li
-                      key={`${task.taskId}:step:${index + 1}`}
-                      className="flex gap-3 rounded-2xl border border-border/65 bg-background/88 px-3.5 py-3 text-sm leading-6 text-foreground/80"
-                    >
-                      <span className="mt-0.5 inline-flex size-6 shrink-0 items-center justify-center rounded-full border border-border/75 bg-card text-[11px] font-semibold text-foreground/75">
-                        {index + 1}
+                    {isSelected ? (
+                      <span className="rounded-full border border-foreground/20 bg-background/90 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/75">
+                        Selected
                       </span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
+                    ) : null}
+                  </div>
 
-              <div className="mt-4 flex items-center justify-between gap-3 border-t border-border/70 pt-4">
-                <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
-                  <PackageSearch className="size-4" />
-                  Open the product detail to review the supporting risk story and savings case.
+                  <div className="mt-3 flex flex-wrap items-start justify-between gap-3">
+                    <div className="min-w-0 flex-1">
+                      <h3 className="text-lg font-semibold text-foreground">{task.productName}</h3>
+                      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-foreground/80">
+                        <span>{formatExpiry(task.daysUntilExpiry)}</span>
+                        <span>{formatStockRiskSummary(task)}</span>
+                      </div>
+                      <p className="mt-2 text-sm leading-6 text-foreground/85">{task.summary}</p>
+                    </div>
+                    <div className="rounded-2xl border border-border/75 bg-card/90 px-3.5 py-3 text-left lg:min-w-36 lg:text-right">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                        Expected net saved
+                      </p>
+                      <p className="mt-1 text-xl font-semibold text-foreground">
+                        {formatCurrency(task.expectedNetSavedValueAzN)}
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
                 <Button
                   type="button"
                   size="sm"
                   variant={statusMeta.buttonVariant}
                   disabled={task.status === "completed"}
+                  className="shrink-0 lg:self-center"
                   onClick={(event) => {
                     event.stopPropagation();
                     onAdvanceStatus(task.taskId);
                   }}
                 >
-                  {task.status === "completed" ? <CheckCheck className="size-4" /> : <CircleCheckBig className="size-4" />}
+                  {task.status === "completed" ? (
+                    <CheckCheck className="size-4" />
+                  ) : (
+                    <CircleCheckBig className="size-4" />
+                  )}
                   {statusMeta.buttonLabel}
                 </Button>
               </div>
+
+              {isSelected ? (
+                <div className="mt-4 rounded-2xl border border-border/70 bg-card/90 p-4">
+                  <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    <ClipboardList className="size-4" />
+                    Selected task checklist
+                  </div>
+                  <ol className="mt-3 space-y-2">
+                    {task.checklistSteps.map((step, index) => (
+                      <li
+                        key={`${task.taskId}:step:${index + 1}`}
+                        className="flex gap-3 rounded-2xl border border-border/65 bg-background/88 px-3.5 py-3 text-sm leading-6 text-foreground/80"
+                      >
+                        <span className="mt-0.5 inline-flex size-6 shrink-0 items-center justify-center rounded-full border border-border/75 bg-card text-[11px] font-semibold text-foreground/75">
+                          {index + 1}
+                        </span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ) : null}
             </article>
           );
         })}
