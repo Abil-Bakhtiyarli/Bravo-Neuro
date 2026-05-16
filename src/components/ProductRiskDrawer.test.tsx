@@ -20,7 +20,9 @@ test("ProductRiskDrawer renders the selected product story when open", () => {
   assert.match(markup, /Risk score/);
   assert.match(markup, /Top drivers/);
   assert.match(markup, /Explanation/);
-  assert.match(markup, /Recommendation summary/);
+  assert.match(markup, /Recommendation card/);
+  assert.match(markup, /Launch markdown today/);
+  assert.match(markup, /Base markdown/);
   assert.match(markup, /Savings summary/);
   assert.match(markup, /Possible waste/);
   assert.match(markup, /Net saved value/);
@@ -32,5 +34,5 @@ test("ProductRiskDrawer omits content when closed", () => {
   );
 
   assert.doesNotMatch(markup, /Greek Yogurt 500g/);
-  assert.doesNotMatch(markup, /Recommendation summary/);
+  assert.doesNotMatch(markup, /Recommendation card/);
 });

@@ -18,12 +18,12 @@ import {
 import { categoryLabels } from "@/lib/riskTableInteraction";
 import type {
   ProductDetailData,
-  RecommendationActionType,
   RiskComponentScore,
   RiskLevel,
 } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
+import RecommendationCard from "./RecommendationCard";
 import { Button } from "./ui/button";
 
 type ProductRiskDrawerProps = {
@@ -65,14 +65,6 @@ const riskLevelStyles: Record<
     panel: "from-emerald-100/95 via-white to-emerald-50/80",
     label: "Low",
   },
-};
-
-const actionTypeLabels: Record<RecommendationActionType, string> = {
-  discount: "Dynamic discount",
-  transfer: "Transfer candidate",
-  "reorder-adjustment": "Reorder adjustment",
-  "shelf-action": "Shelf action",
-  investigation: "Investigation",
 };
 
 function formatCurrency(value: number) {
@@ -339,26 +331,7 @@ export default function ProductRiskDrawer({
                 ) : null}
 
                 <section className="mt-6 grid gap-4 lg:grid-cols-2">
-                  <div className="rounded-3xl border border-border/75 bg-card/90 p-5">
-                    <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                      <ArrowRightLeft className="size-4" />
-                      Recommendation summary
-                    </div>
-                    {detail.recommendation ? (
-                      <>
-                        <div className="mt-4 inline-flex rounded-full border border-border/75 bg-background/88 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/75">
-                          {actionTypeLabels[detail.recommendation.actionType]}
-                        </div>
-                        <p className="mt-4 text-sm leading-6 text-foreground/85">
-                          {detail.recommendation.summary}
-                        </p>
-                      </>
-                    ) : (
-                      <p className="mt-4 text-sm leading-6 text-muted-foreground">
-                        No recommendation is available for this product yet.
-                      </p>
-                    )}
-                  </div>
+                  <RecommendationCard recommendation={detail.recommendation} />
 
                   <div className="rounded-3xl border border-border/75 bg-card/90 p-5">
                     <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -387,7 +360,7 @@ export default function ProductRiskDrawer({
                     )}
                     <div className="mt-4 flex items-center gap-2 rounded-2xl border border-border/70 bg-background/88 px-3.5 py-3 text-xs font-medium text-muted-foreground">
                       <CircleDollarSign className="size-4" />
-                      Parts 16 and 17 will promote these summaries into dedicated action and impact cards.
+                      Part 17 will promote this block into the dedicated savings comparison card.
                     </div>
                   </div>
                 </section>
