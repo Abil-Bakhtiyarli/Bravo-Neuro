@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, the Part 9 header and branch control, the Part 10 KPI card UI, the Part 11 KPI data wiring slice, the Part 12 risk table UI slice, and the Part 13 risk table data wiring slice: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, an active URL-backed branch header, polished reusable KPI cards, live branch-aware KPI values wired from the canonical dashboard data contract while keeping tasks-today visible, a dedicated presentational risk table component with urgency badges and action framing, and the homepage risk table now fed directly from the canonical branch dashboard payload.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, the Part 9 header and branch control, the Part 10 KPI card UI, the Part 11 KPI data wiring slice, the Part 12 risk table UI slice, the Part 13 risk table data wiring slice, and the Part 14 interaction layer: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, an active URL-backed branch header, polished reusable KPI cards, live branch-aware KPI values wired from the canonical dashboard data contract while keeping tasks-today visible, a risk table with urgency badges and action framing, the homepage risk table fed directly from the canonical branch dashboard payload, and URL-backed row selection plus real search and risk filtering that prepare the product drawer flow without introducing route handlers.
 
 ## Repo Structure
 
@@ -21,6 +21,8 @@ bravo-neuro/
 |   |   +-- DashboardHeader.tsx
 |   |   +-- KpiCards.tsx
 |   |   +-- RiskTable.tsx
+|   |   +-- RiskTableController.tsx
+|   |   +-- ProductDetailHint.tsx
 |   |   +-- ProductRiskDrawer.tsx        (planned, not created yet)
 |   |   +-- RecommendationCard.tsx       (planned, not created yet)
 |   |   +-- DailyActionPlan.tsx          (planned, not created yet)
@@ -46,6 +48,8 @@ bravo-neuro/
 |       +-- dashboardData.test.ts
 |       +-- dashboardKpiPresentation.ts
 |       +-- dashboardKpiPresentation.test.ts
+|       +-- riskTableInteraction.ts
+|       +-- riskTableInteraction.test.ts
 |       \-- formatters.ts                (planned, not created yet)
 +-- data/
 |   +-- .gitkeep
@@ -92,7 +96,8 @@ Part 10 is complete: `src/components/KpiCards.tsx` now provides a reusable KPI s
 Part 11 is complete: `src/app/page.tsx` now resolves the selected branch on the server, loads the canonical branch dashboard payload from `src/lib/dashboardData.ts`, and maps the four visible KPI cards to live branch-aware values and copy through `src/lib/dashboardKpiPresentation.ts`, while intentionally keeping `tasks-today` visible and leaving risk-table, drawer, and task interaction work for later parts.
 Part 12 is complete: `src/components/RiskTable.tsx` now provides the polished presentation surface for the risk table, including static filter shells, urgency styling, risk badges, and action labels.
 Part 13 is complete: `src/app/page.tsx` now feeds `src/components/RiskTable.tsx` from the canonical branch-aware `riskTable` payload in `src/lib/dashboardData.ts`, so branch changes now update both KPI cards and risk rows from one server snapshot while keeping the table presentation-only.
-Part 14 and later will add row interaction, drawer detail, task interaction, and only add route handlers if a public HTTP surface is still needed.
+Part 14 is complete: `src/components/RiskTableController.tsx`, `src/components/RiskTable.tsx`, `src/components/ProductDetailHint.tsx`, and `src/lib/riskTableInteraction.ts` now provide clickable URL-backed row selection, real search and risk-level filtering, invalid-selection cleanup across branch/filter changes, and a lightweight selected-product bridge so Part 15 can attach the drawer without changing the state model.
+Part 15 and later will add the real drawer payload, recommendation/savings detail surfaces, task interaction, and only add route handlers if a public HTTP surface is still needed.
 
 ## Part 1 Seed Data
 
@@ -120,8 +125,8 @@ The seed dataset is designed for the hackathon story in the technical plan:
 
 `src/components/DashboardLayout.tsx` and `src/app/page.tsx` are the canonical Part 8 layout foundation. They define the responsive dashboard shell and placeholder regions that later parts will replace with KPI cards, risk table rows, drawer content, and task actions.
 
-`src/components/DashboardHeader.tsx` is the canonical Part 9 header and branch-control surface. It is intentionally the only client component in this slice: it updates visible branch state and the `?branch=` URL parameter while leaving KPI cards, table rows, action-plan content, and product-detail data wiring reserved for later parts.
+`src/components/DashboardHeader.tsx` is the canonical Part 9 header and branch-control surface. It keeps branch switching URL-backed and now clears stale product selection when the branch changes, while leaving KPI computation in the server page and deeper drawer/task logic for later parts.
 
 `src/components/KpiCards.tsx` is the canonical KPI presentation surface. It remains presentation-only: Part 10 established the reusable card UI, and Part 11 now feeds it live branch-aware values, helper text, icons, and status badges without moving dashboard data logic into the component itself.
 
-`src/components/RiskTable.tsx` is the canonical risk-table presentation surface. It remains presentation-only: Part 12 established the polished rows, risk/action visual mapping, and static control shells, and Part 13 now feeds it live branch `riskTable` data from `src/lib/dashboardData.ts`.
+`src/components/RiskTable.tsx`, `src/components/RiskTableController.tsx`, and `src/lib/riskTableInteraction.ts` are the canonical Part 14 risk interaction surface. Part 12 established the polished rows, Part 13 fed them from the live branch `riskTable` payload, and Part 14 now adds client-side URL-backed selection plus real query/risk filtering while keeping the page-level data load on the server.

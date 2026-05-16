@@ -64,6 +64,7 @@ export default function DashboardHeader({
   function handleBranchChange(nextBranchId: BranchId) {
     const nextParams = new URLSearchParams(searchParams.toString());
     nextParams.set("branch", nextBranchId);
+    nextParams.delete("product");
     router.replace(`${pathname}?${nextParams.toString()}`, { scroll: false });
   }
 
@@ -142,7 +143,7 @@ export default function DashboardHeader({
             {formatDemoDate(generatedAt)}
           </p>
           <div className="mt-4 rounded-xl border border-dashed border-border/80 bg-card/70 px-3 py-2 text-xs leading-5 text-muted-foreground">
-            The branch URL is ready for later KPI and table data wiring.
+            Branch changes keep the dashboard server-driven and reset stale product selection.
           </div>
         </div>
       </div>

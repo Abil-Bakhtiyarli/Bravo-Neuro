@@ -1,18 +1,15 @@
 import {
   AlertTriangle,
-  ArrowRightLeft,
   BanknoteArrowDown,
   CalendarClock,
-  CircleCheckBig,
-  FlaskConical,
   PackageSearch,
-  TrendingUp,
 } from "lucide-react";
 
 import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
 import KpiCards, { type KpiCardItem } from "@/components/KpiCards";
-import RiskTable from "@/components/RiskTable";
+import ProductDetailHint from "@/components/ProductDetailHint";
+import RiskTableController from "@/components/RiskTableController";
 import { getAvailableBranchOptions, getDashboardData } from "@/lib/dashboardData";
 import {
   buildDashboardKpiPresentationItems,
@@ -75,11 +72,11 @@ const actionPlanRows = [
 ] as const;
 
 type MainPaneProps = {
-  rows: Parameters<typeof RiskTable>[0]["rows"];
+  rows: ReturnType<typeof getDashboardData>["riskTable"];
 };
 
 function MainPane({ rows }: MainPaneProps) {
-  return <RiskTable rows={rows} />;
+  return <RiskTableController rows={rows} />;
 }
 
 function SidePane() {
@@ -133,84 +130,8 @@ function SidePane() {
   );
 }
 
-function DetailHint() {
-  return (
-    <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-      <div className="rounded-3xl border border-dashed border-border/80 bg-background/72 p-5">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              Product detail drawer
-            </p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
-              Reserved product story canvas
-            </h2>
-          </div>
-          <FlaskConical className="mt-1 size-5 text-muted-foreground" />
-        </div>
-        <p className="mt-4 max-w-3xl text-sm leading-6 text-muted-foreground">
-          Later parts will replace this reserved surface with the selected
-          product drawer: risk score, top drivers, explanation text,
-          recommendation card, and savings comparison card.
-        </p>
-        <div className="mt-6 grid gap-3 sm:grid-cols-3">
-          <div className="rounded-2xl border border-border/75 bg-card/80 p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              Risk explanation
-            </p>
-            <div className="mt-4 h-2.5 rounded-full bg-muted/80" />
-            <div className="mt-3 h-2.5 w-4/5 rounded-full bg-muted/70" />
-            <div className="mt-3 h-2.5 w-3/5 rounded-full bg-muted/60" />
-          </div>
-          <div className="rounded-2xl border border-border/75 bg-card/80 p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              Recommendation
-            </p>
-            <div className="mt-4 flex items-center gap-2 text-sm text-foreground/80">
-              <ArrowRightLeft className="size-4 text-muted-foreground" />
-              Action card placeholder
-            </div>
-            <div className="mt-3 h-2.5 w-2/3 rounded-full bg-muted/70" />
-          </div>
-          <div className="rounded-2xl border border-border/75 bg-card/80 p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              Savings
-            </p>
-            <div className="mt-4 flex items-center gap-2 text-sm text-foreground/80">
-              <TrendingUp className="size-4 text-muted-foreground" />
-              AZN impact placeholder
-            </div>
-            <div className="mt-3 h-2.5 w-1/2 rounded-full bg-muted/70" />
-          </div>
-        </div>
-      </div>
-
-      <div className="rounded-3xl border border-border/80 bg-card/88 p-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-          Part boundary
-        </p>
-        <h2 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
-          What starts next
-        </h2>
-        <ul className="mt-5 space-y-3 text-sm leading-6 text-muted-foreground">
-          <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
-            <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-            Part 9 locked in the real header structure and URL-backed branch control.
-          </li>
-          <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
-            <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-            Parts 10 and 11 now cover reusable KPI presentation and live branch-aware
-            values.
-          </li>
-          <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
-            <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-            Part 12 now locks the risk table presentation before Parts 13-18 activate
-            live rows, drawer detail, recommendations, savings, and tasks.
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+function DetailHint({ rows }: MainPaneProps) {
+  return <ProductDetailHint rows={rows} />;
 }
 
 type HomeProps = {
@@ -253,7 +174,7 @@ export default async function Home({ searchParams }: HomeProps) {
       kpiStrip={<KpiCards items={kpiCards} />}
       mainPane={<MainPane rows={dashboardData.riskTable} />}
       sidePane={<SidePane />}
-      detailHint={<DetailHint />}
+      detailHint={<DetailHint rows={dashboardData.riskTable} />}
     />
   );
 }

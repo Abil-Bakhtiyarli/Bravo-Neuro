@@ -1,10 +1,17 @@
 import { Search, SlidersHorizontal } from "lucide-react";
 
-import type { ProductCategory, RecommendationActionType, RiskLevel, RiskTableItem } from "@/lib/types";
+import { categoryLabels, type RiskTableFilterValue } from "@/lib/riskTableInteraction";
+import type { RecommendationActionType, RiskLevel, RiskTableItem } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export type RiskTableProps = {
   rows: readonly RiskTableItem[];
+  searchValue: string;
+  riskFilter: RiskTableFilterValue;
+  selectedProductId: string | null;
+  onSearchChange: (value: string) => void;
+  onRiskFilterChange: (value: RiskTableFilterValue) => void;
+  onSelectProduct: (productId: string) => void;
 };
 
 const riskLevelStyles: Record<
@@ -66,13 +73,6 @@ const actionStyles: Record<
   },
 };
 
-const categoryLabels: Record<ProductCategory, string> = {
-  dairy: "Dairy",
-  bakery: "Bakery",
-  "fruits-vegetables": "Fruit & veg",
-  drinks: "Drinks",
-};
-
 function formatExpiry(daysUntilExpiry: number) {
   if (daysUntilExpiry <= 0) {
     return "Expires today";
@@ -122,7 +122,15 @@ function getExpiryTone(daysUntilExpiry: number) {
   return "text-foreground/80";
 }
 
-export default function RiskTable({ rows }: RiskTableProps) {
+export default function RiskTable({
+  rows,
+  searchValue,
+  riskFilter,
+  selectedProductId,
+  onSearchChange,
+  onRiskFilterChange,
+  onSelectProduct,
+}: RiskTableProps) {
   return (
     <div className="rounded-3xl border border-border/80 bg-card/92 shadow-[0_24px_60px_-46px_rgba(15,23,42,0.55)]">
       <div className="flex flex-col gap-5 border-b border-border/80 px-5 py-5 sm:px-6">
@@ -155,10 +163,16 @@ export default function RiskTable({ rows }: RiskTableProps) {
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 Search
               </p>
-              <div className="mt-2 flex items-center gap-2 rounded-xl border border-border/80 bg-card px-3 py-2.5 text-sm text-muted-foreground">
+              <label className="mt-2 flex items-center gap-2 rounded-xl border border-border/80 bg-card px-3 py-2.5 text-sm text-muted-foreground focus-within:border-foreground/30 focus-within:ring-2 focus-within:ring-foreground/10">
                 <Search className="size-4" />
-                Search product or category
-              </div>
+                <input
+                  aria-label="Search product or category"
+                  className="w-full bg-transparent text-foreground outline-none placeholder:text-muted-foreground"
+                  placeholder="Search product or category"
+                  value={searchValue}
+                  onChange={(event) => onSearchChange(event.target.value)}
+                />
+              </label>
             </div>
             <div className="rounded-2xl border border-border/75 bg-background/80 p-3">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -174,7 +188,17 @@ export default function RiskTable({ rows }: RiskTableProps) {
                 Risk level
               </p>
               <div className="mt-2 flex items-center justify-between gap-2 rounded-xl border border-border/80 bg-card px-3 py-2.5 text-sm text-foreground/80">
-                Medium to critical
+                <select
+                  aria-label="Filter by risk level"
+                  className="w-full bg-transparent outline-none"
+                  value={riskFilter}
+                  onChange={(event) => onRiskFilterChange(event.target.value as RiskTableFilterValue)}
+                >
+                  <option value="all">All active risk rows</option>
+                  <option value="critical">Critical only</option>
+                  <option value="high">High only</option>
+                  <option value="medium">Medium only</option>
+                </select>
                 <SlidersHorizontal className="size-4 text-muted-foreground" />
               </div>
             </div>
@@ -198,13 +222,34 @@ export default function RiskTable({ rows }: RiskTableProps) {
             {rows.map((row) => {
               const risk = riskLevelStyles[row.riskLevel];
               const action = actionStyles[row.actionType];
+              const isSelected = row.productId === selectedProductId;
 
               return (
                 <tr
                   key={`${row.branchId}:${row.productId}`}
-                  className="group transition-transform duration-200 hover:-translate-y-0.5"
+                  tabIndex={0}
+                  aria-selected={isSelected}
+                  data-selected={isSelected ? "true" : "false"}
+                  className={cn(
+                    "group cursor-pointer outline-none transition-transform duration-200 hover:-translate-y-0.5 focus-visible:-translate-y-0.5",
+                    isSelected && "translate-y-[-1px]",
+                  )}
+                  onClick={() => onSelectProduct(row.productId)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      onSelectProduct(row.productId);
+                    }
+                  }}
                 >
-                  <td className="relative overflow-hidden rounded-l-2xl border-y border-l border-border/75 bg-background/85 px-3 py-4 align-middle shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200 group-hover:bg-background">
+                  <td
+                    className={cn(
+                      "relative overflow-hidden rounded-l-2xl border-y border-l px-3 py-4 align-middle shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200",
+                      isSelected
+                        ? "border-foreground/30 bg-accent/80"
+                        : "border-border/75 bg-background/85 group-hover:bg-background",
+                    )}
+                  >
                     <span
                       className={cn(
                         "absolute inset-y-3 left-0 w-1 rounded-full",
@@ -213,16 +258,37 @@ export default function RiskTable({ rows }: RiskTableProps) {
                       aria-hidden="true"
                     />
                     <div className="min-w-[14rem] pl-2">
-                      <p className="font-medium text-foreground">{row.productName}</p>
+                      <div className="flex items-center justify-between gap-3">
+                        <p className="font-medium text-foreground">{row.productName}</p>
+                        {isSelected ? (
+                          <span className="rounded-full border border-foreground/20 bg-background/90 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/75">
+                            Selected for detail
+                          </span>
+                        ) : null}
+                      </div>
                       <p className="mt-1 text-sm text-muted-foreground">
                         Score {row.riskScore} | possible waste {formatCurrency(row.possibleLossAzN)}
                       </p>
                     </div>
                   </td>
-                  <td className="border-y border-border/75 bg-background/85 px-3 py-4 text-sm text-foreground/80 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200 group-hover:bg-background">
+                  <td
+                    className={cn(
+                      "border-y px-3 py-4 text-sm text-foreground/80 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200",
+                      isSelected
+                        ? "border-foreground/30 bg-accent/80"
+                        : "border-border/75 bg-background/85 group-hover:bg-background",
+                    )}
+                  >
                     {categoryLabels[row.category]}
                   </td>
-                  <td className="border-y border-border/75 bg-background/85 px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200 group-hover:bg-background">
+                  <td
+                    className={cn(
+                      "border-y px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200",
+                      isSelected
+                        ? "border-foreground/30 bg-accent/80"
+                        : "border-border/75 bg-background/85 group-hover:bg-background",
+                    )}
+                  >
                     <div className="space-y-1">
                       <p className="text-sm font-medium text-foreground">
                         {formatStock(row.totalStock)}
@@ -232,7 +298,14 @@ export default function RiskTable({ rows }: RiskTableProps) {
                       </p>
                     </div>
                   </td>
-                  <td className="border-y border-border/75 bg-background/85 px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200 group-hover:bg-background">
+                  <td
+                    className={cn(
+                      "border-y px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200",
+                      isSelected
+                        ? "border-foreground/30 bg-accent/80"
+                        : "border-border/75 bg-background/85 group-hover:bg-background",
+                    )}
+                  >
                     <div className="space-y-1">
                       <p className={cn("text-sm font-medium", getExpiryTone(row.daysUntilExpiry))}>
                         {formatExpiry(row.daysUntilExpiry)}
@@ -242,7 +315,14 @@ export default function RiskTable({ rows }: RiskTableProps) {
                       </p>
                     </div>
                   </td>
-                  <td className="border-y border-border/75 bg-background/85 px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200 group-hover:bg-background">
+                  <td
+                    className={cn(
+                      "border-y px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200",
+                      isSelected
+                        ? "border-foreground/30 bg-accent/80"
+                        : "border-border/75 bg-background/85 group-hover:bg-background",
+                    )}
+                  >
                     <span
                       className={cn(
                         "inline-flex rounded-full border px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.16em]",
@@ -252,7 +332,14 @@ export default function RiskTable({ rows }: RiskTableProps) {
                       {risk.label}
                     </span>
                   </td>
-                  <td className="rounded-r-2xl border-y border-r border-border/75 bg-background/85 px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200 group-hover:bg-background">
+                  <td
+                    className={cn(
+                      "rounded-r-2xl border-y border-r px-3 py-4 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)] transition-colors duration-200",
+                      isSelected
+                        ? "border-foreground/30 bg-accent/80"
+                        : "border-border/75 bg-background/85 group-hover:bg-background",
+                    )}
+                  >
                     <div className="flex min-w-[16rem] flex-col gap-2">
                       <div className="flex items-center justify-between gap-3">
                         <span
@@ -280,6 +367,11 @@ export default function RiskTable({ rows }: RiskTableProps) {
             })}
           </tbody>
         </table>
+        {rows.length === 0 ? (
+          <div className="px-4 py-10 text-center text-sm text-muted-foreground">
+            No products match the current search and risk filters.
+          </div>
+        ) : null}
       </div>
     </div>
   );

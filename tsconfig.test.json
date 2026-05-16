@@ -27,6 +27,10 @@
     "src/lib/dashboardData.ts",
     "src/lib/dashboardData.test.ts",
     "src/lib/dashboardKpiPresentation.ts",
-    "src/lib/dashboardKpiPresentation.test.ts"
+    "src/lib/dashboardKpiPresentation.test.ts",
+    "src/lib/riskTableInteraction.ts",
+    "src/lib/riskTableInteraction.test.ts",
+    "src/components/RiskTable.tsx",
+    "src/components/RiskTable.test.tsx"
   ]
 }
