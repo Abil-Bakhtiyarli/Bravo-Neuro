@@ -12,12 +12,13 @@ import {
 import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
 import KpiCards, { type KpiCardItem } from "@/components/KpiCards";
+import RiskTable from "@/components/RiskTable";
 import { getAvailableBranchOptions, getDashboardData } from "@/lib/dashboardData";
 import {
   buildDashboardKpiPresentationItems,
   type DashboardKpiPresentationItem,
 } from "@/lib/dashboardKpiPresentation";
-import type { BranchId } from "@/lib/types";
+import type { BranchId, RiskTableItem } from "@/lib/types";
 
 function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
   switch (item.key) {
@@ -46,38 +47,70 @@ function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
   }
 }
 
-const placeholderRows = [
+const placeholderRows: readonly RiskTableItem[] = [
   {
-    product: "Greek Yogurt 500g",
-    category: "Dairy",
-    stock: "30 units",
-    expiry: "1 day",
-    risk: "Critical",
-    action: "Dynamic discount",
+    branchId: "ganjlik",
+    productId: "greek-yogurt-500g",
+    productName: "Greek Yogurt 500g",
+    category: "dairy",
+    riskLevel: "critical",
+    riskScore: 92,
+    daysUntilExpiry: 1,
+    totalStock: 30,
+    daysOfStockRemaining: 4.2,
+    actionType: "discount",
+    recommendationSummary:
+      "Launch a 35% markdown block before the lunchtime window to accelerate sell-through on near-expiry chilled stock.",
+    netSavedValueAzN: 11,
+    possibleLossAzN: 16,
   },
   {
-    product: "Butter Croissant",
-    category: "Bakery",
-    stock: "20 units",
-    expiry: "1 day",
-    risk: "High",
-    action: "Dynamic discount",
+    branchId: "ganjlik",
+    productId: "butter-croissant",
+    productName: "Butter Croissant",
+    category: "bakery",
+    riskLevel: "high",
+    riskScore: 84,
+    daysUntilExpiry: 1,
+    totalStock: 20,
+    daysOfStockRemaining: 2.8,
+    actionType: "discount",
+    recommendationSummary:
+      "Promote an afternoon bakery markdown to clear the excess queue before evening waste collection starts.",
+    netSavedValueAzN: 7,
+    possibleLossAzN: 10,
   },
   {
-    product: "Sourdough Bread",
-    category: "Bakery",
-    stock: "24 units",
-    expiry: "2 days",
-    risk: "High",
-    action: "Dynamic discount",
+    branchId: "yasamal",
+    productId: "sourdough-bread",
+    productName: "Sourdough Bread",
+    category: "bakery",
+    riskLevel: "high",
+    riskScore: 79,
+    daysUntilExpiry: 2,
+    totalStock: 24,
+    daysOfStockRemaining: 3.6,
+    actionType: "reorder-adjustment",
+    recommendationSummary:
+      "Reduce the next replenishment cycle while current stock coverage stays above expected bakery demand.",
+    netSavedValueAzN: 9,
+    possibleLossAzN: 12,
   },
   {
-    product: "Strawberries 250g",
-    category: "Fruit",
-    stock: "18 units",
-    expiry: "3 days",
-    risk: "High",
-    action: "Transfer candidate",
+    branchId: "may28",
+    productId: "strawberries-250g",
+    productName: "Strawberries 250g",
+    category: "fruits-vegetables",
+    riskLevel: "high",
+    riskScore: 76,
+    daysUntilExpiry: 3,
+    totalStock: 18,
+    daysOfStockRemaining: 5.1,
+    actionType: "transfer",
+    recommendationSummary:
+      "Move the excess trays to the faster commuter branch while freshness still supports same-day resale.",
+    netSavedValueAzN: 13,
+    possibleLossAzN: 17,
   },
 ] as const;
 
@@ -109,94 +142,7 @@ const actionPlanRows = [
 ] as const;
 
 function MainPane() {
-  return (
-    <div className="rounded-3xl border border-border/80 bg-card/92 shadow-[0_24px_60px_-46px_rgba(15,23,42,0.55)]">
-      <div className="flex flex-col gap-4 border-b border-border/80 px-5 py-5 sm:px-6">
-        <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              Product risk table
-            </p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
-              Products needing attention
-            </h2>
-          </div>
-          <div className="flex flex-wrap gap-2 text-xs font-medium text-muted-foreground">
-            <span className="rounded-full border border-border/80 bg-background/80 px-3 py-1.5">
-              Search placeholder
-            </span>
-            <span className="rounded-full border border-border/80 bg-background/80 px-3 py-1.5">
-              Category filter later
-            </span>
-            <span className="rounded-full border border-dashed border-border/80 px-3 py-1.5">
-              Risk badge states later
-            </span>
-          </div>
-        </div>
-        <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
-          Static rows below reserve the exact story arc for later parts:
-          expiry pressure, action urgency, and one clear recommended next step
-          per product.
-        </p>
-      </div>
-
-      <div className="overflow-x-auto px-3 pb-3 sm:px-4 sm:pb-4">
-        <table className="min-w-full border-separate border-spacing-y-3 text-left">
-          <thead>
-            <tr className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              <th className="px-3 pt-3 pb-1">Product</th>
-              <th className="px-3 pt-3 pb-1">Category</th>
-              <th className="px-3 pt-3 pb-1">Stock</th>
-              <th className="px-3 pt-3 pb-1">Expiry</th>
-              <th className="px-3 pt-3 pb-1">Risk</th>
-              <th className="px-3 pt-3 pb-1">Recommended action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {placeholderRows.map((row, index) => (
-              <tr
-                key={row.product}
-                className="rounded-2xl border border-border/75 bg-background/82 shadow-[0_12px_30px_-28px_rgba(15,23,42,0.8)]"
-              >
-                <td className="rounded-l-2xl border-y border-l border-border/75 px-3 py-4 align-middle">
-                  <div className="min-w-[12rem]">
-                    <p className="font-medium text-foreground">{row.product}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Product story slot #{index + 1}
-                    </p>
-                  </div>
-                </td>
-                <td className="border-y border-border/75 px-3 py-4 text-sm text-foreground/80">
-                  {row.category}
-                </td>
-                <td className="border-y border-border/75 px-3 py-4 text-sm text-foreground/80">
-                  {row.stock}
-                </td>
-                <td className="border-y border-border/75 px-3 py-4 text-sm text-foreground/80">
-                  {row.expiry}
-                </td>
-                <td className="border-y border-border/75 px-3 py-4">
-                  <span className="inline-flex rounded-full border border-border/80 bg-muted/80 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-foreground/75">
-                    {row.risk}
-                  </span>
-                </td>
-                <td className="rounded-r-2xl border-y border-r border-border/75 px-3 py-4">
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="text-sm font-medium text-foreground/85">
-                      {row.action}
-                    </span>
-                    <span className="hidden rounded-full border border-border/80 bg-card px-2.5 py-1 text-xs font-medium text-muted-foreground sm:inline-flex">
-                      Click state later
-                    </span>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
+  return <RiskTable rows={placeholderRows} />;
 }
 
 function SidePane() {
@@ -316,13 +262,13 @@ function DetailHint() {
           </li>
           <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
             <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-            Part 10 now replaces the KPI placeholders with reusable presentation
-            cards, while Part 11 wires them to live values.
+            Parts 10 and 11 now cover reusable KPI presentation and live branch-aware
+            values.
           </li>
           <li className="flex items-start gap-3 rounded-2xl border border-border/70 bg-background/80 p-3.5">
             <CircleCheckBig className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-            Parts 12-18 progressively activate the table, drawer, recommendation,
-            savings, and task workflow.
+            Part 12 now locks the risk table presentation before Parts 13-18 activate
+            live rows, drawer detail, recommendations, savings, and tasks.
           </li>
         </ul>
       </div>
