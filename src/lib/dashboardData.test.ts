@@ -39,12 +39,28 @@ test("getDashboardData returns a serializable branch dashboard payload", () => {
   assert.deepEqual(serialized, dashboardData);
   assert.equal(dashboardData.branch.branchId, "ganjlik");
   assert.equal(dashboardData.generatedAt, "2026-05-15T00:00:00.000Z");
+  assert.equal(dashboardData.monthlySavingsSeries.length, 6);
+  assert.deepEqual(
+    dashboardData.monthlySavingsSeries.map((item) => item.monthKey),
+    ["2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05"],
+  );
   assert.equal(dashboardData.riskTable.length, dashboardData.actionPlan.length);
   assert.deepEqual(dashboardData.topProductIds, dashboardData.riskTable.map((item) => item.productId));
   assert.deepEqual(
     Object.keys(dashboardData.productDetailsById),
     dashboardData.riskTable.map((item) => item.productId),
   );
+});
+
+test("monthly savings history changes with the selected branch", () => {
+  const ganjlik = getDashboardData("ganjlik");
+  const may28 = getDashboardData("may28");
+
+  assert.equal(ganjlik.monthlySavingsSeries.length, 6);
+  assert.equal(may28.monthlySavingsSeries.length, 6);
+  assert.notDeepEqual(ganjlik.monthlySavingsSeries, may28.monthlySavingsSeries);
+  assert.equal(ganjlik.monthlySavingsSeries.at(-1)?.netSavedValueAzN, 46.2);
+  assert.equal(may28.monthlySavingsSeries.at(-1)?.netSavedValueAzN, 5);
 });
 
 test("dashboard KPI totals match the branch savings summary", () => {

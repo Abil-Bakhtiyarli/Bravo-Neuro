@@ -3,10 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.seedDataSummary = exports.wasteHistory = exports.discountHistory = exports.salesHistory = exports.inventory = exports.products = exports.branches = exports.SEED_REFERENCE_DATE = void 0;
+exports.seedDataSummary = exports.monthlySavingsHistory = exports.wasteHistory = exports.discountHistory = exports.salesHistory = exports.inventory = exports.products = exports.branches = exports.SEED_REFERENCE_DATE = void 0;
+exports.validateMonthlySavingsHistoryRecords = validateMonthlySavingsHistoryRecords;
 const branches_json_1 = __importDefault(require("../../data/branches.json"));
 const discount_history_json_1 = __importDefault(require("../../data/discount_history.json"));
 const inventory_json_1 = __importDefault(require("../../data/inventory.json"));
+const monthly_savings_history_json_1 = __importDefault(require("../../data/monthly_savings_history.json"));
 const products_json_1 = __importDefault(require("../../data/products.json"));
 const sales_history_json_1 = __importDefault(require("../../data/sales_history.json"));
 const waste_history_json_1 = __importDefault(require("../../data/waste_history.json"));
@@ -17,6 +19,7 @@ exports.inventory = inventory_json_1.default;
 exports.salesHistory = sales_history_json_1.default;
 exports.discountHistory = discount_history_json_1.default;
 exports.wasteHistory = waste_history_json_1.default;
+exports.monthlySavingsHistory = monthly_savings_history_json_1.default;
 function invariant(condition, message) {
     if (!condition) {
         throw new Error(`Seed data invariant failed: ${message}`);
@@ -29,6 +32,50 @@ function daysUntil(dateString) {
 }
 function buildLookup(records) {
     return new Set(records.map((record) => `${record.branchId}:${record.productId}`));
+}
+function compareMonthKey(a, b) {
+    return a.localeCompare(b);
+}
+function validateMonthlySavingsHistoryRecords(records, validBranchIds) {
+    invariant(records.length > 0, "expected monthly savings history to exist");
+    const branchIdSet = new Set(validBranchIds);
+    const recordsByBranch = new Map();
+    for (const record of records) {
+        invariant(branchIdSet.has(record.branchId), `unknown branchId in monthly savings history: ${record.branchId}`);
+        invariant(/^\d{4}-\d{2}$/.test(record.monthKey), `invalid monthKey in monthly savings history: ${record.monthKey}`);
+        invariant(record.monthLabel.length >= 3, `monthLabel must be present for ${record.monthKey}`);
+        invariant(record.netSavedValueAzN >= 0 &&
+            record.recoveredValueAzN >= 0 &&
+            record.possibleLossAzN >= 0 &&
+            record.taskCount >= 0, `monthly savings values must be non-negative for ${record.branchId} ${record.monthKey}`);
+        invariant(record.possibleLossAzN >= record.recoveredValueAzN &&
+            record.recoveredValueAzN >= record.netSavedValueAzN, `monthly savings hierarchy must satisfy possible >= recovered >= net for ${record.branchId} ${record.monthKey}`);
+        invariant(Number.isInteger(record.taskCount), `taskCount must be an integer for ${record.branchId} ${record.monthKey}`);
+        const branchRecords = recordsByBranch.get(record.branchId) ?? [];
+        branchRecords.push(record);
+        recordsByBranch.set(record.branchId, branchRecords);
+    }
+    const expectedMonths = [...new Set(records.map((record) => record.monthKey))].sort(compareMonthKey);
+    invariant(expectedMonths.length === 6, "expected exactly 6 monthly savings history points");
+    for (const branchId of validBranchIds) {
+        const branchRecords = [...(recordsByBranch.get(branchId) ?? [])].sort((a, b) => compareMonthKey(a.monthKey, b.monthKey));
+        invariant(branchRecords.length === expectedMonths.length, `expected a full monthly history window for ${branchId}`);
+        invariant(new Set(branchRecords.map((record) => record.monthKey)).size === branchRecords.length, `monthly history contains duplicate monthKey values for ${branchId}`);
+        invariant(branchRecords.every((record, index) => record.monthKey === expectedMonths[index]), `monthly history for ${branchId} must follow the shared month window order`);
+        invariant(new Set(branchRecords.map((record) => record.netSavedValueAzN)).size > 1, `monthly history for ${branchId} must show real variation`);
+    }
+    const latestMonth = expectedMonths.at(-1);
+    invariant(latestMonth !== undefined, "expected a latest month in monthly savings history");
+    const latestNetSavedByBranch = new Map();
+    for (const branchId of validBranchIds) {
+        const latestRecord = recordsByBranch
+            .get(branchId)
+            ?.find((record) => record.monthKey === latestMonth);
+        invariant(latestRecord, `missing latest monthly history point for ${branchId}`);
+        latestNetSavedByBranch.set(branchId, latestRecord.netSavedValueAzN);
+    }
+    invariant((latestNetSavedByBranch.get("ganjlik") ?? 0) > (latestNetSavedByBranch.get("yasamal") ?? 0) &&
+        (latestNetSavedByBranch.get("yasamal") ?? 0) > (latestNetSavedByBranch.get("may28") ?? 0), "latest monthly savings should preserve the seeded branch performance ranking");
 }
 function validateSeedData() {
     invariant(exports.branches.length === 3, "expected exactly 3 branches");
@@ -97,6 +144,7 @@ function validateSeedData() {
             stock <= record.avgDailySales * 3);
     });
     invariant(hasLowRiskCase, "expected at least one low-risk case");
+    validateMonthlySavingsHistoryRecords(exports.monthlySavingsHistory, exports.branches.map((branch) => branch.branchId));
 }
 validateSeedData();
 exports.seedDataSummary = {
@@ -106,4 +154,5 @@ exports.seedDataSummary = {
     salesRecordCount: exports.salesHistory.length,
     discountRecordCount: exports.discountHistory.length,
     wasteRecordCount: exports.wasteHistory.length,
+    monthlySavingsHistoryCount: exports.monthlySavingsHistory.length,
 };

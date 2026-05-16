@@ -167,8 +167,8 @@ export default function ProductRiskDrawer({
                       {detail.product.name}
                     </Dialog.Title>
                     <Dialog.Description className="mt-3 max-w-2xl text-sm leading-6 text-foreground/78">
-                      Zoom into one risk story: why this item is exposed, which action is recommended,
-                      and how much value the branch can still recover.
+                      Review why this item is exposed, which action the branch should take first,
+                      and how much value is still recoverable from the current situation.
                     </Dialog.Description>
                   </div>
 

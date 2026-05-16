@@ -6,7 +6,7 @@ import {
 import { generateRecommendationsForBranch } from "./recommendationEngine";
 import { calculateWasteRisk, calculateWasteRiskForBranch } from "./riskScore";
 import { attachSavingsToRecommendation, summarizeBranchSavings } from "./savings";
-import { SEED_REFERENCE_DATE } from "./seedData";
+import { monthlySavingsHistory, SEED_REFERENCE_DATE } from "./seedData";
 import type {
   ActionPlanItem,
   Branch,
@@ -15,6 +15,7 @@ import type {
   BranchProductLookup,
   DashboardKpi,
   LoaderOptions,
+  MonthlySavingsSeriesPoint,
   ProductDetailData,
   ProductId,
   ProductRecommendation,
@@ -163,6 +164,10 @@ function buildKpis(
   ];
 }
 
+function buildMonthlySavingsSeries(branchId: BranchId): MonthlySavingsSeriesPoint[] {
+  return monthlySavingsHistory.filter((entry) => entry.branchId === branchId);
+}
+
 function buildRiskTableItem(entry: DashboardRecommendationEntry): RiskTableItem {
   return {
     branchId: entry.record.branch.branchId,
@@ -259,6 +264,7 @@ export function getDashboardData(
     branch: bundle.branch,
     generatedAt: bundle.generatedAt,
     kpis: buildKpis(bundle.recommendationEntries, bundle.records),
+    monthlySavingsSeries: buildMonthlySavingsSeries(branchId),
     riskTable: bundle.recommendationEntries.map(buildRiskTableItem),
     actionPlan: rankActionPlanItems(bundle.recommendationEntries.map(buildActionPlanItem)),
     topProductIds: bundle.recommendationEntries.map((entry) => entry.record.product.productId),

@@ -37,5 +37,5 @@ test("SavingsCard keeps a dedicated empty state when savings data is missing", (
   );
 
   assert.match(markup, /Savings comparison/);
-  assert.match(markup, /not available for this product yet/);
+  assert.match(markup, /does not currently carry a separate before-and-after savings scenario/);
 });

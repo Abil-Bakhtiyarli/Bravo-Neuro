@@ -71,6 +71,16 @@ export type WasteHistory = {
   previousWasteUnits: number;
 };
 
+export type MonthlySavingsSeriesPoint = {
+  branchId: BranchId;
+  monthKey: string;
+  monthLabel: string;
+  netSavedValueAzN: number;
+  recoveredValueAzN: number;
+  possibleLossAzN: number;
+  taskCount: number;
+};
+
 export type LoaderOptions = {
   referenceDate?: string;
 };
@@ -316,6 +326,7 @@ export type BranchDashboardData = {
   branch: Branch;
   generatedAt: string;
   kpis: DashboardKpi[];
+  monthlySavingsSeries: MonthlySavingsSeriesPoint[];
   riskTable: RiskTableItem[];
   actionPlan: ActionPlanItem[];
   topProductIds: ProductId[];

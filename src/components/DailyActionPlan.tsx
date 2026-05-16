@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import {
   ArrowRightLeft,
@@ -211,7 +211,7 @@ export function DailyActionPlanPanel({
             Daily action plan
           </span>
           <span className="rounded-full border border-dashed border-border/80 px-2.5 py-1">
-            Local task workflow
+            Manager execution queue
           </span>
         </div>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
@@ -219,11 +219,16 @@ export function DailyActionPlanPanel({
         </h2>
         <p className="mt-3 text-sm leading-6 text-muted-foreground">
           Recommendation-backed tasks stay branch-scoped, priority-ranked, and locally persistent
-          so the demo can show a real accept-to-complete flow without route handlers.
+          so the branch lead can move from review to execution without leaving the dashboard.
         </p>
       </div>
 
       <div className="space-y-3 p-4 sm:p-5">
+        {tasks.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-border/75 bg-background/88 px-4 py-8 text-center text-sm leading-6 text-muted-foreground">
+            No manager actions are queued for this branch right now. Switch branches or revisit the risk filters if you need another product story.
+          </div>
+        ) : null}
         {tasks.map((task) => {
           const isSelected = task.productId === selectedProductId;
           const actionMeta = actionTypeMeta[task.actionType];
@@ -356,7 +361,7 @@ export function DailyActionPlanPanel({
               <div className="mt-4 flex items-center justify-between gap-3 border-t border-border/70 pt-4">
                 <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
                   <PackageSearch className="size-4" />
-                  Open product detail drawer to review the supporting risk story.
+                  Open the product drawer to review the supporting risk story and savings case.
                 </div>
                 <Button
                   type="button"
@@ -384,16 +389,16 @@ export default function DailyActionPlan({ branchId, tasks }: DailyActionPlanProp
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const selectedProductId = searchParams.get("product");
-  const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>({});
+  const [taskStatuses, setTaskStatuses] = useState<TaskStatusMap>(() => {
+    if (typeof window === "undefined") {
+      return {};
+    }
 
-  useEffect(() => {
-    setTaskStatuses(
-      parsePersistedTaskStatuses(
-        window.localStorage.getItem(getTaskStorageKey(branchId)),
-        tasks.map((task) => task.taskId),
-      ),
+    return parsePersistedTaskStatuses(
+      window.localStorage.getItem(getTaskStorageKey(branchId)),
+      tasks.map((task) => task.taskId),
     );
-  }, [branchId, tasks]);
+  });
 
   const visibleTasks = useMemo(() => mergeTaskStatuses(tasks, taskStatuses), [taskStatuses, tasks]);
 

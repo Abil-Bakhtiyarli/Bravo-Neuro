@@ -59,4 +59,5 @@ test("RiskTable keeps visible badge labels and action framing", () => {
   assert.match(markup, /Critical/);
   assert.match(markup, /Dynamic discount/);
   assert.match(markup, /Search product or category/);
+  assert.match(markup, /Rows in view/);
 });

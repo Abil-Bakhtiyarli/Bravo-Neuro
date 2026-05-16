@@ -104,6 +104,9 @@ function buildKpis(recommendationEntries, records) {
         },
     ];
 }
+function buildMonthlySavingsSeries(branchId) {
+    return seedData_1.monthlySavingsHistory.filter((entry) => entry.branchId === branchId);
+}
 function buildRiskTableItem(entry) {
     return {
         branchId: entry.record.branch.branchId,
@@ -173,6 +176,7 @@ function getDashboardData(branchId, options) {
         branch: bundle.branch,
         generatedAt: bundle.generatedAt,
         kpis: buildKpis(bundle.recommendationEntries, bundle.records),
+        monthlySavingsSeries: buildMonthlySavingsSeries(branchId),
         riskTable: bundle.recommendationEntries.map(buildRiskTableItem),
         actionPlan: (0, actionPlan_1.rankActionPlanItems)(bundle.recommendationEntries.map(buildActionPlanItem)),
         topProductIds: bundle.recommendationEntries.map((entry) => entry.record.product.productId),

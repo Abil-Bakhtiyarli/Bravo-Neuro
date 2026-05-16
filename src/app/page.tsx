@@ -10,6 +10,7 @@ import DailyActionPlan from "@/components/DailyActionPlan";
 import DashboardHeader from "@/components/DashboardHeader";
 import DashboardLayout from "@/components/DashboardLayout";
 import KpiCards, { type KpiCardItem } from "@/components/KpiCards";
+import MonthlySavingsChart from "@/components/MonthlySavingsChart";
 import RiskTableExperience from "@/components/RiskTableExperience";
 import { getAvailableBranchOptions, getDashboardData } from "@/lib/dashboardData";
 import {
@@ -103,7 +104,15 @@ export default async function Home({ searchParams }: HomeProps) {
           tasks={dashboardData.actionPlan}
         />
       }
-      kpiRail={<KpiCards items={kpiCards} orientation="rail" />}
+      kpiRail={
+        <div className="space-y-4">
+          <MonthlySavingsChart
+            branchName={dashboardData.branch.branchName}
+            series={dashboardData.monthlySavingsSeries}
+          />
+          <KpiCards items={kpiCards} orientation="rail" />
+        </div>
+      }
       bottomSection={
         <RiskTablePane
           rows={dashboardData.riskTable}

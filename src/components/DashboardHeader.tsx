@@ -76,7 +76,7 @@ export default function DashboardHeader({
             Bravo Neuro
           </span>
           <span className="rounded-full border border-dashed border-border/80 px-2.5 py-1">
-            Part 10 KPI cards active
+            Part 19 demo polish
           </span>
         </div>
         <div className="space-y-2">
@@ -84,9 +84,8 @@ export default function DashboardHeader({
             Retail waste-risk operations dashboard for branch-level decisions.
           </h1>
           <p className="max-w-3xl text-sm leading-6 text-muted-foreground sm:text-base">
-            Branch control is now URL-backed for the demo flow. KPI values, risk
-            rows, drawer detail, and manager tasks remain staged for the later
-            data-wiring parts.
+            Track branch waste exposure, monthly protected value, product-level risk,
+            and manager actions from one server-driven demo snapshot.
           </p>
         </div>
       </div>
@@ -143,7 +142,7 @@ export default function DashboardHeader({
             {formatDemoDate(generatedAt)}
           </p>
           <div className="mt-4 rounded-xl border border-dashed border-border/80 bg-card/70 px-3 py-2 text-xs leading-5 text-muted-foreground">
-            Branch changes keep the dashboard server-driven and reset stale product selection.
+            Changing branches refreshes the chart, KPI rail, risk queue, and drawer context together.
           </div>
         </div>
       </div>

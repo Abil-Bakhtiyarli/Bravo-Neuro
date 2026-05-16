@@ -29,7 +29,7 @@ const actionPresentation: Record<
     accent: "border-rose-200 bg-rose-50 text-rose-700",
   },
   transfer: {
-    badge: "Transfer candidate",
+    badge: "Stock transfer",
     title: "Move stock to faster branch",
     icon: Truck,
     accent: "border-sky-200 bg-sky-50 text-sky-700",
@@ -170,10 +170,10 @@ export default function RecommendationCard({ recommendation }: RecommendationCar
       <div className="rounded-3xl border border-border/75 bg-card/90 p-5">
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
           <ArrowRightLeft className="size-4" />
-          Recommendation card
+          Recommended action
         </div>
         <p className="mt-4 text-sm leading-6 text-muted-foreground">
-          No recommendation is available for this product yet.
+          This product does not need a primary action in the current branch snapshot.
         </p>
       </div>
     );
@@ -187,7 +187,7 @@ export default function RecommendationCard({ recommendation }: RecommendationCar
     <div className="rounded-3xl border border-border/75 bg-card/90 p-5">
       <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
         <ArrowRightLeft className="size-4" />
-        Recommendation card
+        Recommended action
       </div>
 
       <div className="mt-4 rounded-3xl border border-border/75 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,250,252,0.92))] p-4">

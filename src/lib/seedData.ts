@@ -1,6 +1,7 @@
 import branchesJson from "../../data/branches.json";
 import discountHistoryJson from "../../data/discount_history.json";
 import inventoryJson from "../../data/inventory.json";
+import monthlySavingsHistoryJson from "../../data/monthly_savings_history.json";
 import productsJson from "../../data/products.json";
 import salesHistoryJson from "../../data/sales_history.json";
 import wasteHistoryJson from "../../data/waste_history.json";
@@ -10,6 +11,7 @@ import type {
   BranchId,
   DiscountHistory,
   InventoryLot,
+  MonthlySavingsSeriesPoint,
   Product,
   ProductId,
   SalesHistory,
@@ -24,6 +26,7 @@ export const inventory = inventoryJson as InventoryLot[];
 export const salesHistory = salesHistoryJson as SalesHistory[];
 export const discountHistory = discountHistoryJson as DiscountHistory[];
 export const wasteHistory = wasteHistoryJson as WasteHistory[];
+export const monthlySavingsHistory = monthlySavingsHistoryJson as MonthlySavingsSeriesPoint[];
 
 function invariant(condition: unknown, message: string): asserts condition {
   if (!condition) {
@@ -41,6 +44,95 @@ function buildLookup<T extends { branchId: BranchId; productId: ProductId }>(
   records: T[],
 ) {
   return new Set(records.map((record) => `${record.branchId}:${record.productId}`));
+}
+
+function compareMonthKey(a: string, b: string) {
+  return a.localeCompare(b);
+}
+
+export function validateMonthlySavingsHistoryRecords(
+  records: readonly MonthlySavingsSeriesPoint[],
+  validBranchIds: readonly BranchId[],
+) {
+  invariant(records.length > 0, "expected monthly savings history to exist");
+
+  const branchIdSet = new Set(validBranchIds);
+  const recordsByBranch = new Map<BranchId, MonthlySavingsSeriesPoint[]>();
+
+  for (const record of records) {
+    invariant(
+      branchIdSet.has(record.branchId),
+      `unknown branchId in monthly savings history: ${record.branchId}`,
+    );
+    invariant(
+      /^\d{4}-\d{2}$/.test(record.monthKey),
+      `invalid monthKey in monthly savings history: ${record.monthKey}`,
+    );
+    invariant(record.monthLabel.length >= 3, `monthLabel must be present for ${record.monthKey}`);
+    invariant(
+      record.netSavedValueAzN >= 0 &&
+        record.recoveredValueAzN >= 0 &&
+        record.possibleLossAzN >= 0 &&
+        record.taskCount >= 0,
+      `monthly savings values must be non-negative for ${record.branchId} ${record.monthKey}`,
+    );
+    invariant(
+      record.possibleLossAzN >= record.recoveredValueAzN &&
+        record.recoveredValueAzN >= record.netSavedValueAzN,
+      `monthly savings hierarchy must satisfy possible >= recovered >= net for ${record.branchId} ${record.monthKey}`,
+    );
+    invariant(
+      Number.isInteger(record.taskCount),
+      `taskCount must be an integer for ${record.branchId} ${record.monthKey}`,
+    );
+
+    const branchRecords = recordsByBranch.get(record.branchId) ?? [];
+    branchRecords.push(record);
+    recordsByBranch.set(record.branchId, branchRecords);
+  }
+
+  const expectedMonths = [...new Set(records.map((record) => record.monthKey))].sort(compareMonthKey);
+  invariant(expectedMonths.length === 6, "expected exactly 6 monthly savings history points");
+
+  for (const branchId of validBranchIds) {
+    const branchRecords = [...(recordsByBranch.get(branchId) ?? [])].sort((a, b) =>
+      compareMonthKey(a.monthKey, b.monthKey),
+    );
+    invariant(
+      branchRecords.length === expectedMonths.length,
+      `expected a full monthly history window for ${branchId}`,
+    );
+    invariant(
+      new Set(branchRecords.map((record) => record.monthKey)).size === branchRecords.length,
+      `monthly history contains duplicate monthKey values for ${branchId}`,
+    );
+    invariant(
+      branchRecords.every((record, index) => record.monthKey === expectedMonths[index]),
+      `monthly history for ${branchId} must follow the shared month window order`,
+    );
+    invariant(
+      new Set(branchRecords.map((record) => record.netSavedValueAzN)).size > 1,
+      `monthly history for ${branchId} must show real variation`,
+    );
+  }
+
+  const latestMonth = expectedMonths.at(-1);
+  invariant(latestMonth !== undefined, "expected a latest month in monthly savings history");
+
+  const latestNetSavedByBranch = new Map<BranchId, number>();
+  for (const branchId of validBranchIds) {
+    const latestRecord = recordsByBranch
+      .get(branchId)
+      ?.find((record) => record.monthKey === latestMonth);
+    invariant(latestRecord, `missing latest monthly history point for ${branchId}`);
+    latestNetSavedByBranch.set(branchId, latestRecord.netSavedValueAzN);
+  }
+
+  invariant(
+    (latestNetSavedByBranch.get("ganjlik") ?? 0) > (latestNetSavedByBranch.get("yasamal") ?? 0) &&
+      (latestNetSavedByBranch.get("yasamal") ?? 0) > (latestNetSavedByBranch.get("may28") ?? 0),
+    "latest monthly savings should preserve the seeded branch performance ranking",
+  );
 }
 
 function validateSeedData() {
@@ -169,6 +261,8 @@ function validateSeedData() {
     );
   });
   invariant(hasLowRiskCase, "expected at least one low-risk case");
+
+  validateMonthlySavingsHistoryRecords(monthlySavingsHistory, branches.map((branch) => branch.branchId));
 }
 
 validateSeedData();
@@ -180,4 +274,5 @@ export const seedDataSummary = {
   salesRecordCount: salesHistory.length,
   discountRecordCount: discountHistory.length,
   wasteRecordCount: wasteHistory.length,
+  monthlySavingsHistoryCount: monthlySavingsHistory.length,
 } as const;

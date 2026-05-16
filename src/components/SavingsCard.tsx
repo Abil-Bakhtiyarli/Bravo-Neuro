@@ -72,7 +72,7 @@ export default function SavingsCard({ recommendation, savings, unitPriceAzN }: S
           Savings comparison
         </div>
         <p className="mt-4 text-sm leading-6 text-muted-foreground">
-          A dedicated before-and-after savings comparison is not available for this product yet.
+          This product does not currently carry a separate before-and-after savings scenario.
         </p>
       </div>
     );

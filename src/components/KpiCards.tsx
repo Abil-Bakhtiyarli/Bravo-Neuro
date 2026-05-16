@@ -68,7 +68,7 @@ export default function KpiCards({ items, orientation = "grid" }: KpiCardsProps)
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                    KPI signal
+                    Branch KPI
                   </p>
                   <h2 className="mt-2 text-sm font-medium text-foreground/85">
                     {item.label}
@@ -99,7 +99,7 @@ export default function KpiCards({ items, orientation = "grid" }: KpiCardsProps)
               <div className="mt-auto pt-5">
                 <div className="h-px bg-border/70" />
                 <p className="mt-3 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
-                  Mock KPI card for Part 10
+                  Synced with the current branch snapshot
                 </p>
               </div>
             </div>

@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, the Part 9 header and branch control, the Part 10 KPI card UI, the Part 11 KPI data wiring slice, the Part 12 risk table UI slice, the Part 13 risk table data wiring slice, the Part 14 interaction layer, the Part 15 product detail drawer, the Part 16 recommendation card, the Part 17 savings comparison card, and the Part 18 daily action plan: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, an active URL-backed branch header, a five-card KPI presentation including net saved value, live branch-aware KPI values wired from the canonical dashboard data contract, a left-column manager handoff queue followed by the risk table, a right-side vertical KPI rail, URL-backed row selection plus real search and risk filtering, a real product drawer with preloaded detail payloads, a dedicated action-specific recommendation card, a dedicated before/after savings comparison card with cost treatment and methodology copy, and a recommendation-backed task rail with local accept/complete persistence and checklist guidance, all without adding route handlers.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, the Part 9 header and branch control, the Part 10 KPI card UI, the Part 11 KPI data wiring slice, the Part 12 risk table UI slice, the Part 13 risk table data wiring slice, the Part 14 interaction layer, the Part 15 product detail drawer, the Part 16 recommendation card, the Part 17 savings comparison card, the Part 18 daily action plan, and the Part 19 demo polish pass: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, an active URL-backed branch header, a live monthly net-saved chart in the right rail, five live branch-aware KPI cards, a left-column manager handoff queue followed by the risk table, URL-backed row selection plus real search and risk filtering, a real product drawer with preloaded detail payloads, a dedicated action-specific recommendation card, a dedicated before/after savings comparison card with cost treatment and methodology copy, a recommendation-backed task rail with local accept/complete persistence and checklist guidance, and a polished branch-consistent copy/empty-state layer, all without adding route handlers.
 
 ## Repo Structure
 
@@ -20,6 +20,7 @@ bravo-neuro/
 |   |   +-- setup-progress-chart.tsx      (legacy Part 0 artifact, no longer used by `/`)
 |   |   +-- DashboardHeader.tsx
 |   |   +-- KpiCards.tsx
+|   |   +-- MonthlySavingsChart.tsx
 |   |   +-- RiskTable.tsx
 |   |   +-- RiskTableExperience.tsx
 |   |   +-- ProductRiskDrawer.tsx
@@ -60,7 +61,8 @@ bravo-neuro/
 |   +-- inventory.json
 |   +-- sales_history.json
 |   +-- discount_history.json
-|   \-- waste_history.json
+|   +-- waste_history.json
+|   \-- monthly_savings_history.json
 +-- public/
 |   +-- file.svg
 |   +-- globe.svg
@@ -103,7 +105,7 @@ Part 15 is complete: `src/components/RiskTableExperience.tsx`, `src/components/P
 Part 16 is complete: `src/components/RecommendationCard.tsx` and `src/components/ProductRiskDrawer.tsx` now turn the drawer recommendation summary into a dedicated action card with action-type framing, manager-ready emphasis, and type-specific metrics for discount, transfer, reorder adjustment, shelf action, and investigation flows while leaving savings and task execution for later parts.
 Part 17 is complete: `src/components/SavingsCard.tsx`, `src/components/ProductRiskDrawer.tsx`, `src/lib/savingsComparison.ts`, and `src/lib/savings.ts` now turn the old savings summary block into a dedicated before/after comparison card with explicit recovered value, action cost, residual exposure, waste avoided, and methodology copy, while also fixing transfer cost semantics so the UI still reflects one shared savings calculator.
 Part 18 is complete: `src/components/DailyActionPlan.tsx`, `src/app/page.tsx`, `src/lib/actionPlan.ts`, `src/lib/dashboardData.ts`, and `src/lib/types.ts` now replace the static side rail with a real recommendation-backed manager queue that stays branch-scoped, priority-ranked, locally persistent across refreshes, and wired to the existing product drawer flow through the `product` query parameter while keeping all task state route-free.
-Part 19 and later can polish the demo further and only add route handlers if a public HTTP surface is still needed.
+Part 19 is complete: `data/monthly_savings_history.json`, `src/lib/seedData.ts`, `src/lib/dashboardData.ts`, `src/lib/types.ts`, `src/components/MonthlySavingsChart.tsx`, `src/app/page.tsx`, and the active presentation surfaces now add a real branch-scoped six-month net-saved chart above the KPI rail, validate seeded monthly history, and polish stale copy, badges, spacing, and empty states so the demo feels branch-aware instead of staged.
 
 ## Part 1 Seed Data
 
@@ -113,6 +115,7 @@ The seed dataset is designed for the hackathon story in the technical plan:
 - 8 products across dairy, bakery, fruits/vegetables, and drinks
 - per-lot inventory records with expiry dates for expiry-driven risk logic
 - sales, discount, and waste history aligned to the same branch/product pairs
+- monthly branch savings history aligned to the same branch personas
 - at least one critical expiry case, transfer-favorable case, reorder-reduction case, and low-risk case
 
 `src/lib/seedData.ts` is the canonical raw seed import surface. It loads all JSON seed files, exports typed arrays, and runs lightweight import-time invariants for referential integrity and scenario coverage.
@@ -138,3 +141,5 @@ The seed dataset is designed for the hackathon story in the technical plan:
 `src/components/RiskTable.tsx`, `src/components/RiskTableExperience.tsx`, `src/components/ProductRiskDrawer.tsx`, and `src/lib/riskTableInteraction.ts` are the canonical Parts 14-15 risk interaction surface. Part 12 established the polished rows, Part 13 fed them from the live branch `riskTable` payload, Part 14 added client-side URL-backed selection plus real query/risk filtering, and Part 15 now turns that same selection into a real overlay drawer backed by preloaded `productDetailsById` data from `src/lib/dashboardData.ts`.
 
 `src/lib/actionPlan.ts`, `src/components/DailyActionPlan.tsx`, and the enriched `actionPlan` payload in `src/lib/dashboardData.ts` are the canonical Part 18 manager workflow surface. They turn each recommendation into one ranked parent task with action-specific checklist guidance, expose the queue to the page as serializable server data, and let the client layer persist `pending -> accepted -> completed` status locally per branch without introducing route handlers or a database.
+
+`data/monthly_savings_history.json`, `src/lib/seedData.ts`, `src/lib/dashboardData.ts`, and `src/components/MonthlySavingsChart.tsx` are the canonical Part 19 branch-history surface. They add one validated six-month net-saved series per branch, preload that series into the server snapshot, and render it as the right-rail chart above the KPI cards so branch switching updates the full story together.

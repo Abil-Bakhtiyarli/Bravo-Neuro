@@ -36,4 +36,5 @@ const rows = [
     strict_1.default.match(markup, /Critical/);
     strict_1.default.match(markup, /Dynamic discount/);
     strict_1.default.match(markup, /Search product or category/);
+    strict_1.default.match(markup, /Rows in view/);
 });

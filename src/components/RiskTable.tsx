@@ -57,7 +57,7 @@ const actionStyles: Record<
   },
   transfer: {
     badge: "border-violet-200/90 bg-violet-50/90 text-violet-700",
-    label: "Transfer candidate",
+    label: "Stock transfer",
   },
   "reorder-adjustment": {
     badge: "border-cyan-200/90 bg-cyan-50/90 text-cyan-700",
@@ -141,7 +141,7 @@ export default function RiskTable({
                 Risk watchlist
               </span>
               <span className="rounded-full border border-dashed border-border/80 px-2.5 py-1">
-                Live branch feed
+                Branch risk queue
               </span>
             </div>
             <div>
@@ -153,8 +153,8 @@ export default function RiskTable({
               </h2>
             </div>
             <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
-              The table now reflects the selected branch&apos;s live risk snapshot with
-              priority ordering, urgency cues, and action framing.
+              Review the selected branch&apos;s products in priority order, then open the drawer
+              to confirm the risk story and action economics.
             </p>
           </div>
 
@@ -176,10 +176,10 @@ export default function RiskTable({
             </div>
             <div className="rounded-2xl border border-border/75 bg-background/80 p-3">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Category
+                Rows in view
               </p>
               <div className="mt-2 flex items-center justify-between gap-2 rounded-xl border border-border/80 bg-card px-3 py-2.5 text-sm text-foreground/80">
-                All categories
+                <span>{rows.length} products</span>
                 <SlidersHorizontal className="size-4 text-muted-foreground" />
               </div>
             </div>
@@ -311,7 +311,7 @@ export default function RiskTable({
                         {formatExpiry(row.daysUntilExpiry)}
                       </p>
                       <p className="text-xs text-muted-foreground">
-                        Priority window for intervention
+                        Intervention window before the next expiry check
                       </p>
                     </div>
                   </td>
@@ -351,14 +351,14 @@ export default function RiskTable({
                           {action.label}
                         </span>
                         <span className="text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
-                          Live signal
+                          Estimated outcome
                         </span>
                       </div>
                       <p className="text-sm leading-6 text-foreground/80">
                         {row.recommendationSummary}
                       </p>
                       <p className="text-xs font-medium text-muted-foreground">
-                        Net recovery signal {formatCurrency(row.netSavedValueAzN)}
+                        Estimated net saved {formatCurrency(row.netSavedValueAzN)}
                       </p>
                     </div>
                   </td>
@@ -369,7 +369,7 @@ export default function RiskTable({
         </table>
         {rows.length === 0 ? (
           <div className="px-4 py-10 text-center text-sm text-muted-foreground">
-            No products match the current search and risk filters.
+            No products match the current search and risk filter. Clear the search text or widen the risk level to rebuild the queue.
           </div>
         ) : null}
       </div>

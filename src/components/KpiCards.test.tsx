@@ -33,7 +33,7 @@ test("KpiCards renders the default grid presentation", () => {
   assert.match(markup, /xl:grid-cols-4/);
   assert.match(markup, /Possible waste/);
   assert.match(markup, /Net saved value/);
-  assert.match(markup, /Mock KPI card for Part 10/);
+  assert.match(markup, /Synced with the current branch snapshot/);
 });
 
 test("KpiCards supports a vertical rail presentation", () => {
