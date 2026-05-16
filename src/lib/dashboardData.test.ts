@@ -66,6 +66,33 @@ test("riskTable includes only medium, high, and critical products", () => {
   );
 });
 
+test("riskTable stays priority-sorted by risk level, score, then expiry urgency", () => {
+  const dashboardData = getDashboardData("ganjlik");
+  const riskPriority = {
+    critical: 3,
+    high: 2,
+    medium: 1,
+    low: 0,
+  } as const;
+
+  for (let index = 0; index < dashboardData.riskTable.length - 1; index += 1) {
+    const current = dashboardData.riskTable[index];
+    const next = dashboardData.riskTable[index + 1];
+    const currentPriority = riskPriority[current.riskLevel];
+    const nextPriority = riskPriority[next.riskLevel];
+
+    assert.ok(currentPriority >= nextPriority);
+
+    if (currentPriority === nextPriority) {
+      assert.ok(current.riskScore >= next.riskScore);
+
+      if (current.riskScore === next.riskScore) {
+        assert.ok(current.daysUntilExpiry <= next.daysUntilExpiry);
+      }
+    }
+  }
+});
+
 test("action plan count stays aligned with recommendation-backed risk rows", () => {
   const dashboardData = getDashboardData("ganjlik");
 

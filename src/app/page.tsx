@@ -18,7 +18,7 @@ import {
   buildDashboardKpiPresentationItems,
   type DashboardKpiPresentationItem,
 } from "@/lib/dashboardKpiPresentation";
-import type { BranchId, RiskTableItem } from "@/lib/types";
+import type { BranchId } from "@/lib/types";
 
 function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
   switch (item.key) {
@@ -47,73 +47,6 @@ function toKpiCardItem(item: DashboardKpiPresentationItem): KpiCardItem {
   }
 }
 
-const placeholderRows: readonly RiskTableItem[] = [
-  {
-    branchId: "ganjlik",
-    productId: "greek-yogurt-500g",
-    productName: "Greek Yogurt 500g",
-    category: "dairy",
-    riskLevel: "critical",
-    riskScore: 92,
-    daysUntilExpiry: 1,
-    totalStock: 30,
-    daysOfStockRemaining: 4.2,
-    actionType: "discount",
-    recommendationSummary:
-      "Launch a 35% markdown block before the lunchtime window to accelerate sell-through on near-expiry chilled stock.",
-    netSavedValueAzN: 11,
-    possibleLossAzN: 16,
-  },
-  {
-    branchId: "ganjlik",
-    productId: "butter-croissant",
-    productName: "Butter Croissant",
-    category: "bakery",
-    riskLevel: "high",
-    riskScore: 84,
-    daysUntilExpiry: 1,
-    totalStock: 20,
-    daysOfStockRemaining: 2.8,
-    actionType: "discount",
-    recommendationSummary:
-      "Promote an afternoon bakery markdown to clear the excess queue before evening waste collection starts.",
-    netSavedValueAzN: 7,
-    possibleLossAzN: 10,
-  },
-  {
-    branchId: "yasamal",
-    productId: "sourdough-bread",
-    productName: "Sourdough Bread",
-    category: "bakery",
-    riskLevel: "high",
-    riskScore: 79,
-    daysUntilExpiry: 2,
-    totalStock: 24,
-    daysOfStockRemaining: 3.6,
-    actionType: "reorder-adjustment",
-    recommendationSummary:
-      "Reduce the next replenishment cycle while current stock coverage stays above expected bakery demand.",
-    netSavedValueAzN: 9,
-    possibleLossAzN: 12,
-  },
-  {
-    branchId: "may28",
-    productId: "strawberries-250g",
-    productName: "Strawberries 250g",
-    category: "fruits-vegetables",
-    riskLevel: "high",
-    riskScore: 76,
-    daysUntilExpiry: 3,
-    totalStock: 18,
-    daysOfStockRemaining: 5.1,
-    actionType: "transfer",
-    recommendationSummary:
-      "Move the excess trays to the faster commuter branch while freshness still supports same-day resale.",
-    netSavedValueAzN: 13,
-    possibleLossAzN: 17,
-  },
-] as const;
-
 const actionPlanRows = [
   {
     title: "Approve dairy markdown block",
@@ -141,8 +74,12 @@ const actionPlanRows = [
   },
 ] as const;
 
-function MainPane() {
-  return <RiskTable rows={placeholderRows} />;
+type MainPaneProps = {
+  rows: Parameters<typeof RiskTable>[0]["rows"];
+};
+
+function MainPane({ rows }: MainPaneProps) {
+  return <RiskTable rows={rows} />;
 }
 
 function SidePane() {
@@ -314,7 +251,7 @@ export default async function Home({ searchParams }: HomeProps) {
         />
       }
       kpiStrip={<KpiCards items={kpiCards} />}
-      mainPane={<MainPane />}
+      mainPane={<MainPane rows={dashboardData.riskTable} />}
       sidePane={<SidePane />}
       detailHint={<DetailHint />}
     />

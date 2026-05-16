@@ -133,7 +133,7 @@ export default function RiskTable({ rows }: RiskTableProps) {
                 Risk watchlist
               </span>
               <span className="rounded-full border border-dashed border-border/80 px-2.5 py-1">
-                Part 12 visual slice
+                Live branch feed
               </span>
             </div>
             <div>
@@ -145,8 +145,8 @@ export default function RiskTable({ rows }: RiskTableProps) {
               </h2>
             </div>
             <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
-              The table is now presentation-ready with risk hierarchy, urgency cues,
-              and action framing. Live branch data wiring begins in Part 13.
+              The table now reflects the selected branch&apos;s live risk snapshot with
+              priority ordering, urgency cues, and action framing.
             </p>
           </div>
 
@@ -264,7 +264,7 @@ export default function RiskTable({ rows }: RiskTableProps) {
                           {action.label}
                         </span>
                         <span className="text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
-                          UI only
+                          Live signal
                         </span>
                       </div>
                       <p className="text-sm leading-6 text-foreground/80">
