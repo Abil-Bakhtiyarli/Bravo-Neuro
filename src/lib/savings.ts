@@ -133,7 +133,7 @@ function calculateTransferSavings(
     {
       discountCostAzN: 0,
       transferCostAzN,
-      handlingCostAzN: transferCostAzN,
+      handlingCostAzN: 0,
     },
     {
       methodology: "Transfer value assumes the moved units can be sold at full retail in the destination branch.",

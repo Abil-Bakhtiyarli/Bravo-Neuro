@@ -72,6 +72,31 @@ function getKpiValue(dashboardData, key) {
     const dashboardData = (0, dashboardData_1.getDashboardData)("ganjlik");
     strict_1.default.equal(dashboardData.actionPlan.length, dashboardData.riskTable.length);
     strict_1.default.ok(dashboardData.actionPlan.every((item) => item.status === "pending"));
+    strict_1.default.ok(dashboardData.actionPlan.every((item) => item.daysUntilExpiry >= 0));
+    strict_1.default.ok(dashboardData.actionPlan.every((item) => item.checklistSteps.length >= 3));
+    strict_1.default.deepEqual(dashboardData.actionPlan.map((item) => item.priorityRank), dashboardData.actionPlan.map((_, index) => index + 1));
+});
+(0, node_test_1.default)("action plan stays priority sorted by risk level, net saved value, and expiry urgency", () => {
+    const dashboardData = (0, dashboardData_1.getDashboardData)("ganjlik");
+    const riskPriority = {
+        critical: 3,
+        high: 2,
+        medium: 1,
+        low: 0,
+    };
+    for (let index = 0; index < dashboardData.actionPlan.length - 1; index += 1) {
+        const current = dashboardData.actionPlan[index];
+        const next = dashboardData.actionPlan[index + 1];
+        const currentPriority = riskPriority[current.riskLevel];
+        const nextPriority = riskPriority[next.riskLevel];
+        strict_1.default.ok(currentPriority >= nextPriority);
+        if (currentPriority === nextPriority) {
+            strict_1.default.ok(current.expectedNetSavedValueAzN >= next.expectedNetSavedValueAzN);
+            if (current.expectedNetSavedValueAzN === next.expectedNetSavedValueAzN) {
+                strict_1.default.ok(current.daysUntilExpiry <= next.daysUntilExpiry);
+            }
+        }
+    }
 });
 (0, node_test_1.default)("getProductDetailData aligns with the dashboard snapshot for a risky seeded product", () => {
     const dashboardData = (0, dashboardData_1.getDashboardData)("ganjlik");

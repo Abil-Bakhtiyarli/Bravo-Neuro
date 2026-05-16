@@ -102,6 +102,39 @@ test("action plan count stays aligned with recommendation-backed risk rows", () 
 
   assert.equal(dashboardData.actionPlan.length, dashboardData.riskTable.length);
   assert.ok(dashboardData.actionPlan.every((item) => item.status === "pending"));
+  assert.ok(dashboardData.actionPlan.every((item) => item.daysUntilExpiry >= 0));
+  assert.ok(dashboardData.actionPlan.every((item) => item.checklistSteps.length >= 3));
+  assert.deepEqual(
+    dashboardData.actionPlan.map((item) => item.priorityRank),
+    dashboardData.actionPlan.map((_, index) => index + 1),
+  );
+});
+
+test("action plan stays priority sorted by risk level, net saved value, and expiry urgency", () => {
+  const dashboardData = getDashboardData("ganjlik");
+  const riskPriority = {
+    critical: 3,
+    high: 2,
+    medium: 1,
+    low: 0,
+  } as const;
+
+  for (let index = 0; index < dashboardData.actionPlan.length - 1; index += 1) {
+    const current = dashboardData.actionPlan[index];
+    const next = dashboardData.actionPlan[index + 1];
+    const currentPriority = riskPriority[current.riskLevel];
+    const nextPriority = riskPriority[next.riskLevel];
+
+    assert.ok(currentPriority >= nextPriority);
+
+    if (currentPriority === nextPriority) {
+      assert.ok(current.expectedNetSavedValueAzN >= next.expectedNetSavedValueAzN);
+
+      if (current.expectedNetSavedValueAzN === next.expectedNetSavedValueAzN) {
+        assert.ok(current.daysUntilExpiry <= next.daysUntilExpiry);
+      }
+    }
+  }
 });
 
 test("getProductDetailData aligns with the dashboard snapshot for a risky seeded product", () => {

@@ -9,6 +9,7 @@ import {
   calculateRecommendationSavings,
   summarizeBranchSavings,
 } from "./savings";
+import { buildSavingsComparisonViewModel } from "./savingsComparison";
 import type { ProductRiskAssessment, ScoredBranchProductRecord } from "./types";
 
 function getRequiredScoredRecord(
@@ -71,6 +72,64 @@ test("transfer savings recover full retail value minus transfer handling cost", 
   assert.equal(savings.recoveredValueAzN, 39.2);
   assert.equal(savings.netSavedValueAzN, 36.75);
   assert.equal(savings.costBreakdown.transferCostAzN, 2.45);
+  assert.equal(savings.costBreakdown.handlingCostAzN, 0);
+});
+
+test("savings comparison view model keeps gross recovery, residual exposure, and action cost distinct", () => {
+  const discountRecord = getRequiredScoredRecord("ganjlik", "greek-yogurt-500g");
+  const discountRecommendation = generateRecommendation(discountRecord);
+  const transferRecord = getRequiredScoredRecord("ganjlik", "strawberries-250g");
+  const transferRecommendation = generateRecommendation(transferRecord);
+  const baseRecord = getBranchProductRecord("ganjlik", "orange-juice-1l");
+
+  assert.ok(discountRecommendation);
+  assert.equal(discountRecommendation.actionType, "discount");
+  assert.ok(transferRecommendation);
+  assert.equal(transferRecommendation.actionType, "transfer");
+  assert.ok(baseRecord);
+
+  const investigationRecord = withRisk(
+    {
+      ...baseRecord,
+      daysUntilEarliestExpiry: 3,
+      daysOfStockRemaining: null,
+      salesHistory: {
+        ...baseRecord.salesHistory,
+        avgDailySales: 0,
+      },
+    },
+    {
+      totalScore: 64,
+      roundedScore: 64,
+      riskLevel: "high",
+    },
+  );
+  const investigationRecommendation = generateRecommendation(investigationRecord);
+
+  assert.ok(investigationRecommendation);
+  assert.equal(investigationRecommendation.actionType, "investigation");
+
+  const discountViewModel = buildSavingsComparisonViewModel(
+    discountRecommendation,
+    calculateRecommendationSavings(discountRecord, discountRecommendation),
+  );
+  const transferViewModel = buildSavingsComparisonViewModel(
+    transferRecommendation,
+    calculateRecommendationSavings(transferRecord, transferRecommendation),
+  );
+  const investigationViewModel = buildSavingsComparisonViewModel(
+    investigationRecommendation,
+    calculateRecommendationSavings(investigationRecord, investigationRecommendation),
+  );
+
+  assert.equal(discountViewModel.grossRecoveredValueAzN, 4.71);
+  assert.equal(discountViewModel.totalActionCostAzN, 2.54);
+  assert.equal(discountViewModel.afterActionResidualLossAzN, 114.46);
+  assert.equal(transferViewModel.totalActionCostAzN, 2.45);
+  assert.equal(transferViewModel.afterActionResidualLossAzN, 0);
+  assert.equal(investigationViewModel.grossRecoveredValueAzN, 0);
+  assert.equal(investigationViewModel.netSavedValueAzN, 0);
+  assert.ok(investigationViewModel.afterActionResidualLossAzN > 0);
 });
 
 test("shelf action savings are positive and more conservative than comparable discounts", () => {

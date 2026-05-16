@@ -23,8 +23,10 @@ test("ProductRiskDrawer renders the selected product story when open", () => {
   assert.match(markup, /Recommendation card/);
   assert.match(markup, /Launch markdown today/);
   assert.match(markup, /Base markdown/);
-  assert.match(markup, /Savings summary/);
-  assert.match(markup, /Possible waste/);
+  assert.match(markup, /Savings comparison/);
+  assert.match(markup, /Without action/);
+  assert.match(markup, /With action/);
+  assert.match(markup, /Action cost/);
   assert.match(markup, /Net saved value/);
 });
 

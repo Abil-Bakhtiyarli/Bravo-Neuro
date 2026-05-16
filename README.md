@@ -1,6 +1,6 @@
 # Bravo Neuro
 
-Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, the Part 9 header and branch control, the Part 10 KPI card UI, the Part 11 KPI data wiring slice, the Part 12 risk table UI slice, the Part 13 risk table data wiring slice, the Part 14 interaction layer, the Part 15 product detail drawer, and the Part 16 recommendation card: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, an active URL-backed branch header, polished reusable KPI cards, live branch-aware KPI values wired from the canonical dashboard data contract while keeping tasks-today visible, a risk table with urgency badges and action framing, the homepage risk table fed directly from the canonical branch dashboard payload, URL-backed row selection plus real search and risk filtering, a real right-side product drawer with preloaded detail payloads, top risk drivers, explanation text, and compact recommendation and savings summaries, plus a dedicated action-specific recommendation card inside the drawer without adding route handlers.
+Bravo Neuro is a Next.js dashboard prototype for retail waste-risk decisions. The repo now contains the Part 0 foundation, the Part 1 seed data layer, the Part 2 enriched data loader, the Part 3 waste-risk scorer, the Part 4 recommendation engine, the Part 5 savings calculator, the Part 6 explanation generator, the Part 7 server data layer, the Part 8 dashboard layout foundation, the Part 9 header and branch control, the Part 10 KPI card UI, the Part 11 KPI data wiring slice, the Part 12 risk table UI slice, the Part 13 risk table data wiring slice, the Part 14 interaction layer, the Part 15 product detail drawer, the Part 16 recommendation card, the Part 17 savings comparison card, and the Part 18 daily action plan: app scaffold, UI stack, typed domain models, realistic seed data, import-time validation, branch-first loader helpers, a deterministic explainable scoring engine, primary-action recommendation logic for risky branch/product records, AZN business-impact estimation for those recommendations, short manager-friendly explanations built from the top risk drivers plus action rationale, one stable JSON-safe dashboard payload layer for future UI consumption, a presentation-ready dashboard shell, an active URL-backed branch header, polished reusable KPI cards, live branch-aware KPI values wired from the canonical dashboard data contract while keeping tasks-today visible, a risk table with urgency badges and action framing, the homepage risk table fed directly from the canonical branch dashboard payload, URL-backed row selection plus real search and risk filtering, a real right-side product drawer with preloaded detail payloads, top risk drivers, explanation text, a dedicated action-specific recommendation card inside the drawer, a dedicated before/after savings comparison card with cost treatment and methodology copy, and a real recommendation-backed task rail with local accept/complete persistence and checklist guidance, all without adding route handlers.
 
 ## Repo Structure
 
@@ -24,9 +24,9 @@ bravo-neuro/
 |   |   +-- RiskTableExperience.tsx
 |   |   +-- ProductRiskDrawer.tsx
 |   |   +-- RecommendationCard.tsx
-|   |   +-- DailyActionPlan.tsx          (planned, not created yet)
+|   |   +-- DailyActionPlan.tsx
 |   |   +-- BranchSelector.tsx           (planned, not created yet)
-|   |   +-- SavingsCard.tsx              (planned, not created yet)
+|   |   +-- SavingsCard.tsx
 |   |   \-- ui/
 |   |       \-- button.tsx
 |   \-- lib/
@@ -43,12 +43,15 @@ bravo-neuro/
 |       +-- savings.test.ts
 |       +-- explanation.ts
 |       +-- explanation.test.ts
+|       +-- actionPlan.ts
+|       +-- actionPlan.test.ts
 |       +-- dashboardData.ts
 |       +-- dashboardData.test.ts
 |       +-- dashboardKpiPresentation.ts
 |       +-- dashboardKpiPresentation.test.ts
 |       +-- riskTableInteraction.ts
 |       +-- riskTableInteraction.test.ts
+|       +-- savingsComparison.ts
 |       \-- formatters.ts                (planned, not created yet)
 +-- data/
 |   +-- .gitkeep
@@ -98,7 +101,9 @@ Part 13 is complete: `src/app/page.tsx` now feeds `src/components/RiskTable.tsx`
 Part 14 is complete: `src/components/RiskTable.tsx` and `src/lib/riskTableInteraction.ts` provide clickable URL-backed row selection, real search and risk-level filtering, and invalid-selection cleanup across branch/filter changes.
 Part 15 is complete: `src/components/RiskTableExperience.tsx`, `src/components/ProductRiskDrawer.tsx`, `src/app/page.tsx`, and `src/lib/dashboardData.ts` now preload recommendation-backed product detail payloads into the server snapshot and attach a real Base UI drawer to the existing `product` query param, showing risk score, top drivers, explanation, recommendation summary, and savings summary without route handlers.
 Part 16 is complete: `src/components/RecommendationCard.tsx` and `src/components/ProductRiskDrawer.tsx` now turn the drawer recommendation summary into a dedicated action card with action-type framing, manager-ready emphasis, and type-specific metrics for discount, transfer, reorder adjustment, shelf action, and investigation flows while leaving savings and task execution for later parts.
-Part 17 and later will deepen the savings card, task interaction, and only add route handlers if a public HTTP surface is still needed.
+Part 17 is complete: `src/components/SavingsCard.tsx`, `src/components/ProductRiskDrawer.tsx`, `src/lib/savingsComparison.ts`, and `src/lib/savings.ts` now turn the old savings summary block into a dedicated before/after comparison card with explicit recovered value, action cost, residual exposure, waste avoided, and methodology copy, while also fixing transfer cost semantics so the UI still reflects one shared savings calculator.
+Part 18 is complete: `src/components/DailyActionPlan.tsx`, `src/app/page.tsx`, `src/lib/actionPlan.ts`, `src/lib/dashboardData.ts`, and `src/lib/types.ts` now replace the static side rail with a real recommendation-backed manager queue that stays branch-scoped, priority-ranked, locally persistent across refreshes, and wired to the existing product drawer flow through the `product` query parameter while keeping all task state route-free.
+Part 19 and later can polish the demo further and only add route handlers if a public HTTP surface is still needed.
 
 ## Part 1 Seed Data
 
@@ -131,3 +136,5 @@ The seed dataset is designed for the hackathon story in the technical plan:
 `src/components/KpiCards.tsx` is the canonical KPI presentation surface. It remains presentation-only: Part 10 established the reusable card UI, and Part 11 now feeds it live branch-aware values, helper text, icons, and status badges without moving dashboard data logic into the component itself.
 
 `src/components/RiskTable.tsx`, `src/components/RiskTableExperience.tsx`, `src/components/ProductRiskDrawer.tsx`, and `src/lib/riskTableInteraction.ts` are the canonical Parts 14-15 risk interaction surface. Part 12 established the polished rows, Part 13 fed them from the live branch `riskTable` payload, Part 14 added client-side URL-backed selection plus real query/risk filtering, and Part 15 now turns that same selection into a real overlay drawer backed by preloaded `productDetailsById` data from `src/lib/dashboardData.ts`.
+
+`src/lib/actionPlan.ts`, `src/components/DailyActionPlan.tsx`, and the enriched `actionPlan` payload in `src/lib/dashboardData.ts` are the canonical Part 18 manager workflow surface. They turn each recommendation into one ranked parent task with action-specific checklist guidance, expose the queue to the page as serializable server data, and let the client layer persist `pending -> accepted -> completed` status locally per branch without introducing route handlers or a database.

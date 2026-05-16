@@ -282,11 +282,14 @@ export type ActionPlanItem = {
   branchId: BranchId;
   productId: ProductId;
   productName: string;
+  priorityRank: number;
   actionType: RecommendationActionType;
   riskLevel: RiskLevel;
   riskScore: number;
+  daysUntilExpiry: number;
   status: TaskStatus;
   summary: string;
+  checklistSteps: string[];
   expectedNetSavedValueAzN: number;
   expectedRecoveredValueAzN: number;
 };

@@ -79,7 +79,7 @@ function calculateTransferSavings(record, recommendation) {
     return buildSavings(recoveredValueAzN, recoveredValueAzN, recoveredValueAzN - transferCostAzN, recoveredUnits, recoveredUnits, {
         discountCostAzN: 0,
         transferCostAzN,
-        handlingCostAzN: transferCostAzN,
+        handlingCostAzN: 0,
     }, {
         methodology: "Transfer value assumes the moved units can be sold at full retail in the destination branch.",
         baselineUnitsWithoutAction: getBaselineUnitsWithoutAction(record),

@@ -7,10 +7,8 @@ import {
   BadgePercent,
   Boxes,
   CalendarClock,
-  CircleDollarSign,
   Package,
   Sparkles,
-  TrendingUp,
   Warehouse,
   X,
 } from "lucide-react";
@@ -24,6 +22,7 @@ import type {
 import { cn } from "@/lib/utils";
 
 import RecommendationCard from "./RecommendationCard";
+import SavingsCard from "./SavingsCard";
 import { Button } from "./ui/button";
 
 type ProductRiskDrawerProps = {
@@ -129,23 +128,6 @@ function SnapshotCard({
         </span>
       </div>
       <p className="mt-2 text-xs leading-5 text-muted-foreground">{helper}</p>
-    </div>
-  );
-}
-
-function SavingsMetric({
-  label,
-  value,
-}: {
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="rounded-2xl border border-border/70 bg-background/88 p-3.5">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-        {label}
-      </p>
-      <p className="mt-2 text-lg font-semibold text-foreground">{value}</p>
     </div>
   );
 }
@@ -332,37 +314,11 @@ export default function ProductRiskDrawer({
 
                 <section className="mt-6 grid gap-4 lg:grid-cols-2">
                   <RecommendationCard recommendation={detail.recommendation} />
-
-                  <div className="rounded-3xl border border-border/75 bg-card/90 p-5">
-                    <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                      <TrendingUp className="size-4" />
-                      Savings summary
-                    </div>
-                    {detail.savings ? (
-                      <div className="mt-4 grid gap-3">
-                        <SavingsMetric
-                          label="Possible waste"
-                          value={formatCurrency(detail.savings.possibleLossAzN)}
-                        />
-                        <SavingsMetric
-                          label="Recovered value"
-                          value={formatCurrency(detail.savings.recoveredValueAzN)}
-                        />
-                        <SavingsMetric
-                          label="Net saved value"
-                          value={formatCurrency(detail.savings.netSavedValueAzN)}
-                        />
-                      </div>
-                    ) : (
-                      <p className="mt-4 text-sm leading-6 text-muted-foreground">
-                        Savings estimates are not available for this product yet.
-                      </p>
-                    )}
-                    <div className="mt-4 flex items-center gap-2 rounded-2xl border border-border/70 bg-background/88 px-3.5 py-3 text-xs font-medium text-muted-foreground">
-                      <CircleDollarSign className="size-4" />
-                      Part 17 will promote this block into the dedicated savings comparison card.
-                    </div>
-                  </div>
+                  <SavingsCard
+                    recommendation={detail.recommendation}
+                    savings={detail.savings}
+                    unitPriceAzN={detail.product.unitPrice}
+                  />
                 </section>
               </div>
             </div>

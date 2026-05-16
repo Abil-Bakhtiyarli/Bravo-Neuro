@@ -1,4 +1,5 @@
 import { getAvailableBranches, getBranchProductRecord, getBranchProductRecords } from "./dataLoader";
+import { buildActionPlanChecklistSteps, rankActionPlanItems } from "./actionPlan";
 import {
   attachExplanationToRecommendation,
 } from "./explanation";
@@ -186,11 +187,17 @@ function buildActionPlanItem(entry: DashboardRecommendationEntry): ActionPlanIte
     branchId: entry.record.branch.branchId,
     productId: entry.record.product.productId,
     productName: entry.record.product.name,
+    priorityRank: 0,
     actionType: entry.recommendation.actionType,
     riskLevel: entry.record.risk.riskLevel,
     riskScore: entry.record.risk.roundedScore,
+    daysUntilExpiry: entry.record.daysUntilEarliestExpiry,
     status: "pending",
     summary: entry.recommendation.summary,
+    checklistSteps: buildActionPlanChecklistSteps(
+      entry.recommendation,
+      entry.record.daysUntilEarliestExpiry,
+    ),
     expectedNetSavedValueAzN: entry.savings.netSavedValueAzN,
     expectedRecoveredValueAzN: entry.savings.recoveredValueAzN,
   };
@@ -253,7 +260,7 @@ export function getDashboardData(
     generatedAt: bundle.generatedAt,
     kpis: buildKpis(bundle.recommendationEntries, bundle.records),
     riskTable: bundle.recommendationEntries.map(buildRiskTableItem),
-    actionPlan: bundle.recommendationEntries.map(buildActionPlanItem),
+    actionPlan: rankActionPlanItems(bundle.recommendationEntries.map(buildActionPlanItem)),
     topProductIds: bundle.recommendationEntries.map((entry) => entry.record.product.productId),
     productDetailsById: buildProductDetailsById(
       bundle.recommendationEntries,

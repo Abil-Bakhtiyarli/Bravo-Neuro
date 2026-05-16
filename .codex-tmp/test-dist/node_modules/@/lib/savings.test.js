@@ -9,6 +9,7 @@ const dataLoader_1 = require("./dataLoader");
 const recommendationEngine_1 = require("./recommendationEngine");
 const riskScore_1 = require("./riskScore");
 const savings_1 = require("./savings");
+const savingsComparison_1 = require("./savingsComparison");
 function getRequiredScoredRecord(branchId, productId) {
     const record = (0, dataLoader_1.getBranchProductRecord)(branchId, productId);
     strict_1.default.ok(record, `Expected seeded record for ${branchId}:${productId}`);
@@ -52,6 +53,46 @@ function withRisk(record, risk) {
     strict_1.default.equal(savings.recoveredValueAzN, 39.2);
     strict_1.default.equal(savings.netSavedValueAzN, 36.75);
     strict_1.default.equal(savings.costBreakdown.transferCostAzN, 2.45);
+    strict_1.default.equal(savings.costBreakdown.handlingCostAzN, 0);
+});
+(0, node_test_1.default)("savings comparison view model keeps gross recovery, residual exposure, and action cost distinct", () => {
+    const discountRecord = getRequiredScoredRecord("ganjlik", "greek-yogurt-500g");
+    const discountRecommendation = (0, recommendationEngine_1.generateRecommendation)(discountRecord);
+    const transferRecord = getRequiredScoredRecord("ganjlik", "strawberries-250g");
+    const transferRecommendation = (0, recommendationEngine_1.generateRecommendation)(transferRecord);
+    const baseRecord = (0, dataLoader_1.getBranchProductRecord)("ganjlik", "orange-juice-1l");
+    strict_1.default.ok(discountRecommendation);
+    strict_1.default.equal(discountRecommendation.actionType, "discount");
+    strict_1.default.ok(transferRecommendation);
+    strict_1.default.equal(transferRecommendation.actionType, "transfer");
+    strict_1.default.ok(baseRecord);
+    const investigationRecord = withRisk({
+        ...baseRecord,
+        daysUntilEarliestExpiry: 3,
+        daysOfStockRemaining: null,
+        salesHistory: {
+            ...baseRecord.salesHistory,
+            avgDailySales: 0,
+        },
+    }, {
+        totalScore: 64,
+        roundedScore: 64,
+        riskLevel: "high",
+    });
+    const investigationRecommendation = (0, recommendationEngine_1.generateRecommendation)(investigationRecord);
+    strict_1.default.ok(investigationRecommendation);
+    strict_1.default.equal(investigationRecommendation.actionType, "investigation");
+    const discountViewModel = (0, savingsComparison_1.buildSavingsComparisonViewModel)(discountRecommendation, (0, savings_1.calculateRecommendationSavings)(discountRecord, discountRecommendation));
+    const transferViewModel = (0, savingsComparison_1.buildSavingsComparisonViewModel)(transferRecommendation, (0, savings_1.calculateRecommendationSavings)(transferRecord, transferRecommendation));
+    const investigationViewModel = (0, savingsComparison_1.buildSavingsComparisonViewModel)(investigationRecommendation, (0, savings_1.calculateRecommendationSavings)(investigationRecord, investigationRecommendation));
+    strict_1.default.equal(discountViewModel.grossRecoveredValueAzN, 4.71);
+    strict_1.default.equal(discountViewModel.totalActionCostAzN, 2.54);
+    strict_1.default.equal(discountViewModel.afterActionResidualLossAzN, 114.46);
+    strict_1.default.equal(transferViewModel.totalActionCostAzN, 2.45);
+    strict_1.default.equal(transferViewModel.afterActionResidualLossAzN, 0);
+    strict_1.default.equal(investigationViewModel.grossRecoveredValueAzN, 0);
+    strict_1.default.equal(investigationViewModel.netSavedValueAzN, 0);
+    strict_1.default.ok(investigationViewModel.afterActionResidualLossAzN > 0);
 });
 (0, node_test_1.default)("shelf action savings are positive and more conservative than comparable discounts", () => {
     const discountRecord = getRequiredScoredRecord("yasamal", "butter-croissant");
