@@ -3,6 +3,7 @@
 import { useEffect, useMemo } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
+import { useOptionalAppRouter } from "@/lib/optionalAppRouter";
 import type { BranchDashboardData } from "@/lib/types";
 import {
   filterRiskTableRows,
@@ -37,6 +38,7 @@ export default function RiskTableExperience({
   initialRiskFilter = "all",
 }: RiskTableExperienceProps) {
   const pathname = usePathname();
+  const router = useOptionalAppRouter();
   const searchParams = useSearchParams();
   const query = searchParams?.get("q") ?? initialQuery;
   const requestedRiskFilter = searchParams?.get("risk");
@@ -63,15 +65,15 @@ export default function RiskTableExperience({
       product: selectedProductId,
     });
 
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-  }, [pathname, requestedProductId, searchParams, selectedProductId]);
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+  }, [pathname, requestedProductId, router, searchParams, selectedProductId]);
 
   function handleSelectProduct(productId: string) {
     const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       product: productId,
     });
 
-    window.history.pushState(null, "", buildUrl(pathname, nextParams));
+    router?.push(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleSearchChange(nextQuery: string) {
@@ -82,7 +84,7 @@ export default function RiskTableExperience({
       product: nextSelectedProductId,
     });
 
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleRiskFilterChange(nextRiskFilter: "all" | "medium" | "high" | "critical") {
@@ -93,7 +95,7 @@ export default function RiskTableExperience({
       product: nextSelectedProductId,
     });
 
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleDrawerOpenChange(open: boolean) {
@@ -105,7 +107,7 @@ export default function RiskTableExperience({
       product: null,
     });
 
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   return (

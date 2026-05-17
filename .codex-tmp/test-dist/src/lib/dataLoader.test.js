@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const node_test_1 = __importDefault(require("node:test"));
 const strict_1 = __importDefault(require("node:assert/strict"));
 const dataLoader_1 = require("./dataLoader");
+const seedData_1 = require("./seedData");
 (0, node_test_1.default)("getAvailableBranches returns the seeded branches", () => {
     const availableBranches = (0, dataLoader_1.getAvailableBranches)();
     strict_1.default.equal(availableBranches.length, 3);
@@ -13,7 +14,10 @@ const dataLoader_1 = require("./dataLoader");
 });
 (0, node_test_1.default)("valid branch returns one enriched record per inventory-backed branch-product pair", () => {
     const ganjlikRecords = (0, dataLoader_1.getBranchProductRecords)("ganjlik");
-    strict_1.default.equal(ganjlikRecords.length, 6);
+    const expectedUniqueProducts = new Set(seedData_1.inventory
+        .filter((lot) => lot.branchId === "ganjlik")
+        .map((lot) => lot.productId));
+    strict_1.default.equal(ganjlikRecords.length, expectedUniqueProducts.size);
     strict_1.default.ok(ganjlikRecords.every((record) => record.branch.branchId === "ganjlik"));
 });
 (0, node_test_1.default)("ganjlik Greek yogurt aggregates lots and sorts them by nearest expiry", () => {

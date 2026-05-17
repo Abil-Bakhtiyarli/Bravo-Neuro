@@ -166,5 +166,5052 @@
     "currentStock": 12,
     "expiryDate": "2026-06-28",
     "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-1l",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-1l",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mozzarella-200g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-200g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mozzarella-200g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-250g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-250g",
+    "currentStock": 10,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-250g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-250g",
+    "currentStock": 11,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "feta-250g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "feta-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-1l",
+    "currentStock": 21,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-1l",
+    "currentStock": 21,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-300g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-300g",
+    "currentStock": 3,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-300g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-300g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-200g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-200g",
+    "currentStock": 23,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-200g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-180g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-180g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-180g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-180g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-180g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-180g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-250g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-250g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-250g",
+    "currentStock": 16,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-330ml",
+    "currentStock": 11,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-330ml",
+    "currentStock": 9,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-330ml",
+    "currentStock": 13,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-330ml",
+    "currentStock": 9,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-330ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-330ml",
+    "currentStock": 10,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-225g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-225g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-225g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-500ml",
+    "currentStock": 12,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-500ml",
+    "currentStock": 21,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-500ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-500ml",
+    "currentStock": 5,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sour-cream-250g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-250g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sour-cream-250g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-250g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-250g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-250g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-250g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-250g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread",
+    "currentStock": 16,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette",
+    "currentStock": 14,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette",
+    "currentStock": 10,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette",
+    "currentStock": 15,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette",
+    "currentStock": 11,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette",
+    "currentStock": 11,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette",
+    "currentStock": 9,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-4pk",
+    "currentStock": 27,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-4pk",
+    "currentStock": 9,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-4pk",
+    "currentStock": 7,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-4pk",
+    "currentStock": 24,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "chocolate-muffin",
+    "currentStock": 7,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "chocolate-muffin",
+    "currentStock": 5,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "chocolate-muffin",
+    "currentStock": 15,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "chocolate-muffin",
+    "currentStock": 10,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll",
+    "currentStock": 13,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll",
+    "currentStock": 23,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll",
+    "currentStock": 8,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-6pk",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-6pk",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-6pk",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-6pk",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-6pk",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-6pk",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mini-eclair-2pk",
+    "currentStock": 16,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-2pk",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-2pk",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mini-eclair-2pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-200g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-200g",
+    "currentStock": 9,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-200g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-200g",
+    "currentStock": 9,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-200g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-200g",
+    "currentStock": 10,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-4pk",
+    "currentStock": 21,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-4pk",
+    "currentStock": 12,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-4pk",
+    "currentStock": 18,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-6pk",
+    "currentStock": 16,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-6pk",
+    "currentStock": 21,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-6pk",
+    "currentStock": 8,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-6pk",
+    "currentStock": 6,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek",
+    "currentStock": 15,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek",
+    "currentStock": 9,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek",
+    "currentStock": 8,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast",
+    "currentStock": 13,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast",
+    "currentStock": 14,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-2pk",
+    "currentStock": 14,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-2pk",
+    "currentStock": 10,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-2pk",
+    "currentStock": 15,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-2pk",
+    "currentStock": 11,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-2pk",
+    "currentStock": 11,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-2pk",
+    "currentStock": 9,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-125g",
+    "currentStock": 18,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-125g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-125g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-125g",
+    "currentStock": 18,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-125g",
+    "currentStock": 4,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-125g",
+    "currentStock": 2,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "raspberries-125g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "raspberries-125g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-1kg",
+    "currentStock": 11,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-1kg",
+    "currentStock": 23,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-1kg",
+    "currentStock": 13,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-250g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-250g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-250g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-250g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-250g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-150g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-150g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-150g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-150g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-250g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-250g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-250g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-250g",
+    "currentStock": 10,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-500g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-500g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-500g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-1kg",
+    "currentStock": 10,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-1kg",
+    "currentStock": 15,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-1kg",
+    "currentStock": 6,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-1kg",
+    "currentStock": 4,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-500g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-500g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-500g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-500g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-400g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-400g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-400g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-400g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-400g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-400g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mandarins-1kg",
+    "currentStock": 14,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-1kg",
+    "currentStock": 15,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mandarins-1kg",
+    "currentStock": 16,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-1l",
+    "currentStock": 14,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-1l",
+    "currentStock": 10,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-1l",
+    "currentStock": 15,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-1l",
+    "currentStock": 11,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-1l",
+    "currentStock": 11,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-1.5l",
+    "currentStock": 21,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-1.5l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-1.5l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-1.5l",
+    "currentStock": 24,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-500ml",
+    "currentStock": 5,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-500ml",
+    "currentStock": 3,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-peach-500ml",
+    "currentStock": 12,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-peach-500ml",
+    "currentStock": 10,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-250ml",
+    "currentStock": 11,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-250ml",
+    "currentStock": 23,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-250ml",
+    "currentStock": 9,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-1l",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-1l",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-330ml",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-330ml",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-330ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-330ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-250ml",
+    "currentStock": 11,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-250ml",
+    "currentStock": 9,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-250ml",
+    "currentStock": 13,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-250ml",
+    "currentStock": 9,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-250ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-250ml",
+    "currentStock": 10,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-500ml-6pk",
+    "currentStock": 15,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-500ml-6pk",
+    "currentStock": 10,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-500ml-6pk",
+    "currentStock": 18,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-1l",
+    "currentStock": 18,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-1l",
+    "currentStock": 8,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-1l",
+    "currentStock": 6,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-1l",
+    "currentStock": 13,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-500ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-500ml",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-500ml",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-500ml",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-500ml",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-500ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-1l",
+    "currentStock": 16,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-1l",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-strawberry-400g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-strawberry-400g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-strawberry-400g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-strawberry-400g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-strawberry-400g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-strawberry-400g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-honey-400g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-honey-400g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-honey-400g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-honey-400g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-mint-300ml",
+    "currentStock": 28,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-mint-300ml",
+    "currentStock": 20,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-mint-300ml",
+    "currentStock": 31,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-mint-300ml",
+    "currentStock": 21,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-mint-300ml",
+    "currentStock": 33,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-mint-300ml",
+    "currentStock": 23,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-family-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-family-1l",
+    "currentStock": 3,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-family-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-family-1l",
+    "currentStock": 10,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-butter-spread-180g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-butter-spread-180g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-butter-spread-180g",
+    "currentStock": 4,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-butter-spread-180g",
+    "currentStock": 2,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-lactose-free-1l",
+    "currentStock": 14,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lactose-free-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lactose-free-1l",
+    "currentStock": 2,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-lactose-free-1l",
+    "currentStock": 13,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-whole-1l",
+    "currentStock": 17,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-whole-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-whole-1l",
+    "currentStock": 20,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-whole-1l",
+    "currentStock": 13,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-whole-1l",
+    "currentStock": 13,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-whole-1l",
+    "currentStock": 8,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-lowfat-1l",
+    "currentStock": 21,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-lowfat-1l",
+    "currentStock": 15,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lowfat-1l",
+    "currentStock": 23,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lowfat-1l",
+    "currentStock": 16,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-lowfat-1l",
+    "currentStock": 25,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-lowfat-1l",
+    "currentStock": 17,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-zaatar-200g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-zaatar-200g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-zaatar-200g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-zaatar-200g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-zaatar-200g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-zaatar-200g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-crumbled-200g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-crumbled-200g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-crumbled-200g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "feta-crumbled-200g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mozzarella-shredded-200g",
+    "currentStock": 18,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mozzarella-shredded-200g",
+    "currentStock": 12,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-shredded-200g",
+    "currentStock": 20,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-shredded-200g",
+    "currentStock": 13,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mozzarella-shredded-200g",
+    "currentStock": 21,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mozzarella-shredded-200g",
+    "currentStock": 15,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-herb-300g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-herb-300g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-herb-300g",
+    "currentStock": 2,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-herb-300g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-plain-500g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-plain-500g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-plain-500g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-plain-500g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-slices-200g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-slices-200g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-slices-200g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-slices-200g",
+    "currentStock": 4,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-garlic-250g",
+    "currentStock": 17,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-garlic-250g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-garlic-250g",
+    "currentStock": 20,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-garlic-250g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-garlic-250g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-garlic-250g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-plain-250g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-plain-250g",
+    "currentStock": 8,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-plain-250g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-plain-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-plain-250g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-plain-250g",
+    "currentStock": 10,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-light-225g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-light-225g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-light-225g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-light-225g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-light-225g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-light-225g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-whipped-200g",
+    "currentStock": 19,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-whipped-200g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-whipped-200g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-whipped-200g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "currentStock": 16,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "currentStock": 10,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "currentStock": 17,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "currentStock": 11,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "currentStock": 12,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "currentStock": 8,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "currentStock": 11,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "currentStock": 8,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "currentStock": 6,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "currentStock": 4,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sour-cream-light-250g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-light-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-light-250g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sour-cream-light-250g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-blueberry-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-blueberry-1l",
+    "currentStock": 3,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-blueberry-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-blueberry-1l",
+    "currentStock": 10,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-plain-500ml",
+    "currentStock": 17,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-plain-500ml",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-plain-500ml",
+    "currentStock": 20,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-plain-500ml",
+    "currentStock": 13,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-plain-500ml",
+    "currentStock": 13,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-plain-500ml",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "currentStock": 31,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "currentStock": 21,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "currentStock": 33,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "currentStock": 23,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "currentStock": 24,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "currentStock": 16,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-mango-500ml",
+    "currentStock": 8,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-mango-500ml",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-mango-500ml",
+    "currentStock": 9,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-mango-500ml",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-mango-500ml",
+    "currentStock": 10,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-mango-500ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "chilled aisle"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread-seeded",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-seeded",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-seeded",
+    "currentStock": 9,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-seeded",
+    "currentStock": 6,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread-olive",
+    "currentStock": 26,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread-olive",
+    "currentStock": 18,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-olive",
+    "currentStock": 28,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-olive",
+    "currentStock": 20,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-olive",
+    "currentStock": 31,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-olive",
+    "currentStock": 21,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant-almond",
+    "currentStock": 5,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant-almond",
+    "currentStock": 3,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant-almond",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant-almond",
+    "currentStock": 10,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant-chocolate",
+    "currentStock": 10,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant-chocolate",
+    "currentStock": 18,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant-chocolate",
+    "currentStock": 4,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant-chocolate",
+    "currentStock": 2,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-garlic",
+    "currentStock": 14,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-garlic",
+    "currentStock": 4,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-garlic",
+    "currentStock": 2,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-garlic",
+    "currentStock": 13,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-mini-2pk",
+    "currentStock": 17,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-mini-2pk",
+    "currentStock": 12,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-mini-2pk",
+    "currentStock": 20,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-mini-2pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-mini-2pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-mini-2pk",
+    "currentStock": 8,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sliced",
+    "currentStock": 20,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sliced",
+    "currentStock": 13,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sliced",
+    "currentStock": 21,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sliced",
+    "currentStock": 15,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sliced",
+    "currentStock": 23,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sliced",
+    "currentStock": 16,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sunflower",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sunflower",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sunflower",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sunflower",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sunflower",
+    "currentStock": 10,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sunflower",
+    "currentStock": 7,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-cheese-4pk",
+    "currentStock": 8,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-cheese-4pk",
+    "currentStock": 5,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-cheese-4pk",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-cheese-4pk",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "currentStock": 25,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "currentStock": 17,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "currentStock": 18,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "currentStock": 12,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "currentStock": 20,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "currentStock": 13,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "chocolate-muffin-double",
+    "currentStock": 14,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "chocolate-muffin-double",
+    "currentStock": 4,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "chocolate-muffin-double",
+    "currentStock": 2,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "chocolate-muffin-double",
+    "currentStock": 13,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberry-muffin",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberry-muffin",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberry-muffin",
+    "currentStock": 9,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberry-muffin",
+    "currentStock": 7,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-icing",
+    "currentStock": 11,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-icing",
+    "currentStock": 7,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-icing",
+    "currentStock": 6,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-icing",
+    "currentStock": 4,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-mini-4pk",
+    "currentStock": 17,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-mini-4pk",
+    "currentStock": 12,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-mini-4pk",
+    "currentStock": 20,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-mini-4pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-mini-4pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-mini-4pk",
+    "currentStock": 8,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-mini-8pk",
+    "currentStock": 17,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-mini-8pk",
+    "currentStock": 11,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-mini-8pk",
+    "currentStock": 12,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-mini-8pk",
+    "currentStock": 8,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-mini-8pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-mini-8pk",
+    "currentStock": 9,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-walnut-200g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-walnut-200g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-walnut-200g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-walnut-200g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-walnut-200g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-walnut-200g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-triple-choc-200g",
+    "currentStock": 19,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-triple-choc-200g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-triple-choc-200g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-triple-choc-200g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-brioche-4pk",
+    "currentStock": 14,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-brioche-4pk",
+    "currentStock": 10,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-brioche-4pk",
+    "currentStock": 16,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-brioche-4pk",
+    "currentStock": 10,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-brioche-4pk",
+    "currentStock": 17,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-brioche-4pk",
+    "currentStock": 11,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-potato-4pk",
+    "currentStock": 11,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-potato-4pk",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-potato-4pk",
+    "currentStock": 6,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-potato-4pk",
+    "currentStock": 4,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "currentStock": 12,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "currentStock": 5,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "currentStock": 8,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "currentStock": 5,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "currentStock": 3,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "currentStock": 5,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "currentStock": 10,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek-spinach",
+    "currentStock": 17,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek-spinach",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek-spinach",
+    "currentStock": 20,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek-spinach",
+    "currentStock": 13,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek-spinach",
+    "currentStock": 13,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek-spinach",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut-sugar",
+    "currentStock": 28,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut-sugar",
+    "currentStock": 20,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut-sugar",
+    "currentStock": 31,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut-sugar",
+    "currentStock": 21,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut-sugar",
+    "currentStock": 33,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut-sugar",
+    "currentStock": 23,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast-thick",
+    "currentStock": 8,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast-thick",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast-thick",
+    "currentStock": 9,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast-thick",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast-thick",
+    "currentStock": 10,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast-thick",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mini-eclair-chocolate-2pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-chocolate-2pk",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mini-eclair-chocolate-2pk",
+    "currentStock": 9,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mini-eclair-chocolate-2pk",
+    "currentStock": 6,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "bakery display"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-organic-1kg",
+    "currentStock": 24,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-organic-1kg",
+    "currentStock": 16,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas-organic-1kg",
+    "currentStock": 26,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas-organic-1kg",
+    "currentStock": 18,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas-organic-1kg",
+    "currentStock": 28,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas-organic-1kg",
+    "currentStock": 20,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-mini-700g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-mini-700g",
+    "currentStock": 3,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas-mini-700g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas-mini-700g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-premium-300g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-premium-300g",
+    "currentStock": 17,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-premium-300g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-premium-300g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-family-500g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-family-500g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-family-500g",
+    "currentStock": 2,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-family-500g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-baby-150g",
+    "currentStock": 17,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-baby-150g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-baby-150g",
+    "currentStock": 20,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-baby-150g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-baby-150g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-baby-150g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-family-300g",
+    "currentStock": 18,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-family-300g",
+    "currentStock": 12,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-family-300g",
+    "currentStock": 20,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-family-300g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-family-300g",
+    "currentStock": 21,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-family-300g",
+    "currentStock": 15,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-premium-200g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-premium-200g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-premium-200g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-premium-200g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-premium-200g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-premium-200g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-premium-200g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-premium-200g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "raspberries-premium-200g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "raspberries-premium-200g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-ready-2pk",
+    "currentStock": 23,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-ready-2pk",
+    "currentStock": 16,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-ready-2pk",
+    "currentStock": 25,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-ready-2pk",
+    "currentStock": 17,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-ready-2pk",
+    "currentStock": 18,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-ready-2pk",
+    "currentStock": 12,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-premium-4pk",
+    "currentStock": 14,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-premium-4pk",
+    "currentStock": 5,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-premium-4pk",
+    "currentStock": 2,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-premium-4pk",
+    "currentStock": 13,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-mini-500g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-mini-500g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-mini-500g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-mini-500g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-bio-1kg",
+    "currentStock": 11,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-bio-1kg",
+    "currentStock": 7,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-bio-1kg",
+    "currentStock": 6,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-bio-1kg",
+    "currentStock": 4,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-mix-300g",
+    "currentStock": 17,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-mix-300g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-mix-300g",
+    "currentStock": 20,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-mix-300g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-mix-300g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-mix-300g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-premium-500g",
+    "currentStock": 16,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-premium-500g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-premium-500g",
+    "currentStock": 17,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-premium-500g",
+    "currentStock": 11,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-premium-500g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-premium-500g",
+    "currentStock": 8,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-rocket-120g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-rocket-120g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-rocket-120g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-rocket-120g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-rocket-120g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-rocket-120g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-protein-180g",
+    "currentStock": 19,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-protein-180g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-protein-180g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-protein-180g",
+    "currentStock": 15,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-button-250g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-button-250g",
+    "currentStock": 9,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-button-250g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-button-250g",
+    "currentStock": 10,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-button-250g",
+    "currentStock": 16,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-button-250g",
+    "currentStock": 10,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-oyster-200g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-oyster-200g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-oyster-200g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-oyster-200g",
+    "currentStock": 4,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-honey-500g",
+    "currentStock": 12,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-honey-500g",
+    "currentStock": 11,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-honey-500g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-honey-500g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-peeled-500g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-peeled-500g",
+    "currentStock": 3,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-peeled-500g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-peeled-500g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-premium-1kg",
+    "currentStock": 17,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-premium-1kg",
+    "currentStock": 12,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-premium-1kg",
+    "currentStock": 20,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-premium-1kg",
+    "currentStock": 13,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-premium-1kg",
+    "currentStock": 13,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-premium-1kg",
+    "currentStock": 8,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-snack-800g",
+    "currentStock": 26,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-snack-800g",
+    "currentStock": 18,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-snack-800g",
+    "currentStock": 28,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-snack-800g",
+    "currentStock": 20,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-snack-800g",
+    "currentStock": 31,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-snack-800g",
+    "currentStock": 21,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-seedless-500g",
+    "currentStock": 8,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-seedless-500g",
+    "currentStock": 5,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-seedless-500g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-seedless-500g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-seedless-500g",
+    "currentStock": 10,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-seedless-500g",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-florets-300g",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-florets-300g",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-florets-300g",
+    "currentStock": 9,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-florets-300g",
+    "currentStock": 6,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "produce chiller"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mandarins-easy-peel-1kg",
+    "currentStock": 33,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mandarins-easy-peel-1kg",
+    "currentStock": 23,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-easy-peel-1kg",
+    "currentStock": 24,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-easy-peel-1kg",
+    "currentStock": 16,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mandarins-easy-peel-1kg",
+    "currentStock": 26,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mandarins-easy-peel-1kg",
+    "currentStock": 18,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "produce table"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-fresh-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-06-15",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-fresh-1l",
+    "currentStock": 3,
+    "expiryDate": "2026-06-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-fresh-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-06-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-fresh-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-06-17",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-pulp-1l",
+    "currentStock": 10,
+    "expiryDate": "2026-06-08",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-pulp-1l",
+    "currentStock": 26,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-pulp-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-06-10",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-pulp-1l",
+    "currentStock": 2,
+    "expiryDate": "2026-06-12",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-lime-1l",
+    "currentStock": 14,
+    "expiryDate": "2026-06-17",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-lime-1l",
+    "currentStock": 4,
+    "expiryDate": "2026-06-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-lime-1l",
+    "currentStock": 2,
+    "expiryDate": "2026-06-20",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-lime-1l",
+    "currentStock": 15,
+    "expiryDate": "2026-06-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-vanilla-1l",
+    "currentStock": 17,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-vanilla-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-vanilla-1l",
+    "currentStock": 20,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-vanilla-1l",
+    "currentStock": 13,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-vanilla-1l",
+    "currentStock": 15,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-vanilla-1l",
+    "currentStock": 10,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-sparkling-1.5l",
+    "currentStock": 25,
+    "expiryDate": "2026-06-15",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-sparkling-1.5l",
+    "currentStock": 17,
+    "expiryDate": "2026-06-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-sparkling-1.5l",
+    "currentStock": 18,
+    "expiryDate": "2026-06-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-sparkling-1.5l",
+    "currentStock": 12,
+    "expiryDate": "2026-06-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-sparkling-1.5l",
+    "currentStock": 26,
+    "expiryDate": "2026-06-17",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-sparkling-1.5l",
+    "currentStock": 18,
+    "expiryDate": "2026-06-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-still-1.5l",
+    "currentStock": 8,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-still-1.5l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-still-1.5l",
+    "currentStock": 9,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-still-1.5l",
+    "currentStock": 6,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-still-1.5l",
+    "currentStock": 10,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-still-1.5l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-zero-500ml",
+    "currentStock": 8,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-zero-500ml",
+    "currentStock": 5,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-peach-zero-500ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-peach-zero-500ml",
+    "currentStock": 17,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-lemon-500ml",
+    "currentStock": 21,
+    "expiryDate": "2026-06-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-lemon-500ml",
+    "currentStock": 15,
+    "expiryDate": "2026-06-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-lemon-500ml",
+    "currentStock": 23,
+    "expiryDate": "2026-06-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-lemon-500ml",
+    "currentStock": 16,
+    "expiryDate": "2026-06-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-lemon-500ml",
+    "currentStock": 33,
+    "expiryDate": "2026-06-08",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-lemon-500ml",
+    "currentStock": 23,
+    "expiryDate": "2026-06-14",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "currentStock": 4,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "currentStock": 2,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "currentStock": 15,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-black-250ml",
+    "currentStock": 11,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-black-250ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-black-250ml",
+    "currentStock": 9,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-black-250ml",
+    "currentStock": 8,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-premium-1l",
+    "currentStock": 11,
+    "expiryDate": "2026-06-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-premium-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-06-26",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-premium-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-06-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-premium-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-06-30",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-ginger-330ml",
+    "currentStock": 17,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-ginger-330ml",
+    "currentStock": 12,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-ginger-330ml",
+    "currentStock": 20,
+    "expiryDate": "2026-05-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-ginger-330ml",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-ginger-330ml",
+    "currentStock": 15,
+    "expiryDate": "2026-05-17",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-ginger-330ml",
+    "currentStock": 10,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-berry-330ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-berry-330ml",
+    "currentStock": 10,
+    "expiryDate": "2026-06-03",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-berry-330ml",
+    "currentStock": 16,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-berry-330ml",
+    "currentStock": 10,
+    "expiryDate": "2026-06-04",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-berry-330ml",
+    "currentStock": 17,
+    "expiryDate": "2026-05-30",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-berry-330ml",
+    "currentStock": 11,
+    "expiryDate": "2026-06-05",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-zero-250ml",
+    "currentStock": 8,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-zero-250ml",
+    "currentStock": 5,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-zero-250ml",
+    "currentStock": 9,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-zero-250ml",
+    "currentStock": 6,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-zero-250ml",
+    "currentStock": 10,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-zero-250ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-tropical-250ml",
+    "currentStock": 19,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-tropical-250ml",
+    "currentStock": 9,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-tropical-250ml",
+    "currentStock": 5,
+    "expiryDate": "2026-05-20",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-tropical-250ml",
+    "currentStock": 17,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-sportscap-750ml",
+    "currentStock": 12,
+    "expiryDate": "2026-06-14",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-sportscap-750ml",
+    "currentStock": 8,
+    "expiryDate": "2026-06-20",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-sportscap-750ml",
+    "currentStock": 13,
+    "expiryDate": "2026-06-15",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-sportscap-750ml",
+    "currentStock": 9,
+    "expiryDate": "2026-06-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-sportscap-750ml",
+    "currentStock": 14,
+    "expiryDate": "2026-06-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-sportscap-750ml",
+    "currentStock": 10,
+    "expiryDate": "2026-06-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-500ml-12pk",
+    "currentStock": 11,
+    "expiryDate": "2026-06-13",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-500ml-12pk",
+    "currentStock": 7,
+    "expiryDate": "2026-06-14",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-500ml-12pk",
+    "currentStock": 7,
+    "expiryDate": "2026-06-15",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-500ml-12pk",
+    "currentStock": 5,
+    "expiryDate": "2026-06-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-mint-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-06-12",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-mint-1l",
+    "currentStock": 17,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-mint-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-mint-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-06-06",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-pink-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-06-15",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-pink-1l",
+    "currentStock": 3,
+    "expiryDate": "2026-06-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-pink-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-06-16",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-pink-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-06-17",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-cloudy-1l",
+    "currentStock": 17,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-cloudy-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-24",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-cloudy-1l",
+    "currentStock": 20,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-cloudy-1l",
+    "currentStock": 13,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-cloudy-1l",
+    "currentStock": 15,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-cloudy-1l",
+    "currentStock": 10,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-kids-750ml",
+    "currentStock": 24,
+    "expiryDate": "2026-06-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-kids-750ml",
+    "currentStock": 16,
+    "expiryDate": "2026-06-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-kids-750ml",
+    "currentStock": 26,
+    "expiryDate": "2026-06-08",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-kids-750ml",
+    "currentStock": 18,
+    "expiryDate": "2026-06-14",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-kids-750ml",
+    "currentStock": 35,
+    "expiryDate": "2026-06-09",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-kids-750ml",
+    "currentStock": 25,
+    "expiryDate": "2026-06-15",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-1l",
+    "currentStock": 8,
+    "expiryDate": "2026-05-21",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-1l",
+    "currentStock": 9,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-1l",
+    "currentStock": 6,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-1l",
+    "currentStock": 10,
+    "expiryDate": "2026-05-23",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-1l",
+    "currentStock": 7,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-berry-500ml",
+    "currentStock": 13,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-berry-500ml",
+    "currentStock": 14,
+    "expiryDate": "2026-05-18",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-berry-500ml",
+    "currentStock": 10,
+    "expiryDate": "2026-05-19",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-berry-500ml",
+    "currentStock": 7,
+    "expiryDate": "2026-05-22",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-barista-1l",
+    "currentStock": 31,
+    "expiryDate": "2026-05-25",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-barista-1l",
+    "currentStock": 21,
+    "expiryDate": "2026-05-31",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-barista-1l",
+    "currentStock": 33,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-barista-1l",
+    "currentStock": 23,
+    "expiryDate": "2026-06-01",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-barista-1l",
+    "currentStock": 29,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-barista-1l",
+    "currentStock": 21,
+    "expiryDate": "2026-06-02",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-vanilla-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-26",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-vanilla-1l",
+    "currentStock": 3,
+    "expiryDate": "2026-05-29",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-vanilla-1l",
+    "currentStock": 5,
+    "expiryDate": "2026-05-27",
+    "shelfLocation": "beverage shelf"
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-vanilla-1l",
+    "currentStock": 12,
+    "expiryDate": "2026-05-28",
+    "shelfLocation": "beverage shelf"
   }
 ]

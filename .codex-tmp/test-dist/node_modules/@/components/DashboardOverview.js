@@ -8,6 +8,7 @@ exports.default = DashboardOverview;
 const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = require("react");
 const navigation_1 = require("next/navigation");
+const optionalAppRouter_1 = require("@/lib/optionalAppRouter");
 const BranchComparisonCard_1 = __importDefault(require("./BranchComparisonCard"));
 const CompactDashboardHeader_1 = __importDefault(require("./CompactDashboardHeader"));
 const MonthlySavingsChart_1 = __importDefault(require("./MonthlySavingsChart"));
@@ -31,6 +32,7 @@ function updateProductSearchParam(current, productId) {
 }
 function DashboardOverview({ branches, selectedBranchId, generatedAt, branchName, kpiItems, actionPlan, riskTable, productDetailsById, monthlySavingsSeries, branchComparisons, initialRequestedProductId = null, staticMode = false, }) {
     const pathname = (0, navigation_1.usePathname)();
+    const router = (0, optionalAppRouter_1.useOptionalAppRouter)();
     const searchParams = (0, navigation_1.useSearchParams)();
     const requestedProductId = searchParams?.get("product") ?? initialRequestedProductId;
     const selectedDetail = (0, react_1.useMemo)(() => {
@@ -44,18 +46,18 @@ function DashboardOverview({ branches, selectedBranchId, generatedAt, branchName
             return;
         }
         const nextParams = updateProductSearchParam(searchParams ?? new URLSearchParams(), null);
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-    }, [pathname, requestedProductId, searchParams, selectedDetail]);
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+    }, [pathname, requestedProductId, router, searchParams, selectedDetail]);
     function handleOpenProduct(productId) {
         const nextParams = updateProductSearchParam(searchParams ?? new URLSearchParams(), productId);
-        window.history.pushState(null, "", buildUrl(pathname, nextParams));
+        router?.push(buildUrl(pathname, nextParams), { scroll: false });
     }
     function handleDrawerOpenChange(open) {
         if (open) {
             return;
         }
         const nextParams = updateProductSearchParam(searchParams ?? new URLSearchParams(), null);
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
     }
     return ((0, jsx_runtime_1.jsxs)("div", { className: "flex flex-col gap-6", children: [(0, jsx_runtime_1.jsx)(CompactDashboardHeader_1.default, { branches: branches, selectedBranchId: selectedBranchId, generatedAt: generatedAt, staticMode: staticMode }), (0, jsx_runtime_1.jsx)(SummaryKpiGrid_1.default, { items: kpiItems }), (0, jsx_runtime_1.jsxs)("div", { className: "grid gap-6 xl:grid-cols-[minmax(0,1.45fr)_minmax(22rem,0.95fr)] xl:items-start", children: [(0, jsx_runtime_1.jsx)(MonthlySavingsChart_1.default, { branchName: branchName, series: monthlySavingsSeries }), (0, jsx_runtime_1.jsx)(TodayDecisionCard_1.default, { primaryTask: actionPlan[0] ?? null, fallbackRiskRow: riskTable[0] ?? null, detail: actionPlan[0]
                             ? (productDetailsById[actionPlan[0].productId] ?? null)

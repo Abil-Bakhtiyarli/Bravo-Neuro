@@ -199,14 +199,35 @@ test("branch recommendations return exactly one action per eligible seeded recor
 test("branch recommendations stay sorted by urgency, then score, then expiry", () => {
   const records = calculateWasteRiskForBranch(getBranchProductRecords("ganjlik"));
   const recommendations = generateRecommendationsForBranch(records);
+  const riskPriority = {
+    critical: 3,
+    high: 2,
+    medium: 1,
+    low: 0,
+  } as const;
 
-  assert.deepEqual(
-    recommendations.map((item) => `${item.productId}:${item.actionType}`),
-    [
-      "greek-yogurt-500g:discount",
-      "butter-croissant:discount",
-      "sourdough-bread:discount",
-      "strawberries-250g:transfer",
-    ],
-  );
+  assert.ok(recommendations.length > 0);
+
+  for (let index = 0; index < recommendations.length - 1; index += 1) {
+    const current = recommendations[index];
+    const next = recommendations[index + 1];
+    const currentRecord = records.find((record) => record.product.productId === current.productId);
+    const nextRecord = records.find((record) => record.product.productId === next.productId);
+
+    assert.ok(currentRecord);
+    assert.ok(nextRecord);
+
+    const currentPriority = riskPriority[currentRecord.risk.riskLevel];
+    const nextPriority = riskPriority[nextRecord.risk.riskLevel];
+
+    assert.ok(currentPriority >= nextPriority);
+
+    if (currentPriority === nextPriority) {
+      assert.ok(currentRecord.risk.roundedScore >= nextRecord.risk.roundedScore);
+
+      if (currentRecord.risk.roundedScore === nextRecord.risk.roundedScore) {
+        assert.ok(currentRecord.daysUntilEarliestExpiry <= nextRecord.daysUntilEarliestExpiry);
+      }
+    }
+  }
 });

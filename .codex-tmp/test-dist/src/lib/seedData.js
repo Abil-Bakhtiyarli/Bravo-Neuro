@@ -56,7 +56,7 @@ function validateMonthlySavingsHistoryRecords(records, validBranchIds) {
         recordsByBranch.set(record.branchId, branchRecords);
     }
     const expectedMonths = [...new Set(records.map((record) => record.monthKey))].sort(compareMonthKey);
-    invariant(expectedMonths.length === 6, "expected exactly 6 monthly savings history points");
+    invariant(expectedMonths.length >= 6, "expected at least 6 monthly savings history points");
     for (const branchId of validBranchIds) {
         const branchRecords = [...(recordsByBranch.get(branchId) ?? [])].sort((a, b) => compareMonthKey(a.monthKey, b.monthKey));
         invariant(branchRecords.length === expectedMonths.length, `expected a full monthly history window for ${branchId}`);
@@ -79,7 +79,7 @@ function validateMonthlySavingsHistoryRecords(records, validBranchIds) {
 }
 function validateSeedData() {
     invariant(exports.branches.length === 3, "expected exactly 3 branches");
-    invariant(exports.products.length === 8, "expected exactly 8 products");
+    invariant(exports.products.length >= 158, "expected at least 158 seeded products");
     const branchIds = new Set(exports.branches.map((branch) => branch.branchId));
     const productIds = new Set(exports.products.map((product) => product.productId));
     const salesPairs = buildLookup(exports.salesHistory);

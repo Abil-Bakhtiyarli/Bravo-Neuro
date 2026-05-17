@@ -18,5 +18,6 @@ test("Transfers page renders branch-aware transfer lanes", async () => {
   assert.match(markup, /Inter-branch transfer recommendations/);
   assert.match(markup, /Bravo Ganjlik/);
   assert.match(markup, /Value protected/);
-  assert.match(markup, /Strawberries 250g/);
+  assert.match(markup, /(Outbound|Inbound)/);
+  assert.match(markup, /units/);
 });

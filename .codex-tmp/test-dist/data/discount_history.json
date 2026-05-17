@@ -70,5 +70,869 @@
     "productId": "orange-juice-1l",
     "pastDiscountPercent": 10,
     "responseRate": 0.19
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-1l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-1l",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-1l",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-200g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-200g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-180g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-180g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-180g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-250g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-250g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-250g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-250g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-250g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-6pk",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-6pk",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-6pk",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-2pk",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-1kg",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-250g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-250g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-250g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-150g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-500g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-400g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-400g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-400g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-1kg",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-250ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-1l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-1l",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-1l",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-330ml",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-1l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.25
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-500ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-500ml",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-500ml",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-1l",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.34
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-strawberry-400g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-strawberry-400g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-strawberry-400g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-honey-400g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-butter-spread-180g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-whole-1l",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-whole-1l",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-whole-1l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-zaatar-200g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-zaatar-200g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-zaatar-200g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-crumbled-200g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-plain-500g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.24
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-garlic-250g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-garlic-250g",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-garlic-250g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-light-225g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-light-225g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-light-225g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-whipped-200g",
+    "pastDiscountPercent": 10,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-light-250g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-plain-500ml",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-plain-500ml",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-plain-500ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-mango-500ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-mango-500ml",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-mango-500ml",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-seeded",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant-chocolate",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-mini-2pk",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-mini-2pk",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-mini-2pk",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sunflower",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sunflower",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sunflower",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-cheese-4pk",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberry-muffin",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.24
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-mini-4pk",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-mini-4pk",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-mini-4pk",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-walnut-200g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-walnut-200g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-walnut-200g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-triple-choc-200g",
+    "pastDiscountPercent": 10,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek-spinach",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek-spinach",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek-spinach",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast-thick",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast-thick",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast-thick",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-chocolate-2pk",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-premium-300g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-baby-150g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-baby-150g",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-baby-150g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-premium-200g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-premium-200g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-premium-200g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "raspberries-premium-200g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-mini-500g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.24
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-mix-300g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-mix-300g",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-mix-300g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-rocket-120g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-rocket-120g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-rocket-120g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-protein-180g",
+    "pastDiscountPercent": 10,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-honey-500g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-premium-1kg",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-premium-1kg",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-premium-1kg",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-seedless-500g",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-seedless-500g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-seedless-500g",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-florets-300g",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-pulp-1l",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-vanilla-1l",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-vanilla-1l",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-vanilla-1l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-still-1.5l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-still-1.5l",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-still-1.5l",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-peach-zero-500ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-black-250ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.24
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-ginger-330ml",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-ginger-330ml",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-ginger-330ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-zero-250ml",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-zero-250ml",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-zero-250ml",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-tropical-250ml",
+    "pastDiscountPercent": 10,
+    "responseRate": 0.3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-mint-1l",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-cloudy-1l",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.46
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-cloudy-1l",
+    "pastDiscountPercent": 30,
+    "responseRate": 0.26
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-cloudy-1l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-1l",
+    "pastDiscountPercent": 15,
+    "responseRate": 0.31
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-1l",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.36
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-1l",
+    "pastDiscountPercent": 25,
+    "responseRate": 0.41
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-berry-500ml",
+    "pastDiscountPercent": 20,
+    "responseRate": 0.3
   }
 ]

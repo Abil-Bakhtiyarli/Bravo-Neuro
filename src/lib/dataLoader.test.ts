@@ -6,6 +6,7 @@ import {
   getBranchProductRecord,
   getBranchProductRecords,
 } from "./dataLoader";
+import { inventory } from "./seedData";
 
 test("getAvailableBranches returns the seeded branches", () => {
   const availableBranches = getAvailableBranches();
@@ -19,8 +20,13 @@ test("getAvailableBranches returns the seeded branches", () => {
 
 test("valid branch returns one enriched record per inventory-backed branch-product pair", () => {
   const ganjlikRecords = getBranchProductRecords("ganjlik");
+  const expectedUniqueProducts = new Set(
+    inventory
+      .filter((lot) => lot.branchId === "ganjlik")
+      .map((lot) => lot.productId),
+  );
 
-  assert.equal(ganjlikRecords.length, 6);
+  assert.equal(ganjlikRecords.length, expectedUniqueProducts.size);
   assert.ok(ganjlikRecords.every((record) => record.branch.branchId === "ganjlik"));
 });
 

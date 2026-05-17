@@ -92,7 +92,10 @@ export function validateMonthlySavingsHistoryRecords(
   }
 
   const expectedMonths = [...new Set(records.map((record) => record.monthKey))].sort(compareMonthKey);
-  invariant(expectedMonths.length === 6, "expected exactly 6 monthly savings history points");
+  invariant(
+    expectedMonths.length >= 6,
+    "expected at least 6 monthly savings history points",
+  );
 
   for (const branchId of validBranchIds) {
     const branchRecords = [...(recordsByBranch.get(branchId) ?? [])].sort((a, b) =>
@@ -137,7 +140,7 @@ export function validateMonthlySavingsHistoryRecords(
 
 function validateSeedData() {
   invariant(branches.length === 3, "expected exactly 3 branches");
-  invariant(products.length === 8, "expected exactly 8 products");
+  invariant(products.length >= 158, "expected at least 158 seeded products");
 
   const branchIds = new Set(branches.map((branch) => branch.branchId));
   const productIds = new Set(products.map((product) => product.productId));

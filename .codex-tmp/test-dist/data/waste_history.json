@@ -142,5 +142,2705 @@
     "productId": "orange-juice-1l",
     "categoryWasteRate": 0.04,
     "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-1l",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mozzarella-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "mozzarella-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-250g",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "feta-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-1l",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-300g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-300g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-300g",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-180g",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-180g",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-180g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-330ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-330ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-330ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-225g",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-225g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-225g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-500ml",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sour-cream-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "sour-cream-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-250g",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-4pk",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-4pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-4pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "chocolate-muffin",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "chocolate-muffin",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "chocolate-muffin",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-6pk",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-6pk",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-6pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mini-eclair-2pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-2pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "mini-eclair-2pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-4pk",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-4pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-4pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-6pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-6pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-6pk",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-2pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-2pk",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-2pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-125g",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-125g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-125g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-125g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "raspberries-125g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "raspberries-125g",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-250g",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-250g",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-150g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-150g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-150g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-250g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-500g",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-500g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-500g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-1kg",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-500g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-500g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-500g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-400g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-400g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-400g",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mandarins-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "mandarins-1kg",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-1l",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-1.5l",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-1.5l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-1.5l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-peach-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-peach-500ml",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-250ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-250ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-250ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-1l",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-1l",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-330ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-330ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-330ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-250ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-250ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-250ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-500ml-6pk",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-500ml-6pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-500ml-6pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-1l",
+    "categoryWasteRate": 0,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-500ml",
+    "categoryWasteRate": 0.2,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-1l",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-strawberry-400g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-strawberry-400g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-strawberry-400g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-honey-400g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-honey-400g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-honey-400g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-mint-300ml",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-mint-300ml",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-mint-300ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-family-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-family-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-family-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-butter-spread-180g",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-butter-spread-180g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-butter-spread-180g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-lactose-free-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lactose-free-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-lactose-free-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-whole-1l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-whole-1l",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-whole-1l",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-lowfat-1l",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lowfat-1l",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-lowfat-1l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-zaatar-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-zaatar-200g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-zaatar-200g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-crumbled-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-crumbled-200g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "feta-crumbled-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mozzarella-shredded-200g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-shredded-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "may28",
+    "productId": "mozzarella-shredded-200g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-herb-300g",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-herb-300g",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-herb-300g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-plain-500g",
+    "categoryWasteRate": 0.12,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-plain-500g",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-plain-500g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-slices-200g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-slices-200g",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-slices-200g",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-garlic-250g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-garlic-250g",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-garlic-250g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-plain-250g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-plain-250g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-plain-250g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-light-225g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-light-225g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-light-225g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-whipped-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-whipped-200g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-whipped-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sour-cream-light-250g",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-light-250g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "may28",
+    "productId": "sour-cream-light-250g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-blueberry-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-blueberry-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-blueberry-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-plain-500ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-plain-500ml",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-plain-500ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-mango-500ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-mango-500ml",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-mango-500ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread-seeded",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-seeded",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-seeded",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread-olive",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-olive",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-olive",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant-almond",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant-almond",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant-almond",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant-chocolate",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant-chocolate",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant-chocolate",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-garlic",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-garlic",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-garlic",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-mini-2pk",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-mini-2pk",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-mini-2pk",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sliced",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sliced",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sliced",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sunflower",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sunflower",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sunflower",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-cheese-4pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-cheese-4pk",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-cheese-4pk",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "chocolate-muffin-double",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "chocolate-muffin-double",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "chocolate-muffin-double",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberry-muffin",
+    "categoryWasteRate": 0.12,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberry-muffin",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberry-muffin",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-icing",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-icing",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-icing",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-mini-4pk",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-mini-4pk",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-mini-4pk",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-mini-8pk",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-mini-8pk",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-mini-8pk",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-walnut-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-walnut-200g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-walnut-200g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-triple-choc-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-triple-choc-200g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-triple-choc-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-brioche-4pk",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-brioche-4pk",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-brioche-4pk",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-potato-4pk",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-potato-4pk",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-potato-4pk",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek-spinach",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek-spinach",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek-spinach",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut-sugar",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut-sugar",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut-sugar",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast-thick",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast-thick",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast-thick",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mini-eclair-chocolate-2pk",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-chocolate-2pk",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "mini-eclair-chocolate-2pk",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-organic-1kg",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas-organic-1kg",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas-organic-1kg",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-mini-700g",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas-mini-700g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas-mini-700g",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-premium-300g",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-premium-300g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-premium-300g",
+    "categoryWasteRate": 0.06,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-family-500g",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-family-500g",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-family-500g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-baby-150g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-baby-150g",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-baby-150g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-family-300g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-family-300g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-family-300g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-premium-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-premium-200g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-premium-200g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-premium-200g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "raspberries-premium-200g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "raspberries-premium-200g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-ready-2pk",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-ready-2pk",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-ready-2pk",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-premium-4pk",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-premium-4pk",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-premium-4pk",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-mini-500g",
+    "categoryWasteRate": 0.12,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-mini-500g",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-mini-500g",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-bio-1kg",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-bio-1kg",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-bio-1kg",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-mix-300g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-mix-300g",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-mix-300g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-premium-500g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-premium-500g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-premium-500g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-rocket-120g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-rocket-120g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-rocket-120g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-protein-180g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-protein-180g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-protein-180g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-button-250g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-button-250g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-button-250g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-oyster-200g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-oyster-200g",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-oyster-200g",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-honey-500g",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-honey-500g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-honey-500g",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-peeled-500g",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-peeled-500g",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-peeled-500g",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-premium-1kg",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-premium-1kg",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-premium-1kg",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-snack-800g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-snack-800g",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-snack-800g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-seedless-500g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-seedless-500g",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-seedless-500g",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-florets-300g",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-florets-300g",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-florets-300g",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mandarins-easy-peel-1kg",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-easy-peel-1kg",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "mandarins-easy-peel-1kg",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-fresh-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-fresh-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-fresh-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-pulp-1l",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-pulp-1l",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-pulp-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-lime-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-lime-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-lime-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-vanilla-1l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-vanilla-1l",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-vanilla-1l",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-sparkling-1.5l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-sparkling-1.5l",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-sparkling-1.5l",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-still-1.5l",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-still-1.5l",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-still-1.5l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-zero-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-peach-zero-500ml",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-peach-zero-500ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-lemon-500ml",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-lemon-500ml",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-lemon-500ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-black-250ml",
+    "categoryWasteRate": 0.12,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-black-250ml",
+    "categoryWasteRate": 0.07,
+    "previousWasteUnits": 3
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-black-250ml",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-premium-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-premium-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-premium-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-ginger-330ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-ginger-330ml",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-ginger-330ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-berry-330ml",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-berry-330ml",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-berry-330ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-zero-250ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-zero-250ml",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-zero-250ml",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-tropical-250ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-tropical-250ml",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-tropical-250ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-sportscap-750ml",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-sportscap-750ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-sportscap-750ml",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-500ml-12pk",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-500ml-12pk",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-500ml-12pk",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-mint-1l",
+    "categoryWasteRate": 0.08,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-mint-1l",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-mint-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-pink-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-pink-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-pink-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-cloudy-1l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-cloudy-1l",
+    "categoryWasteRate": 0.19,
+    "previousWasteUnits": 11
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-cloudy-1l",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-kids-750ml",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 10
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-kids-750ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-kids-750ml",
+    "categoryWasteRate": 0.14,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-1l",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-1l",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-1l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-berry-500ml",
+    "categoryWasteRate": 0.1,
+    "previousWasteUnits": 4
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-berry-500ml",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 5
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-berry-500ml",
+    "categoryWasteRate": 0.13,
+    "previousWasteUnits": 6
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-barista-1l",
+    "categoryWasteRate": 0.15,
+    "previousWasteUnits": 7
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-barista-1l",
+    "categoryWasteRate": 0.17,
+    "previousWasteUnits": 8
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-barista-1l",
+    "categoryWasteRate": 0.11,
+    "previousWasteUnits": 9
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-vanilla-1l",
+    "categoryWasteRate": 0.03,
+    "previousWasteUnits": 0
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-vanilla-1l",
+    "categoryWasteRate": 0.04,
+    "previousWasteUnits": 1
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-vanilla-1l",
+    "categoryWasteRate": 0.05,
+    "previousWasteUnits": 2
   }
 ]

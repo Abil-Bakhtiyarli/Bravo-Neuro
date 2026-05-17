@@ -1,6 +1,60 @@
 [
   {
     "branchId": "ganjlik",
+    "monthKey": "2025-06",
+    "monthLabel": "Jun",
+    "netSavedValueAzN": 28.6,
+    "recoveredValueAzN": 33.8,
+    "possibleLossAzN": 151.2,
+    "taskCount": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "monthKey": "2025-07",
+    "monthLabel": "Jul",
+    "netSavedValueAzN": 31.9,
+    "recoveredValueAzN": 37.5,
+    "possibleLossAzN": 164.4,
+    "taskCount": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "monthKey": "2025-08",
+    "monthLabel": "Aug",
+    "netSavedValueAzN": 29.7,
+    "recoveredValueAzN": 35.1,
+    "possibleLossAzN": 158.7,
+    "taskCount": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "monthKey": "2025-09",
+    "monthLabel": "Sep",
+    "netSavedValueAzN": 36.4,
+    "recoveredValueAzN": 42.8,
+    "possibleLossAzN": 187.9,
+    "taskCount": 5
+  },
+  {
+    "branchId": "ganjlik",
+    "monthKey": "2025-10",
+    "monthLabel": "Oct",
+    "netSavedValueAzN": 33.2,
+    "recoveredValueAzN": 39.6,
+    "possibleLossAzN": 173.5,
+    "taskCount": 4
+  },
+  {
+    "branchId": "ganjlik",
+    "monthKey": "2025-11",
+    "monthLabel": "Nov",
+    "netSavedValueAzN": 39.1,
+    "recoveredValueAzN": 45.9,
+    "possibleLossAzN": 201.7,
+    "taskCount": 5
+  },
+  {
+    "branchId": "ganjlik",
     "monthKey": "2025-12",
     "monthLabel": "Dec",
     "netSavedValueAzN": 32.4,
@@ -55,6 +109,60 @@
   },
   {
     "branchId": "yasamal",
+    "monthKey": "2025-06",
+    "monthLabel": "Jun",
+    "netSavedValueAzN": 6.2,
+    "recoveredValueAzN": 6.9,
+    "possibleLossAzN": 27.8,
+    "taskCount": 2
+  },
+  {
+    "branchId": "yasamal",
+    "monthKey": "2025-07",
+    "monthLabel": "Jul",
+    "netSavedValueAzN": 7.1,
+    "recoveredValueAzN": 7.9,
+    "possibleLossAzN": 30.6,
+    "taskCount": 3
+  },
+  {
+    "branchId": "yasamal",
+    "monthKey": "2025-08",
+    "monthLabel": "Aug",
+    "netSavedValueAzN": 6.8,
+    "recoveredValueAzN": 7.6,
+    "possibleLossAzN": 29.3,
+    "taskCount": 2
+  },
+  {
+    "branchId": "yasamal",
+    "monthKey": "2025-09",
+    "monthLabel": "Sep",
+    "netSavedValueAzN": 8.2,
+    "recoveredValueAzN": 9.1,
+    "possibleLossAzN": 33.8,
+    "taskCount": 3
+  },
+  {
+    "branchId": "yasamal",
+    "monthKey": "2025-10",
+    "monthLabel": "Oct",
+    "netSavedValueAzN": 7.9,
+    "recoveredValueAzN": 8.8,
+    "possibleLossAzN": 32.1,
+    "taskCount": 3
+  },
+  {
+    "branchId": "yasamal",
+    "monthKey": "2025-11",
+    "monthLabel": "Nov",
+    "netSavedValueAzN": 8.8,
+    "recoveredValueAzN": 9.8,
+    "possibleLossAzN": 35.6,
+    "taskCount": 3
+  },
+  {
+    "branchId": "yasamal",
     "monthKey": "2025-12",
     "monthLabel": "Dec",
     "netSavedValueAzN": 7.8,
@@ -106,6 +214,60 @@
     "recoveredValueAzN": 12.5,
     "possibleLossAzN": 45.4,
     "taskCount": 4
+  },
+  {
+    "branchId": "may28",
+    "monthKey": "2025-06",
+    "monthLabel": "Jun",
+    "netSavedValueAzN": 1.8,
+    "recoveredValueAzN": 1.9,
+    "possibleLossAzN": 5.1,
+    "taskCount": 1
+  },
+  {
+    "branchId": "may28",
+    "monthKey": "2025-07",
+    "monthLabel": "Jul",
+    "netSavedValueAzN": 2.1,
+    "recoveredValueAzN": 2.1,
+    "possibleLossAzN": 5.8,
+    "taskCount": 1
+  },
+  {
+    "branchId": "may28",
+    "monthKey": "2025-08",
+    "monthLabel": "Aug",
+    "netSavedValueAzN": 1.9,
+    "recoveredValueAzN": 2,
+    "possibleLossAzN": 5.5,
+    "taskCount": 1
+  },
+  {
+    "branchId": "may28",
+    "monthKey": "2025-09",
+    "monthLabel": "Sep",
+    "netSavedValueAzN": 2.5,
+    "recoveredValueAzN": 2.5,
+    "possibleLossAzN": 6.7,
+    "taskCount": 1
+  },
+  {
+    "branchId": "may28",
+    "monthKey": "2025-10",
+    "monthLabel": "Oct",
+    "netSavedValueAzN": 2.3,
+    "recoveredValueAzN": 2.3,
+    "possibleLossAzN": 6.1,
+    "taskCount": 1
+  },
+  {
+    "branchId": "may28",
+    "monthKey": "2025-11",
+    "monthLabel": "Nov",
+    "netSavedValueAzN": 2.9,
+    "recoveredValueAzN": 3,
+    "possibleLossAzN": 7.6,
+    "taskCount": 1
   },
   {
     "branchId": "may28",

@@ -54,5 +54,1055 @@
     "category": "drinks",
     "unitPrice": 3.8,
     "shelfLifeType": "long"
+  },
+  {
+    "productId": "kefir-1l",
+    "name": "Kefir 1L",
+    "category": "dairy",
+    "unitPrice": 3.2,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "mozzarella-200g",
+    "name": "Mozzarella 200g",
+    "category": "dairy",
+    "unitPrice": 4.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "feta-250g",
+    "name": "Feta 250g",
+    "category": "dairy",
+    "unitPrice": 5.1,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "milk-1l",
+    "name": "Milk 1L",
+    "category": "dairy",
+    "unitPrice": 2.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cottage-cheese-300g",
+    "name": "Cottage Cheese 300g",
+    "category": "dairy",
+    "unitPrice": 4.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "labneh-200g",
+    "name": "Labneh 200g",
+    "category": "dairy",
+    "unitPrice": 4.6,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cheddar-180g",
+    "name": "Cheddar 180g",
+    "category": "dairy",
+    "unitPrice": 5.7,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cream-cheese-250g",
+    "name": "Cream Cheese 250g",
+    "category": "dairy",
+    "unitPrice": 4.4,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "probiotic-yogurt-330ml",
+    "name": "Probiotic Yogurt 330ml",
+    "category": "dairy",
+    "unitPrice": 2.3,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "halloumi-225g",
+    "name": "Halloumi 225g",
+    "category": "dairy",
+    "unitPrice": 6.4,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "yogurt-drink-500ml",
+    "name": "Yogurt Drink 500ml",
+    "category": "dairy",
+    "unitPrice": 2.6,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "sour-cream-250g",
+    "name": "Sour Cream 250g",
+    "category": "dairy",
+    "unitPrice": 3.8,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "ricotta-250g",
+    "name": "Ricotta 250g",
+    "category": "dairy",
+    "unitPrice": 5.3,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "rye-bread",
+    "name": "Rye Bread",
+    "category": "bakery",
+    "unitPrice": 3.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "baguette",
+    "name": "Baguette",
+    "category": "bakery",
+    "unitPrice": 2.7,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "sesame-bagel-4pk",
+    "name": "Sesame Bagel 4pk",
+    "category": "bakery",
+    "unitPrice": 3.6,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "chocolate-muffin",
+    "name": "Chocolate Muffin",
+    "category": "bakery",
+    "unitPrice": 2.5,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cinnamon-roll",
+    "name": "Cinnamon Roll",
+    "category": "bakery",
+    "unitPrice": 2.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "pita-bread-6pk",
+    "name": "Pita Bread 6pk",
+    "category": "bakery",
+    "unitPrice": 3.2,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "mini-eclair-2pk",
+    "name": "Mini Eclair 2pk",
+    "category": "bakery",
+    "unitPrice": 3.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "brownie-200g",
+    "name": "Brownie 200g",
+    "category": "bakery",
+    "unitPrice": 4.1,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "burger-buns-4pk",
+    "name": "Burger Buns 4pk",
+    "category": "bakery",
+    "unitPrice": 2.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "tortilla-wraps-6pk",
+    "name": "Tortilla Wraps 6pk",
+    "category": "bakery",
+    "unitPrice": 3.7,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cheese-borek",
+    "name": "Cheese Borek",
+    "category": "bakery",
+    "unitPrice": 2.6,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "plain-donut",
+    "name": "Plain Donut",
+    "category": "bakery",
+    "unitPrice": 1.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "multigrain-toast",
+    "name": "Multigrain Toast",
+    "category": "bakery",
+    "unitPrice": 3.5,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "avocados-2pk",
+    "name": "Avocados 2pk",
+    "category": "fruits-vegetables",
+    "unitPrice": 4.7,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "blueberries-125g",
+    "name": "Blueberries 125g",
+    "category": "fruits-vegetables",
+    "unitPrice": 4.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "raspberries-125g",
+    "name": "Raspberries 125g",
+    "category": "fruits-vegetables",
+    "unitPrice": 5.3,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cucumbers-1kg",
+    "name": "Cucumbers 1kg",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.4,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cherry-tomatoes-250g",
+    "name": "Cherry Tomatoes 250g",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.3,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mixed-salad-150g",
+    "name": "Mixed Salad 150g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.7,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mushrooms-250g",
+    "name": "Mushrooms 250g",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.6,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "baby-carrots-500g",
+    "name": "Baby Carrots 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.5,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "apples-gala-1kg",
+    "name": "Apples Gala 1kg",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.1,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "grapes-red-500g",
+    "name": "Red Grapes 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 4.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "broccoli-400g",
+    "name": "Broccoli 400g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mandarins-1kg",
+    "name": "Mandarins 1kg",
+    "category": "fruits-vegetables",
+    "unitPrice": 3,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cola-zero-1l",
+    "name": "Cola Zero 1L",
+    "category": "drinks",
+    "unitPrice": 2.1,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "mineral-water-1.5l",
+    "name": "Mineral Water 1.5L",
+    "category": "drinks",
+    "unitPrice": 1.2,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "iced-tea-peach-500ml",
+    "name": "Iced Tea Peach 500ml",
+    "category": "drinks",
+    "unitPrice": 1.9,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "cold-brew-coffee-250ml",
+    "name": "Cold Brew Coffee 250ml",
+    "category": "drinks",
+    "unitPrice": 2.8,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "pomegranate-juice-1l",
+    "name": "Pomegranate Juice 1L",
+    "category": "drinks",
+    "unitPrice": 4.6,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "kombucha-330ml",
+    "name": "Kombucha 330ml",
+    "category": "drinks",
+    "unitPrice": 3.4,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "energy-drink-250ml",
+    "name": "Energy Drink 250ml",
+    "category": "drinks",
+    "unitPrice": 2.2,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "still-water-500ml-6pk",
+    "name": "Still Water 500ml 6pk",
+    "category": "drinks",
+    "unitPrice": 3.9,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "lemonade-1l",
+    "name": "Lemonade 1L",
+    "category": "drinks",
+    "unitPrice": 2.7,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "apple-juice-1l",
+    "name": "Apple Juice 1L",
+    "category": "drinks",
+    "unitPrice": 3.5,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "sparkling-water-lime-500ml",
+    "name": "Sparkling Water Lime 500ml",
+    "category": "drinks",
+    "unitPrice": 1.5,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "oat-milk-1l",
+    "name": "Oat Milk 1L",
+    "category": "drinks",
+    "unitPrice": 3.3,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "greek-yogurt-strawberry-400g",
+    "name": "Greek Yogurt Strawberry 400g",
+    "category": "dairy",
+    "unitPrice": 5.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "greek-yogurt-honey-400g",
+    "name": "Greek Yogurt Honey 400g",
+    "category": "dairy",
+    "unitPrice": 5.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "ayran-mint-300ml",
+    "name": "Ayran Mint 300ml",
+    "category": "dairy",
+    "unitPrice": 1.8,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "ayran-family-1l",
+    "name": "Ayran Family 1L",
+    "category": "dairy",
+    "unitPrice": 3.1,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "sourdough-butter-spread-180g",
+    "name": "Sourdough Butter Spread 180g",
+    "category": "dairy",
+    "unitPrice": 4.1,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "milk-lactose-free-1l",
+    "name": "Milk Lactose Free 1L",
+    "category": "dairy",
+    "unitPrice": 2.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "milk-whole-1l",
+    "name": "Milk Whole 1L",
+    "category": "dairy",
+    "unitPrice": 2.5,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "milk-lowfat-1l",
+    "name": "Milk Lowfat 1L",
+    "category": "dairy",
+    "unitPrice": 2.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "labneh-zaatar-200g",
+    "name": "Labneh Zaatar 200g",
+    "category": "dairy",
+    "unitPrice": 4.9,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "feta-crumbled-200g",
+    "name": "Feta Crumbled 200g",
+    "category": "dairy",
+    "unitPrice": 4.8,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "mozzarella-shredded-200g",
+    "name": "Mozzarella Shredded 200g",
+    "category": "dairy",
+    "unitPrice": 5.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cottage-cheese-herb-300g",
+    "name": "Cottage Cheese Herb 300g",
+    "category": "dairy",
+    "unitPrice": 4.5,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cottage-cheese-plain-500g",
+    "name": "Cottage Cheese Plain 500g",
+    "category": "dairy",
+    "unitPrice": 5.6,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cheddar-slices-200g",
+    "name": "Cheddar Slices 200g",
+    "category": "dairy",
+    "unitPrice": 5.9,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cream-cheese-garlic-250g",
+    "name": "Cream Cheese Garlic 250g",
+    "category": "dairy",
+    "unitPrice": 4.7,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cream-cheese-plain-250g",
+    "name": "Cream Cheese Plain 250g",
+    "category": "dairy",
+    "unitPrice": 4.3,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "halloumi-light-225g",
+    "name": "Halloumi Light 225g",
+    "category": "dairy",
+    "unitPrice": 6.1,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "ricotta-whipped-200g",
+    "name": "Whipped Ricotta 200g",
+    "category": "dairy",
+    "unitPrice": 5.5,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "probiotic-yogurt-berry-330ml",
+    "name": "Probiotic Yogurt Berry 330ml",
+    "category": "dairy",
+    "unitPrice": 2.5,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "probiotic-yogurt-plain-330ml",
+    "name": "Probiotic Yogurt Plain 330ml",
+    "category": "dairy",
+    "unitPrice": 2.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "sour-cream-light-250g",
+    "name": "Sour Cream Light 250g",
+    "category": "dairy",
+    "unitPrice": 3.6,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "kefir-blueberry-1l",
+    "name": "Kefir Blueberry 1L",
+    "category": "dairy",
+    "unitPrice": 3.6,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "kefir-plain-500ml",
+    "name": "Kefir Plain 500ml",
+    "category": "dairy",
+    "unitPrice": 2.2,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "yogurt-drink-strawberry-500ml",
+    "name": "Yogurt Drink Strawberry 500ml",
+    "category": "dairy",
+    "unitPrice": 2.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "yogurt-drink-mango-500ml",
+    "name": "Yogurt Drink Mango 500ml",
+    "category": "dairy",
+    "unitPrice": 2.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "sourdough-bread-seeded",
+    "name": "Sourdough Bread Seeded",
+    "category": "bakery",
+    "unitPrice": 3.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "sourdough-bread-olive",
+    "name": "Sourdough Bread Olive",
+    "category": "bakery",
+    "unitPrice": 4.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "butter-croissant-almond",
+    "name": "Butter Croissant Almond",
+    "category": "bakery",
+    "unitPrice": 2.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "butter-croissant-chocolate",
+    "name": "Butter Croissant Chocolate",
+    "category": "bakery",
+    "unitPrice": 3.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "baguette-garlic",
+    "name": "Garlic Baguette",
+    "category": "bakery",
+    "unitPrice": 3.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "baguette-mini-2pk",
+    "name": "Mini Baguette 2pk",
+    "category": "bakery",
+    "unitPrice": 3.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "rye-bread-sliced",
+    "name": "Rye Bread Sliced",
+    "category": "bakery",
+    "unitPrice": 3.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "rye-bread-sunflower",
+    "name": "Rye Bread Sunflower",
+    "category": "bakery",
+    "unitPrice": 3.6,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "sesame-bagel-cheese-4pk",
+    "name": "Sesame Bagel Cheese 4pk",
+    "category": "bakery",
+    "unitPrice": 3.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "sesame-bagel-multiseed-4pk",
+    "name": "Sesame Bagel Multiseed 4pk",
+    "category": "bakery",
+    "unitPrice": 4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "chocolate-muffin-double",
+    "name": "Chocolate Muffin Double",
+    "category": "bakery",
+    "unitPrice": 2.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "blueberry-muffin",
+    "name": "Blueberry Muffin",
+    "category": "bakery",
+    "unitPrice": 2.7,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cinnamon-roll-icing",
+    "name": "Cinnamon Roll Icing",
+    "category": "bakery",
+    "unitPrice": 3.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cinnamon-roll-mini-4pk",
+    "name": "Cinnamon Roll Mini 4pk",
+    "category": "bakery",
+    "unitPrice": 4.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "pita-bread-mini-8pk",
+    "name": "Pita Bread Mini 8pk",
+    "category": "bakery",
+    "unitPrice": 3.5,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "brownie-walnut-200g",
+    "name": "Brownie Walnut 200g",
+    "category": "bakery",
+    "unitPrice": 4.5,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "brownie-triple-choc-200g",
+    "name": "Brownie Triple Choc 200g",
+    "category": "bakery",
+    "unitPrice": 4.6,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "burger-buns-brioche-4pk",
+    "name": "Burger Buns Brioche 4pk",
+    "category": "bakery",
+    "unitPrice": 3.3,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "burger-buns-potato-4pk",
+    "name": "Burger Buns Potato 4pk",
+    "category": "bakery",
+    "unitPrice": 3.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "name": "Tortilla Wraps Wholewheat 6pk",
+    "category": "bakery",
+    "unitPrice": 4,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "tortilla-wraps-spinach-6pk",
+    "name": "Tortilla Wraps Spinach 6pk",
+    "category": "bakery",
+    "unitPrice": 4.2,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cheese-borek-spinach",
+    "name": "Cheese Borek Spinach",
+    "category": "bakery",
+    "unitPrice": 2.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "plain-donut-sugar",
+    "name": "Plain Donut Sugar",
+    "category": "bakery",
+    "unitPrice": 2.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "multigrain-toast-thick",
+    "name": "Multigrain Toast Thick",
+    "category": "bakery",
+    "unitPrice": 3.8,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "mini-eclair-chocolate-2pk",
+    "name": "Mini Eclair Chocolate 2pk",
+    "category": "bakery",
+    "unitPrice": 4.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "bananas-organic-1kg",
+    "name": "Bananas Organic 1kg",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "bananas-mini-700g",
+    "name": "Bananas Mini 700g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.6,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "strawberries-premium-300g",
+    "name": "Strawberries Premium 300g",
+    "category": "fruits-vegetables",
+    "unitPrice": 6.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "strawberries-family-500g",
+    "name": "Strawberries Family 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 7.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "fresh-spinach-baby-150g",
+    "name": "Baby Spinach 150g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "fresh-spinach-family-300g",
+    "name": "Fresh Spinach Family 300g",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "blueberries-premium-200g",
+    "name": "Blueberries Premium 200g",
+    "category": "fruits-vegetables",
+    "unitPrice": 6.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "raspberries-premium-200g",
+    "name": "Raspberries Premium 200g",
+    "category": "fruits-vegetables",
+    "unitPrice": 6.5,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "avocados-ready-2pk",
+    "name": "Avocados Ready 2pk",
+    "category": "fruits-vegetables",
+    "unitPrice": 5,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "avocados-premium-4pk",
+    "name": "Avocados Premium 4pk",
+    "category": "fruits-vegetables",
+    "unitPrice": 8.4,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cucumbers-mini-500g",
+    "name": "Cucumbers Mini 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 1.9,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cucumbers-bio-1kg",
+    "name": "Cucumbers Bio 1kg",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.9,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cherry-tomatoes-mix-300g",
+    "name": "Cherry Tomatoes Mix 300g",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.7,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "cherry-tomatoes-premium-500g",
+    "name": "Cherry Tomatoes Premium 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 4.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mixed-salad-rocket-120g",
+    "name": "Mixed Salad Rocket 120g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.9,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mixed-salad-protein-180g",
+    "name": "Mixed Salad Protein 180g",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mushrooms-button-250g",
+    "name": "Button Mushrooms 250g",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.4,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mushrooms-oyster-200g",
+    "name": "Oyster Mushrooms 200g",
+    "category": "fruits-vegetables",
+    "unitPrice": 4.2,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "baby-carrots-honey-500g",
+    "name": "Baby Carrots Honey 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.8,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "baby-carrots-peeled-500g",
+    "name": "Baby Carrots Peeled 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.7,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "apples-gala-premium-1kg",
+    "name": "Apples Gala Premium 1kg",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.6,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "apples-gala-snack-800g",
+    "name": "Apples Gala Snack 800g",
+    "category": "fruits-vegetables",
+    "unitPrice": 2.9,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "grapes-red-seedless-500g",
+    "name": "Red Grapes Seedless 500g",
+    "category": "fruits-vegetables",
+    "unitPrice": 4.8,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "broccoli-florets-300g",
+    "name": "Broccoli Florets 300g",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.1,
+    "shelfLifeType": "short"
+  },
+  {
+    "productId": "mandarins-easy-peel-1kg",
+    "name": "Mandarins Easy Peel 1kg",
+    "category": "fruits-vegetables",
+    "unitPrice": 3.4,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "orange-juice-fresh-1l",
+    "name": "Orange Juice Fresh 1L",
+    "category": "drinks",
+    "unitPrice": 4.2,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "orange-juice-pulp-1l",
+    "name": "Orange Juice Pulp 1L",
+    "category": "drinks",
+    "unitPrice": 4,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "cola-zero-lime-1l",
+    "name": "Cola Zero Lime 1L",
+    "category": "drinks",
+    "unitPrice": 2.2,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "cola-zero-vanilla-1l",
+    "name": "Cola Zero Vanilla 1L",
+    "category": "drinks",
+    "unitPrice": 2.3,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "mineral-water-sparkling-1.5l",
+    "name": "Mineral Water Sparkling 1.5L",
+    "category": "drinks",
+    "unitPrice": 1.3,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "mineral-water-still-1.5l",
+    "name": "Mineral Water Still 1.5L",
+    "category": "drinks",
+    "unitPrice": 1.2,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "iced-tea-peach-zero-500ml",
+    "name": "Iced Tea Peach Zero 500ml",
+    "category": "drinks",
+    "unitPrice": 2,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "iced-tea-lemon-500ml",
+    "name": "Iced Tea Lemon 500ml",
+    "category": "drinks",
+    "unitPrice": 1.9,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "name": "Cold Brew Coffee Vanilla 250ml",
+    "category": "drinks",
+    "unitPrice": 3,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "cold-brew-coffee-black-250ml",
+    "name": "Cold Brew Coffee Black 250ml",
+    "category": "drinks",
+    "unitPrice": 2.7,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "pomegranate-juice-premium-1l",
+    "name": "Pomegranate Juice Premium 1L",
+    "category": "drinks",
+    "unitPrice": 5.1,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "kombucha-ginger-330ml",
+    "name": "Kombucha Ginger 330ml",
+    "category": "drinks",
+    "unitPrice": 3.6,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "kombucha-berry-330ml",
+    "name": "Kombucha Berry 330ml",
+    "category": "drinks",
+    "unitPrice": 3.7,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "energy-drink-zero-250ml",
+    "name": "Energy Drink Zero 250ml",
+    "category": "drinks",
+    "unitPrice": 2.3,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "energy-drink-tropical-250ml",
+    "name": "Energy Drink Tropical 250ml",
+    "category": "drinks",
+    "unitPrice": 2.4,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "still-water-sportscap-750ml",
+    "name": "Still Water Sportscap 750ml",
+    "category": "drinks",
+    "unitPrice": 1.4,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "still-water-500ml-12pk",
+    "name": "Still Water 500ml 12pk",
+    "category": "drinks",
+    "unitPrice": 6.8,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "lemonade-mint-1l",
+    "name": "Lemonade Mint 1L",
+    "category": "drinks",
+    "unitPrice": 2.9,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "lemonade-pink-1l",
+    "name": "Pink Lemonade 1L",
+    "category": "drinks",
+    "unitPrice": 3,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "apple-juice-cloudy-1l",
+    "name": "Apple Juice Cloudy 1L",
+    "category": "drinks",
+    "unitPrice": 3.8,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "apple-juice-kids-750ml",
+    "name": "Apple Juice Kids 750ml",
+    "category": "drinks",
+    "unitPrice": 3.2,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "sparkling-water-lime-1l",
+    "name": "Sparkling Water Lime 1L",
+    "category": "drinks",
+    "unitPrice": 1.8,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "sparkling-water-berry-500ml",
+    "name": "Sparkling Water Berry 500ml",
+    "category": "drinks",
+    "unitPrice": 1.7,
+    "shelfLifeType": "long"
+  },
+  {
+    "productId": "oat-milk-barista-1l",
+    "name": "Oat Milk Barista 1L",
+    "category": "drinks",
+    "unitPrice": 3.6,
+    "shelfLifeType": "medium"
+  },
+  {
+    "productId": "oat-milk-vanilla-1l",
+    "name": "Oat Milk Vanilla 1L",
+    "category": "drinks",
+    "unitPrice": 3.7,
+    "shelfLifeType": "medium"
   }
 ]

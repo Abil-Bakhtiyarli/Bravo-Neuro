@@ -26,3 +26,7 @@ const branchIds = ["ganjlik", "yasamal", "may28"];
         : record);
     strict_1.default.throws(() => (0, seedData_1.validateMonthlySavingsHistoryRecords)(invalidRecords, branchIds), /must be non-negative/);
 });
+(0, node_test_1.default)("validateMonthlySavingsHistoryRecords rejects windows shorter than six months", () => {
+    const shortWindow = seedData_1.monthlySavingsHistory.filter((record) => record.monthKey >= "2026-01");
+    strict_1.default.throws(() => (0, seedData_1.validateMonthlySavingsHistoryRecords)(shortWindow, branchIds), /at least 6 monthly savings history points/);
+});

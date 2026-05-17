@@ -19,5 +19,6 @@ const page_1 = __importDefault(require("./page"));
     strict_1.default.match(markup, /Inter-branch transfer recommendations/);
     strict_1.default.match(markup, /Bravo Ganjlik/);
     strict_1.default.match(markup, /Value protected/);
-    strict_1.default.match(markup, /Strawberries 250g/);
+    strict_1.default.match(markup, /(Outbound|Inbound)/);
+    strict_1.default.match(markup, /units/);
 });

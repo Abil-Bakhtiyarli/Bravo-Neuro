@@ -52,7 +52,7 @@ export default function MonthlySavingsChart({
   }
 
   const latestMonth = series[series.length - 1];
-  const sixMonthTotal = series.reduce((total, point) => total + point.netSavedValueAzN, 0);
+  const periodTotal = series.reduce((total, point) => total + point.netSavedValueAzN, 0);
 
   return (
     <section className="demo-card animate-demo-fade-up p-5">
@@ -70,7 +70,9 @@ export default function MonthlySavingsChart({
         </span>
       </div>
 
-      <p className="mt-3 text-sm text-muted-foreground">Six-month recovery trend for the active branch.</p>
+      <p className="mt-3 text-sm text-muted-foreground">
+        Extended recovery trend for the active branch with variable monthly performance.
+      </p>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
         <div className="demo-surface-panel px-3.5 py-3">
@@ -83,9 +85,9 @@ export default function MonthlySavingsChart({
         </div>
         <div className="demo-surface-panel px-3.5 py-3">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-            Six-month total
+            {series.length}-month total
           </p>
-          <p className="mt-1 text-base font-semibold text-foreground">{formatCurrency(sixMonthTotal)}</p>
+          <p className="mt-1 text-base font-semibold text-foreground">{formatCurrency(periodTotal)}</p>
         </div>
       </div>
 
@@ -99,6 +101,8 @@ export default function MonthlySavingsChart({
                 tickLine={false}
                 axisLine={false}
                 tick={{ fill: "rgba(71, 85, 105, 0.9)", fontSize: 12 }}
+                minTickGap={8}
+                tickMargin={8}
               />
               <Tooltip
                 cursor={{ fill: "rgba(15, 23, 42, 0.04)" }}

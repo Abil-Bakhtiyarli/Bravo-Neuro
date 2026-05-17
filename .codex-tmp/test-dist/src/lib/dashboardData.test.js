@@ -25,8 +25,21 @@ function getKpiValue(dashboardData, key) {
     strict_1.default.deepEqual(serialized, dashboardData);
     strict_1.default.equal(dashboardData.branch.branchId, "ganjlik");
     strict_1.default.equal(dashboardData.generatedAt, "2026-05-15T00:00:00.000Z");
-    strict_1.default.equal(dashboardData.monthlySavingsSeries.length, 6);
-    strict_1.default.deepEqual(dashboardData.monthlySavingsSeries.map((item) => item.monthKey), ["2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05"]);
+    strict_1.default.equal(dashboardData.monthlySavingsSeries.length, 12);
+    strict_1.default.deepEqual(dashboardData.monthlySavingsSeries.map((item) => item.monthKey), [
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+    ]);
     strict_1.default.equal(dashboardData.riskTable.length, dashboardData.actionPlan.length);
     strict_1.default.deepEqual(dashboardData.topProductIds, dashboardData.riskTable.map((item) => item.productId));
     strict_1.default.deepEqual(Object.keys(dashboardData.productDetailsById), dashboardData.riskTable.map((item) => item.productId));
@@ -34,8 +47,8 @@ function getKpiValue(dashboardData, key) {
 (0, node_test_1.default)("monthly savings history changes with the selected branch", () => {
     const ganjlik = (0, dashboardData_1.getDashboardData)("ganjlik");
     const may28 = (0, dashboardData_1.getDashboardData)("may28");
-    strict_1.default.equal(ganjlik.monthlySavingsSeries.length, 6);
-    strict_1.default.equal(may28.monthlySavingsSeries.length, 6);
+    strict_1.default.equal(ganjlik.monthlySavingsSeries.length, 12);
+    strict_1.default.equal(may28.monthlySavingsSeries.length, 12);
     strict_1.default.notDeepEqual(ganjlik.monthlySavingsSeries, may28.monthlySavingsSeries);
     strict_1.default.equal(ganjlik.monthlySavingsSeries.at(-1)?.netSavedValueAzN, 46.2);
     strict_1.default.equal(may28.monthlySavingsSeries.at(-1)?.netSavedValueAzN, 5);

@@ -192,8 +192,8 @@ function withRisk(record, risk) {
     strict_1.default.equal(summary.totalPossibleLossAzN, Number(expectedTotals.possibleLossAzN.toFixed(2)));
     strict_1.default.equal(summary.totalRecoveredValueAzN, Number(expectedTotals.recoveredValueAzN.toFixed(2)));
     strict_1.default.equal(summary.totalNetSavedValueAzN, Number(expectedTotals.netSavedValueAzN.toFixed(2)));
-    strict_1.default.equal(summary.breakdownByActionType.discount?.recommendationCount, 3);
-    strict_1.default.equal(summary.breakdownByActionType.transfer?.recommendationCount, 1);
+    strict_1.default.equal(summary.breakdownByActionType.discount?.recommendationCount, recommendations.filter((recommendation) => recommendation.actionType === "discount").length);
+    strict_1.default.equal(summary.breakdownByActionType.transfer?.recommendationCount, recommendations.filter((recommendation) => recommendation.actionType === "transfer").length);
 });
 (0, node_test_1.default)("seeded branch summaries stay non-negative and rank ganjlik above may28 by net value", () => {
     const ganjlikRecords = (0, riskScore_1.calculateWasteRiskForBranch)((0, dataLoader_1.getBranchProductRecords)("ganjlik"));

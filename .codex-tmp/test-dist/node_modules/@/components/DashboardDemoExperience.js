@@ -10,6 +10,7 @@ const react_1 = require("react");
 const navigation_1 = require("next/navigation");
 const lucide_react_1 = require("lucide-react");
 const riskTableInteraction_1 = require("@/lib/riskTableInteraction");
+const optionalAppRouter_1 = require("@/lib/optionalAppRouter");
 const utils_1 = require("@/lib/utils");
 const DailyActionPlan_1 = __importDefault(require("./DailyActionPlan"));
 const MonthlySavingsChart_1 = __importDefault(require("./MonthlySavingsChart"));
@@ -83,6 +84,7 @@ function SelectedProductPanel({ detail, onOpenDrawer, }) {
 }
 function DashboardDemoExperience({ branchId, branchName, tasks, rows, productDetailsById, monthlySavingsSeries, initialRequestedProductId = null, initialQuery = "", initialRiskFilter = "all", staticMode = false, }) {
     const pathname = (0, navigation_1.usePathname)();
+    const router = (0, optionalAppRouter_1.useOptionalAppRouter)();
     const searchParams = (0, navigation_1.useSearchParams)();
     const [drawerProductId, setDrawerProductId] = (0, react_1.useState)(null);
     const query = searchParams?.get("q") ?? initialQuery;
@@ -101,13 +103,13 @@ function DashboardDemoExperience({ branchId, branchName, tasks, rows, productDet
         const nextParams = (0, riskTableInteraction_1.updateRiskTableSearchParams)(new URLSearchParams(searchParams?.toString() ?? ""), {
             product: selectedProductId,
         });
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-    }, [pathname, requestedProductId, searchParams, selectedProductId]);
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+    }, [pathname, requestedProductId, router, searchParams, selectedProductId]);
     function handleSelectProduct(productId) {
         const nextParams = (0, riskTableInteraction_1.updateRiskTableSearchParams)(new URLSearchParams(searchParams?.toString() ?? ""), {
             product: productId,
         });
-        window.history.pushState(null, "", buildUrl(pathname, nextParams));
+        router?.push(buildUrl(pathname, nextParams), { scroll: false });
     }
     function handleSearchChange(nextQuery) {
         const nextFilteredRows = (0, riskTableInteraction_1.filterRiskTableRows)(rows, nextQuery, riskFilter);
@@ -116,7 +118,7 @@ function DashboardDemoExperience({ branchId, branchName, tasks, rows, productDet
             q: nextQuery,
             product: nextSelectedProductId,
         });
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
     }
     function handleRiskFilterChange(nextRiskFilter) {
         const nextFilteredRows = (0, riskTableInteraction_1.filterRiskTableRows)(rows, query, nextRiskFilter);
@@ -125,7 +127,7 @@ function DashboardDemoExperience({ branchId, branchName, tasks, rows, productDet
             risk: nextRiskFilter,
             product: nextSelectedProductId,
         });
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
     }
     function handleDrawerOpenChange(open) {
         setDrawerProductId(open ? selectedProductId : null);

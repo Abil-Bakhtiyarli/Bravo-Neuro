@@ -35,7 +35,7 @@ test("MonthlySavingsChart renders title and latest branch summary", () => {
 
   assert.match(markup, /Monthly net saved value/);
   assert.match(markup, /Bravo Ganjlik/);
-  assert.match(markup, /Six-month total/);
+  assert.match(markup, /2-month total/);
 });
 
 test("MonthlySavingsChart renders an explicit empty state", () => {

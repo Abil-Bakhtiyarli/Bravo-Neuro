@@ -8,6 +8,7 @@ exports.default = ActionPlanExperience;
 const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = require("react");
 const navigation_1 = require("next/navigation");
+const optionalAppRouter_1 = require("@/lib/optionalAppRouter");
 const DailyActionPlan_1 = __importDefault(require("./DailyActionPlan"));
 const ProductRiskDrawer_1 = __importDefault(require("./ProductRiskDrawer"));
 function buildUrl(pathname, searchParams) {
@@ -25,6 +26,7 @@ function updateProductSearchParam(current, productId) {
 }
 function ActionPlanExperience({ branchId, tasks, productDetailsById, initialRequestedProductId = null, staticMode = false, }) {
     const pathname = (0, navigation_1.usePathname)();
+    const router = (0, optionalAppRouter_1.useOptionalAppRouter)();
     const searchParams = (0, navigation_1.useSearchParams)();
     const requestedProductId = searchParams?.get("product") ?? initialRequestedProductId;
     const selectedDetail = (0, react_1.useMemo)(() => {
@@ -38,14 +40,14 @@ function ActionPlanExperience({ branchId, tasks, productDetailsById, initialRequ
             return;
         }
         const nextParams = updateProductSearchParam(new URLSearchParams(searchParams?.toString() ?? ""), null);
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-    }, [pathname, requestedProductId, searchParams, selectedDetail]);
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+    }, [pathname, requestedProductId, router, searchParams, selectedDetail]);
     function handleDrawerOpenChange(open) {
         if (open) {
             return;
         }
         const nextParams = updateProductSearchParam(new URLSearchParams(searchParams?.toString() ?? ""), null);
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
     }
     return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(DailyActionPlan_1.default, { branchId: branchId, tasks: tasks, selectedProductId: selectedDetail?.product.productId ?? null, staticMode: staticMode }), (0, jsx_runtime_1.jsx)(ProductRiskDrawer_1.default, { detail: selectedDetail, open: selectedDetail !== null, onOpenChange: handleDrawerOpenChange })] }));
 }

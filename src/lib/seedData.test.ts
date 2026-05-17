@@ -48,3 +48,12 @@ test("validateMonthlySavingsHistoryRecords rejects negative AZN values", () => {
     /must be non-negative/,
   );
 });
+
+test("validateMonthlySavingsHistoryRecords rejects windows shorter than six months", () => {
+  const shortWindow = monthlySavingsHistory.filter((record) => record.monthKey >= "2026-01");
+
+  assert.throws(
+    () => validateMonthlySavingsHistoryRecords(shortWindow, branchIds),
+    /at least 6 monthly savings history points/,
+  );
+});

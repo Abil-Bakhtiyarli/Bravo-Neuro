@@ -21,6 +21,7 @@ import {
   parseRiskTableFilterValue,
   updateRiskTableSearchParams,
 } from "@/lib/riskTableInteraction";
+import { useOptionalAppRouter } from "@/lib/optionalAppRouter";
 import type {
   ActionPlanItem,
   BranchDashboardData,
@@ -263,6 +264,7 @@ export default function DashboardDemoExperience({
   staticMode = false,
 }: DashboardDemoExperienceProps) {
   const pathname = usePathname();
+  const router = useOptionalAppRouter();
   const searchParams = useSearchParams();
   const [drawerProductId, setDrawerProductId] = useState<string | null>(null);
   const query = searchParams?.get("q") ?? initialQuery;
@@ -290,15 +292,15 @@ export default function DashboardDemoExperience({
       product: selectedProductId,
     });
 
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-  }, [pathname, requestedProductId, searchParams, selectedProductId]);
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+  }, [pathname, requestedProductId, router, searchParams, selectedProductId]);
 
   function handleSelectProduct(productId: string) {
     const nextParams = updateRiskTableSearchParams(new URLSearchParams(searchParams?.toString() ?? ""), {
       product: productId,
     });
 
-    window.history.pushState(null, "", buildUrl(pathname, nextParams));
+    router?.push(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleSearchChange(nextQuery: string) {
@@ -309,7 +311,7 @@ export default function DashboardDemoExperience({
       product: nextSelectedProductId,
     });
 
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleRiskFilterChange(nextRiskFilter: "all" | "medium" | "high" | "critical") {
@@ -320,7 +322,7 @@ export default function DashboardDemoExperience({
       product: nextSelectedProductId,
     });
 
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleDrawerOpenChange(open: boolean) {

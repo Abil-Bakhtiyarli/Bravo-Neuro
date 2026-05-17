@@ -143,10 +143,28 @@ function withRisk(record, risk) {
 (0, node_test_1.default)("branch recommendations stay sorted by urgency, then score, then expiry", () => {
     const records = (0, riskScore_1.calculateWasteRiskForBranch)((0, dataLoader_1.getBranchProductRecords)("ganjlik"));
     const recommendations = (0, recommendationEngine_1.generateRecommendationsForBranch)(records);
-    strict_1.default.deepEqual(recommendations.map((item) => `${item.productId}:${item.actionType}`), [
-        "greek-yogurt-500g:discount",
-        "butter-croissant:discount",
-        "sourdough-bread:discount",
-        "strawberries-250g:transfer",
-    ]);
+    const riskPriority = {
+        critical: 3,
+        high: 2,
+        medium: 1,
+        low: 0,
+    };
+    strict_1.default.ok(recommendations.length > 0);
+    for (let index = 0; index < recommendations.length - 1; index += 1) {
+        const current = recommendations[index];
+        const next = recommendations[index + 1];
+        const currentRecord = records.find((record) => record.product.productId === current.productId);
+        const nextRecord = records.find((record) => record.product.productId === next.productId);
+        strict_1.default.ok(currentRecord);
+        strict_1.default.ok(nextRecord);
+        const currentPriority = riskPriority[currentRecord.risk.riskLevel];
+        const nextPriority = riskPriority[nextRecord.risk.riskLevel];
+        strict_1.default.ok(currentPriority >= nextPriority);
+        if (currentPriority === nextPriority) {
+            strict_1.default.ok(currentRecord.risk.roundedScore >= nextRecord.risk.roundedScore);
+            if (currentRecord.risk.roundedScore === nextRecord.risk.roundedScore) {
+                strict_1.default.ok(currentRecord.daysUntilEarliestExpiry <= nextRecord.daysUntilEarliestExpiry);
+            }
+        }
+    }
 });

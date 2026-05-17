@@ -8,6 +8,7 @@ exports.default = RiskTableExperience;
 const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = require("react");
 const navigation_1 = require("next/navigation");
+const optionalAppRouter_1 = require("@/lib/optionalAppRouter");
 const riskTableInteraction_1 = require("@/lib/riskTableInteraction");
 const ProductRiskDrawer_1 = __importDefault(require("./ProductRiskDrawer"));
 const RiskTable_1 = __importDefault(require("./RiskTable"));
@@ -17,6 +18,7 @@ function buildUrl(pathname, searchParams) {
 }
 function RiskTableExperience({ rows, productDetailsById, initialRequestedProductId = null, initialQuery = "", initialRiskFilter = "all", }) {
     const pathname = (0, navigation_1.usePathname)();
+    const router = (0, optionalAppRouter_1.useOptionalAppRouter)();
     const searchParams = (0, navigation_1.useSearchParams)();
     const query = searchParams?.get("q") ?? initialQuery;
     const requestedRiskFilter = searchParams?.get("risk");
@@ -34,13 +36,13 @@ function RiskTableExperience({ rows, productDetailsById, initialRequestedProduct
         const nextParams = (0, riskTableInteraction_1.updateRiskTableSearchParams)(new URLSearchParams(searchParams?.toString() ?? ""), {
             product: selectedProductId,
         });
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-    }, [pathname, requestedProductId, searchParams, selectedProductId]);
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+    }, [pathname, requestedProductId, router, searchParams, selectedProductId]);
     function handleSelectProduct(productId) {
         const nextParams = (0, riskTableInteraction_1.updateRiskTableSearchParams)(new URLSearchParams(searchParams?.toString() ?? ""), {
             product: productId,
         });
-        window.history.pushState(null, "", buildUrl(pathname, nextParams));
+        router?.push(buildUrl(pathname, nextParams), { scroll: false });
     }
     function handleSearchChange(nextQuery) {
         const nextFilteredRows = (0, riskTableInteraction_1.filterRiskTableRows)(rows, nextQuery, riskFilter);
@@ -49,7 +51,7 @@ function RiskTableExperience({ rows, productDetailsById, initialRequestedProduct
             q: nextQuery,
             product: nextSelectedProductId,
         });
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
     }
     function handleRiskFilterChange(nextRiskFilter) {
         const nextFilteredRows = (0, riskTableInteraction_1.filterRiskTableRows)(rows, query, nextRiskFilter);
@@ -58,7 +60,7 @@ function RiskTableExperience({ rows, productDetailsById, initialRequestedProduct
             risk: nextRiskFilter,
             product: nextSelectedProductId,
         });
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
     }
     function handleDrawerOpenChange(open) {
         if (open) {
@@ -67,7 +69,7 @@ function RiskTableExperience({ rows, productDetailsById, initialRequestedProduct
         const nextParams = (0, riskTableInteraction_1.updateRiskTableSearchParams)(new URLSearchParams(searchParams?.toString() ?? ""), {
             product: null,
         });
-        window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+        router?.replace(buildUrl(pathname, nextParams), { scroll: false });
     }
     return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(RiskTable_1.default, { rows: filteredRows, searchValue: query, riskFilter: riskFilter, selectedProductId: selectedProductId, onSearchChange: handleSearchChange, onRiskFilterChange: handleRiskFilterChange, onSelectProduct: handleSelectProduct }), (0, jsx_runtime_1.jsx)(ProductRiskDrawer_1.default, { detail: selectedDetail, open: selectedDetail !== null, onOpenChange: handleDrawerOpenChange })] }));
 }

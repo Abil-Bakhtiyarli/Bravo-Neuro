@@ -3,6 +3,7 @@
 import { useEffect, useMemo } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
+import { useOptionalAppRouter } from "@/lib/optionalAppRouter";
 import type { BranchDashboardData } from "@/lib/types";
 
 import DailyActionPlan from "./DailyActionPlan";
@@ -40,6 +41,7 @@ export default function ActionPlanExperience({
   staticMode = false,
 }: ActionPlanExperienceProps) {
   const pathname = usePathname();
+  const router = useOptionalAppRouter();
   const searchParams = useSearchParams();
   const requestedProductId = searchParams?.get("product") ?? initialRequestedProductId;
   const selectedDetail = useMemo(() => {
@@ -59,8 +61,8 @@ export default function ActionPlanExperience({
       new URLSearchParams(searchParams?.toString() ?? ""),
       null,
     );
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-  }, [pathname, requestedProductId, searchParams, selectedDetail]);
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+  }, [pathname, requestedProductId, router, searchParams, selectedDetail]);
 
   function handleDrawerOpenChange(open: boolean) {
     if (open) {
@@ -71,7 +73,7 @@ export default function ActionPlanExperience({
       new URLSearchParams(searchParams?.toString() ?? ""),
       null,
     );
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   return (

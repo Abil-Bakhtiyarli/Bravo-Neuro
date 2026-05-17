@@ -32,7 +32,7 @@ const series = [
     const markup = (0, server_1.renderToStaticMarkup)((0, jsx_runtime_1.jsx)(MonthlySavingsChart_1.default, { branchName: "Bravo Ganjlik", series: series }));
     strict_1.default.match(markup, /Monthly net saved value/);
     strict_1.default.match(markup, /Bravo Ganjlik/);
-    strict_1.default.match(markup, /Six-month total/);
+    strict_1.default.match(markup, /2-month total/);
 });
 (0, node_test_1.default)("MonthlySavingsChart renders an explicit empty state", () => {
     const markup = (0, server_1.renderToStaticMarkup)((0, jsx_runtime_1.jsx)(MonthlySavingsChart_1.default, { branchName: "Bravo Ganjlik", series: [] }));

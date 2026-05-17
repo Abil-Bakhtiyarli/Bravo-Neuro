@@ -9,6 +9,7 @@ import {
 
 import type { BranchComparisonSummary } from "@/lib/branchComparison";
 import type { DashboardKpiPresentationItem } from "@/lib/dashboardKpiPresentation";
+import { useOptionalAppRouter } from "@/lib/optionalAppRouter";
 import type { Branch, BranchDashboardData, BranchId } from "@/lib/types";
 
 import BranchComparisonCard from "./BranchComparisonCard";
@@ -70,6 +71,7 @@ export default function DashboardOverview({
   staticMode = false,
 }: DashboardOverviewProps) {
   const pathname = usePathname();
+  const router = useOptionalAppRouter();
   const searchParams = useSearchParams();
   const requestedProductId = searchParams?.get("product") ?? initialRequestedProductId;
   const selectedDetail = useMemo(() => {
@@ -89,15 +91,15 @@ export default function DashboardOverview({
       searchParams ?? new URLSearchParams(),
       null,
     );
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
-  }, [pathname, requestedProductId, searchParams, selectedDetail]);
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
+  }, [pathname, requestedProductId, router, searchParams, selectedDetail]);
 
   function handleOpenProduct(productId: string) {
     const nextParams = updateProductSearchParam(
       searchParams ?? new URLSearchParams(),
       productId,
     );
-    window.history.pushState(null, "", buildUrl(pathname, nextParams));
+    router?.push(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   function handleDrawerOpenChange(open: boolean) {
@@ -109,7 +111,7 @@ export default function DashboardOverview({
       searchParams ?? new URLSearchParams(),
       null,
     );
-    window.history.replaceState(null, "", buildUrl(pathname, nextParams));
+    router?.replace(buildUrl(pathname, nextParams), { scroll: false });
   }
 
   return (

@@ -142,5 +142,2705 @@
     "productId": "orange-juice-1l",
     "avgDailySales": 5,
     "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mozzarella-200g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-200g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "mozzarella-200g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "feta-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-1l",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-1l",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-1l",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-200g",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-180g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-180g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-180g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-250g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-250g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-250g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-225g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-225g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-225g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-500ml",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-500ml",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-500ml",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sour-cream-250g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-250g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "sour-cream-250g",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-4pk",
+    "avgDailySales": 9,
+    "last7DaysSales": 63
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-4pk",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-4pk",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "chocolate-muffin",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "chocolate-muffin",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "chocolate-muffin",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-6pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-6pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-6pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mini-eclair-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "mini-eclair-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-4pk",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-4pk",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-4pk",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-6pk",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-6pk",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-6pk",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-2pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-2pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-2pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-125g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-125g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-125g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-125g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "raspberries-125g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "raspberries-125g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-1kg",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-150g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-150g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-150g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-500g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-500g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-500g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-400g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-400g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-400g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mandarins-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "mandarins-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-1.5l",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-1.5l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-1.5l",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-peach-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-peach-500ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-250ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-250ml",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-250ml",
+    "avgDailySales": 9,
+    "last7DaysSales": 63
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-330ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-330ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-330ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-250ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-250ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-250ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-500ml-6pk",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-500ml-6pk",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-500ml-6pk",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-1l",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-1l",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-1l",
+    "avgDailySales": 9,
+    "last7DaysSales": 63
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-500ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-500ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-500ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-strawberry-400g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-strawberry-400g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-strawberry-400g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "greek-yogurt-honey-400g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "greek-yogurt-honey-400g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "greek-yogurt-honey-400g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-mint-300ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-mint-300ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-mint-300ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ayran-family-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ayran-family-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "ayran-family-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-butter-spread-180g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-butter-spread-180g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-butter-spread-180g",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-lactose-free-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lactose-free-1l",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-lactose-free-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-whole-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-whole-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-whole-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "milk-lowfat-1l",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "milk-lowfat-1l",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "milk-lowfat-1l",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "labneh-zaatar-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "labneh-zaatar-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "labneh-zaatar-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "feta-crumbled-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "feta-crumbled-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "feta-crumbled-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mozzarella-shredded-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mozzarella-shredded-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "mozzarella-shredded-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-herb-300g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-herb-300g",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-herb-300g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cottage-cheese-plain-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cottage-cheese-plain-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cottage-cheese-plain-500g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheddar-slices-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheddar-slices-200g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheddar-slices-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-garlic-250g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-garlic-250g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-garlic-250g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cream-cheese-plain-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cream-cheese-plain-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "cream-cheese-plain-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "halloumi-light-225g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "halloumi-light-225g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "halloumi-light-225g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "ricotta-whipped-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "ricotta-whipped-200g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "ricotta-whipped-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-berry-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "probiotic-yogurt-plain-330ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sour-cream-light-250g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sour-cream-light-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "sour-cream-light-250g",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-blueberry-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-blueberry-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-blueberry-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kefir-plain-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kefir-plain-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "kefir-plain-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-strawberry-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "yogurt-drink-mango-500ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "yogurt-drink-mango-500ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "yogurt-drink-mango-500ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread-seeded",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-seeded",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-seeded",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sourdough-bread-olive",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sourdough-bread-olive",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "sourdough-bread-olive",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant-almond",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant-almond",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant-almond",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "butter-croissant-chocolate",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "butter-croissant-chocolate",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "butter-croissant-chocolate",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-garlic",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-garlic",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-garlic",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baguette-mini-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baguette-mini-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "baguette-mini-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sliced",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sliced",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sliced",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "rye-bread-sunflower",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "rye-bread-sunflower",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "rye-bread-sunflower",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-cheese-4pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-cheese-4pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-cheese-4pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "sesame-bagel-multiseed-4pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "chocolate-muffin-double",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "chocolate-muffin-double",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "chocolate-muffin-double",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberry-muffin",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberry-muffin",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberry-muffin",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-icing",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-icing",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-icing",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cinnamon-roll-mini-4pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cinnamon-roll-mini-4pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cinnamon-roll-mini-4pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pita-bread-mini-8pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pita-bread-mini-8pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "pita-bread-mini-8pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-walnut-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-walnut-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-walnut-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "brownie-triple-choc-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "brownie-triple-choc-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "brownie-triple-choc-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-brioche-4pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-brioche-4pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-brioche-4pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "burger-buns-potato-4pk",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "burger-buns-potato-4pk",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "burger-buns-potato-4pk",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-wholewheat-6pk",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "tortilla-wraps-spinach-6pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cheese-borek-spinach",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cheese-borek-spinach",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cheese-borek-spinach",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "plain-donut-sugar",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "plain-donut-sugar",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "plain-donut-sugar",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "multigrain-toast-thick",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "multigrain-toast-thick",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "multigrain-toast-thick",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mini-eclair-chocolate-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mini-eclair-chocolate-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "mini-eclair-chocolate-2pk",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-organic-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas-organic-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas-organic-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "bananas-mini-700g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "bananas-mini-700g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "bananas-mini-700g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-premium-300g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-premium-300g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-premium-300g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "strawberries-family-500g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "strawberries-family-500g",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "strawberries-family-500g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-baby-150g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-baby-150g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-baby-150g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "fresh-spinach-family-300g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "fresh-spinach-family-300g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "fresh-spinach-family-300g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "blueberries-premium-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "blueberries-premium-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "blueberries-premium-200g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "raspberries-premium-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "raspberries-premium-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "raspberries-premium-200g",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-ready-2pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-ready-2pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-ready-2pk",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "avocados-premium-4pk",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "avocados-premium-4pk",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "avocados-premium-4pk",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-mini-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-mini-500g",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-mini-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cucumbers-bio-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cucumbers-bio-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "cucumbers-bio-1kg",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-mix-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-mix-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-mix-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cherry-tomatoes-premium-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cherry-tomatoes-premium-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "cherry-tomatoes-premium-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-rocket-120g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-rocket-120g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-rocket-120g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mixed-salad-protein-180g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mixed-salad-protein-180g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "mixed-salad-protein-180g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-button-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-button-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-button-250g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mushrooms-oyster-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mushrooms-oyster-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "mushrooms-oyster-200g",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-honey-500g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-honey-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-honey-500g",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "baby-carrots-peeled-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "baby-carrots-peeled-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "baby-carrots-peeled-500g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-premium-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-premium-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-premium-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apples-gala-snack-800g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apples-gala-snack-800g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "apples-gala-snack-800g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "grapes-red-seedless-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "grapes-red-seedless-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "grapes-red-seedless-500g",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "broccoli-florets-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "broccoli-florets-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "broccoli-florets-300g",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mandarins-easy-peel-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mandarins-easy-peel-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "mandarins-easy-peel-1kg",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-fresh-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-fresh-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-fresh-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "orange-juice-pulp-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "orange-juice-pulp-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "orange-juice-pulp-1l",
+    "avgDailySales": 8,
+    "last7DaysSales": 56
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-lime-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-lime-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-lime-1l",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cola-zero-vanilla-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cola-zero-vanilla-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cola-zero-vanilla-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-sparkling-1.5l",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-sparkling-1.5l",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-sparkling-1.5l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "mineral-water-still-1.5l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "mineral-water-still-1.5l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "mineral-water-still-1.5l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-peach-zero-500ml",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-peach-zero-500ml",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-peach-zero-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "iced-tea-lemon-500ml",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "iced-tea-lemon-500ml",
+    "avgDailySales": 3,
+    "last7DaysSales": 21
+  },
+  {
+    "branchId": "may28",
+    "productId": "iced-tea-lemon-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-vanilla-250ml",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "cold-brew-coffee-black-250ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "cold-brew-coffee-black-250ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "cold-brew-coffee-black-250ml",
+    "avgDailySales": 7,
+    "last7DaysSales": 49
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "pomegranate-juice-premium-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "pomegranate-juice-premium-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "pomegranate-juice-premium-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-ginger-330ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-ginger-330ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-ginger-330ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "kombucha-berry-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "kombucha-berry-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "kombucha-berry-330ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-zero-250ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-zero-250ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-zero-250ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "energy-drink-tropical-250ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "energy-drink-tropical-250ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "energy-drink-tropical-250ml",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-sportscap-750ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-sportscap-750ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-sportscap-750ml",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "still-water-500ml-12pk",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "still-water-500ml-12pk",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "may28",
+    "productId": "still-water-500ml-12pk",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-mint-1l",
+    "avgDailySales": 6,
+    "last7DaysSales": 42
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-mint-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-mint-1l",
+    "avgDailySales": 9,
+    "last7DaysSales": 63
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "lemonade-pink-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "lemonade-pink-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "lemonade-pink-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-cloudy-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-cloudy-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-cloudy-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "apple-juice-kids-750ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "apple-juice-kids-750ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "apple-juice-kids-750ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-lime-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-lime-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-lime-1l",
+    "avgDailySales": 2,
+    "last7DaysSales": 14
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "sparkling-water-berry-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "sparkling-water-berry-500ml",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "sparkling-water-berry-500ml",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-barista-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-barista-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-barista-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
+  },
+  {
+    "branchId": "ganjlik",
+    "productId": "oat-milk-vanilla-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "yasamal",
+    "productId": "oat-milk-vanilla-1l",
+    "avgDailySales": 4,
+    "last7DaysSales": 28
+  },
+  {
+    "branchId": "may28",
+    "productId": "oat-milk-vanilla-1l",
+    "avgDailySales": 5,
+    "last7DaysSales": 35
   }
 ]

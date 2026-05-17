@@ -359,7 +359,14 @@ export default function ProductRiskDrawer({
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
         <Dialog.Backdrop className="fixed inset-0 z-40 bg-slate-950/52 backdrop-blur-[4px]" />
-        <Dialog.Popup className="fixed inset-0 z-50 flex items-center justify-center p-3 outline-none sm:p-6 xl:p-8">
+        <Dialog.Popup
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 outline-none sm:p-6 xl:p-8"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) {
+              onOpenChange(false);
+            }
+          }}
+        >
           {detail ? <ProductRiskDrawerContent detail={detail} /> : null}
         </Dialog.Popup>
       </Dialog.Portal>
